@@ -1,12 +1,14 @@
 #include "stm32f10x.h"
 #include "stm32f10x_rcc.h"
 #include "stm32f10x_gpio.h"
+#include "stm32f10x_usart.h"
 
-
-//#define RCC_APB2Periph(port) RCC_APB2Periph_##port
 
 #define LED_PORT    GPIOC
-#define LED_PIN     GPIO_Pin_12
+#define LED_PIN     GPIO_Pin_7
+
+
+
 
 static void delay(void)
 {
@@ -14,18 +16,53 @@ static void delay(void)
     while (n--);
 }
 
+void usart_init(void)
+{
+    USART_InitTypeDef USART_InitStruct;
+    GPIO_InitTypeDef GPIO_InitStruct;
+
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA | RCC_APB2Periph_AFIO, ENABLE);
+
+    /* Configure USART Tx as alternate function push-pull */
+    GPIO_InitStruct.GPIO_Mode = GPIO_Mode_AF_PP;
+    GPIO_InitStruct.GPIO_Pin = GPIO_Pin_9;
+    GPIO_InitStruct.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+    /* Configure USART Rx as input floating */
+    GPIO_InitStruct.GPIO_Mode = GPIO_Mode_IN_FLOATING;
+    GPIO_InitStruct.GPIO_Pin = GPIO_Pin_10;
+    GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+    USART_InitStruct.USART_BaudRate = 57600;
+    USART_InitStruct.USART_WordLength = USART_WordLength_8b;
+    USART_InitStruct.USART_StopBits = USART_StopBits_1;
+    USART_InitStruct.USART_Parity = USART_Parity_No;
+    USART_InitStruct.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
+    USART_InitStruct.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
+
+    USART_Init(USART1, &USART_InitStruct);
+
+    USART_Cmd(USART1, ENABLE);
+}
+
 int main()
 {
-    GPIO_InitTypeDef GPIO_InitStructure;
+    char c = 'A';
+
+    GPIO_InitTypeDef GPIO_InitStruct;
     RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC, ENABLE);
     
-    GPIO_InitStructure.GPIO_Pin = LED_PIN; // GPIO No. 12
-    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_2MHz; // slow rise time
-    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP; // push-pull output
-    GPIO_Init(LED_PORT, &GPIO_InitStructure); // GPIOC init
+    GPIO_InitStruct.GPIO_Pin = LED_PIN; // GPIO No. 12
+    GPIO_InitStruct.GPIO_Speed = GPIO_Speed_2MHz; // slow rise time
+    GPIO_InitStruct.GPIO_Mode = GPIO_Mode_Out_PP; // push-pull output
+    GPIO_Init(LED_PORT, &GPIO_InitStruct); // GPIOC init
 
-    while(1)
-    {
+    while(1) {
+        if (c == 'Z') {
+            c = 'A';
+        }
+        USART_SendData(USART1, c++);
         //GPIOC->BSRR = GPIO_BSRR_BS12; // GPIO PC12 set, pin=high, LED STAT off
         GPIO_WriteBit(LED_PORT, LED_PIN, Bit_SET); // GPIO PC12 set, pin=high, LED STAT off
         delay(); // delay --> not much compiler optimizer settings dependent
