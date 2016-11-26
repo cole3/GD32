@@ -1,0 +1,56 @@
+CROSS_COMPILE=arm-none-eabi
+CC=$(CROSS_COMPILE)-gcc
+LD=$(CROSS_COMPILE)-ld -v
+OBJCOPY=$(CROSS_COMPILE)-objcopy
+AR=$(CROSS_COMPILE)-ar
+GDB=$(CROSS_COMPILE)-gdb
+
+TOP=`pwd`
+LIBS+=libstm32.a
+CFLAGSlib=-g -mcpu=cortex-m3 -mthumb -O2 -Wall -Werror -c
+CFLAGSlib+=-D STM32F10X_HD -D VECT_TAB_FLASH -D USE_STM3210B_EVAL -D USE_STDPERIPH_DRIVER
+CFLAGSlib+= -I../../../CoreSupport \
+			-I../../../../../../Project/STM32F10x_StdPeriph_Template \
+			-I../../../../../STM32F10x_StdPeriph_Driver/inc \
+			-I../../CMSIS/CM3/CoreSupport \
+			-I../../CMSIS/CM3/DeviceSupport/ST/STM32F10x \
+			-I../../../Project/STM32F10x_StdPeriph_Template \
+			-I../inc
+
+all: libs
+libs: $(LIBS)
+
+libstm32.a:
+	@echo "Building $@ part1..."
+	@cd CMSIS/CM3/DeviceSupport/ST/STM32F10x && \
+		$(CC) $(CFLAGSlib) \
+		-I../../../CoreSupport \
+		-I../../../../../../Project/STM32F10x_StdPeriph_Template \
+		-I../../../../../STM32F10x_StdPeriph_Driver/inc \
+		-I. \
+		system_stm32f10x.c
+	@echo "Building $@ part2..."
+	@cd STM32F10x_StdPeriph_Driver/src && \
+		$(CC) $(CFLAGSlib) \
+		-D"assert_param(expr)=((void)0)" \
+		-I../../CMSIS/CM3/CoreSupport \
+		-I../../CMSIS/CM3/DeviceSupport/ST/STM32F10x \
+		-I../../../Project/STM32F10x_StdPeriph_Template \
+		-I../inc \
+		*.c
+	@echo "Aring $@ part2..."
+	@$(AR) cr $@ \
+		CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.c \
+		STM32F10x_StdPeriph_Driver/src/*.o
+	@echo "done."
+
+.PHONY: libs clean tshow
+clean:
+	rm -f CMSIS/Device/ST/STM32F10x/Source/Templates/system_stm32f10x.o
+	rm -f STM32F10x_StdPeriph_Driver/src/*.o
+	rm -f $(LIBS)
+tshow:
+	@echo "######################################################################################################"
+	@echo "######## optimize settings: $(InfoTextLib), $(InfoTextSrc)"
+	@echo "######################################################################################################"
+

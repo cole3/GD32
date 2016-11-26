@@ -1,0 +1,290 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ADC1ConvertedValue	./src/hw_config.c	/^__IO uint16_t  ADC1ConvertedValue = 0, ADC1ConvertedVoltage = 0, calibration_value = 0;$/;"	v
+ADC1ConvertedVoltage	./src/hw_config.c	/^__IO uint16_t  ADC1ConvertedValue = 0, ADC1ConvertedVoltage = 0, calibration_value = 0;$/;"	v
+ADC1_DR_Address	./inc/platform_config.h	101;"	d
+ADC1_DR_Address	./inc/platform_config.h	107;"	d
+ADC1_DR_Address	./inc/platform_config.h	140;"	d
+ADC1_DR_Address	./inc/platform_config.h	178;"	d
+ADC1_DR_Address	./inc/platform_config.h	188;"	d
+ADC30x_Configuration	./src/hw_config.c	/^void ADC30x_Configuration(void)$/;"	f
+ADC_AIN_CHANNEL	./inc/platform_config.h	167;"	d
+ADC_AIN_CHANNEL	./inc/platform_config.h	174;"	d
+ADC_AIN_CHANNEL	./inc/platform_config.h	183;"	d
+ADC_AIN_CHANNEL	./inc/platform_config.h	193;"	d
+ADC_AIN_CHANNEL	./inc/platform_config.h	200;"	d
+ADC_Configuration	./src/hw_config.c	/^void ADC_Configuration(void)$/;"	f
+ADC_ConvertedValueX	./src/hw_config.c	/^uint32_t ADC_ConvertedValueX = 0;$/;"	v
+ADC_ConvertedValueX_1	./src/hw_config.c	/^uint32_t ADC_ConvertedValueX_1 = 0;$/;"	v
+ADDRESSED	./inc/usb_pwr.h	/^  ADDRESSED,$/;"	e	enum:_DEVICE_STATE
+AHBPrescTable	./src/system_stm32f10x.c	/^__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};$/;"	v
+AHBPrescTable	./src/system_stm32f30x.c	/^  __I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};$/;"	v
+AHBPrescTable	./src/system_stm32f37x.c	/^__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};$/;"	v
+AHBPrescTable	./src/system_stm32l1xx.c	/^__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};$/;"	v
+ATTACHED	./inc/usb_pwr.h	/^  ATTACHED,$/;"	e	enum:_DEVICE_STATE
+BTABLE_ADDRESS	./inc/usb_conf.h	50;"	d
+BusFault_Handler	./src/stm32_it.c	/^void BusFault_Handler(void)$/;"	f
+CONFIGURED	./inc/usb_pwr.h	/^  CONFIGURED$/;"	e	enum:_DEVICE_STATE
+CUSTOMHID_OFF_HID_DESC	./inc/usb_desc.h	46;"	d
+CUSTOMHID_SIZ_CONFIG_DESC	./inc/usb_desc.h	49;"	d
+CUSTOMHID_SIZ_DEVICE_DESC	./inc/usb_desc.h	48;"	d
+CUSTOMHID_SIZ_HID_DESC	./inc/usb_desc.h	45;"	d
+CUSTOMHID_SIZ_REPORT_DESC	./inc/usb_desc.h	50;"	d
+CUSTOMHID_SIZ_STRING_LANGID	./inc/usb_desc.h	51;"	d
+CUSTOMHID_SIZ_STRING_PRODUCT	./inc/usb_desc.h	53;"	d
+CUSTOMHID_SIZ_STRING_SERIAL	./inc/usb_desc.h	54;"	d
+CUSTOMHID_SIZ_STRING_VENDOR	./inc/usb_desc.h	52;"	d
+Config_Descriptor	./src/usb_prop.c	/^ONE_DESCRIPTOR Config_Descriptor =$/;"	v
+CustomHID_ClearFeature	./inc/usb_prop.h	74;"	d
+CustomHID_ConfigDescriptor	./src/usb_desc.c	/^const uint8_t CustomHID_ConfigDescriptor[CUSTOMHID_SIZ_CONFIG_DESC] =$/;"	v
+CustomHID_Data_Setup	./src/usb_prop.c	/^RESULT CustomHID_Data_Setup(uint8_t RequestNo)$/;"	f
+CustomHID_DeviceDescriptor	./src/usb_desc.c	/^const uint8_t CustomHID_DeviceDescriptor[CUSTOMHID_SIZ_DEVICE_DESC] =$/;"	v
+CustomHID_GetConfigDescriptor	./src/usb_prop.c	/^uint8_t *CustomHID_GetConfigDescriptor(uint16_t Length)$/;"	f
+CustomHID_GetConfiguration	./inc/usb_prop.h	69;"	d
+CustomHID_GetDeviceDescriptor	./src/usb_prop.c	/^uint8_t *CustomHID_GetDeviceDescriptor(uint16_t Length)$/;"	f
+CustomHID_GetHIDDescriptor	./src/usb_prop.c	/^uint8_t *CustomHID_GetHIDDescriptor(uint16_t Length)$/;"	f
+CustomHID_GetInterface	./inc/usb_prop.h	71;"	d
+CustomHID_GetProtocolValue	./src/usb_prop.c	/^uint8_t *CustomHID_GetProtocolValue(uint16_t Length)$/;"	f
+CustomHID_GetReportDescriptor	./src/usb_prop.c	/^uint8_t *CustomHID_GetReportDescriptor(uint16_t Length)$/;"	f
+CustomHID_GetStatus	./inc/usb_prop.h	73;"	d
+CustomHID_GetStringDescriptor	./src/usb_prop.c	/^uint8_t *CustomHID_GetStringDescriptor(uint16_t Length)$/;"	f
+CustomHID_Get_Interface_Setting	./src/usb_prop.c	/^RESULT CustomHID_Get_Interface_Setting(uint8_t Interface, uint8_t AlternateSetting)$/;"	f
+CustomHID_Hid_Descriptor	./src/usb_prop.c	/^ONE_DESCRIPTOR CustomHID_Hid_Descriptor =$/;"	v
+CustomHID_NoData_Setup	./src/usb_prop.c	/^RESULT CustomHID_NoData_Setup(uint8_t RequestNo)$/;"	f
+CustomHID_ReportDescriptor	./src/usb_desc.c	/^const uint8_t CustomHID_ReportDescriptor[CUSTOMHID_SIZ_REPORT_DESC] =$/;"	v
+CustomHID_Report_Descriptor	./src/usb_prop.c	/^ONE_DESCRIPTOR CustomHID_Report_Descriptor =$/;"	v
+CustomHID_Reset	./src/usb_prop.c	/^void CustomHID_Reset(void)$/;"	f
+CustomHID_SetConfiguration	./src/usb_prop.c	/^void CustomHID_SetConfiguration(void)$/;"	f
+CustomHID_SetDeviceAddress	./src/usb_prop.c	/^void CustomHID_SetDeviceAddress (void)$/;"	f
+CustomHID_SetDeviceFeature	./inc/usb_prop.h	76;"	d
+CustomHID_SetEndPointFeature	./inc/usb_prop.h	75;"	d
+CustomHID_SetInterface	./inc/usb_prop.h	72;"	d
+CustomHID_SetProtocol	./src/usb_prop.c	/^RESULT CustomHID_SetProtocol(void)$/;"	f
+CustomHID_SetReport_Feature	./src/usb_prop.c	/^uint8_t *CustomHID_SetReport_Feature(uint16_t Length)$/;"	f
+CustomHID_Status_In	./src/usb_prop.c	/^void CustomHID_Status_In(void)$/;"	f
+CustomHID_Status_Out	./src/usb_prop.c	/^void CustomHID_Status_Out (void)$/;"	f
+CustomHID_StringLangID	./src/usb_desc.c	/^const uint8_t CustomHID_StringLangID[CUSTOMHID_SIZ_STRING_LANGID] =$/;"	v
+CustomHID_StringProduct	./src/usb_desc.c	/^const uint8_t CustomHID_StringProduct[CUSTOMHID_SIZ_STRING_PRODUCT] =$/;"	v
+CustomHID_StringSerial	./src/usb_desc.c	/^uint8_t CustomHID_StringSerial[CUSTOMHID_SIZ_STRING_SERIAL] =$/;"	v
+CustomHID_StringVendor	./src/usb_desc.c	/^const uint8_t CustomHID_StringVendor[CUSTOMHID_SIZ_STRING_VENDOR] =$/;"	v
+CustomHID_init	./src/usb_prop.c	/^void CustomHID_init(void)$/;"	f
+DEVICE_STATE	./inc/usb_pwr.h	/^} DEVICE_STATE;$/;"	t	typeref:enum:_DEVICE_STATE
+DMA1_Channel1_IRQHandler	./src/stm32_it.c	/^void DMA1_Channel1_IRQHandler(void)$/;"	f
+DebugMon_Handler	./src/stm32_it.c	/^void DebugMon_Handler(void)$/;"	f
+Delay	./src/main.c	/^void Delay(__IO uint32_t nCount)$/;"	f
+Device_Descriptor	./src/usb_prop.c	/^ONE_DESCRIPTOR Device_Descriptor =$/;"	v
+Device_Property	./src/usb_prop.c	/^DEVICE_PROP Device_Property =$/;"	v
+Device_Table	./src/usb_prop.c	/^DEVICE Device_Table =$/;"	v
+ENDP0_RXADDR	./inc/usb_conf.h	54;"	d
+ENDP0_TXADDR	./inc/usb_conf.h	55;"	d
+ENDP1_RXADDR	./inc/usb_conf.h	60;"	d
+ENDP1_TXADDR	./inc/usb_conf.h	59;"	d
+EP	./src/usb_pwr.c	/^__IO uint32_t EP[8];$/;"	v
+EP1_IN_Callback	./src/usb_endp.c	/^void EP1_IN_Callback(void)$/;"	f
+EP1_OUT_Callback	./src/usb_endp.c	/^void EP1_OUT_Callback(void)$/;"	f
+EP2_IN_Callback	./inc/usb_conf.h	75;"	d
+EP2_OUT_Callback	./inc/usb_conf.h	83;"	d
+EP3_IN_Callback	./inc/usb_conf.h	76;"	d
+EP3_OUT_Callback	./inc/usb_conf.h	84;"	d
+EP4_IN_Callback	./inc/usb_conf.h	77;"	d
+EP4_OUT_Callback	./inc/usb_conf.h	85;"	d
+EP5_IN_Callback	./inc/usb_conf.h	78;"	d
+EP5_OUT_Callback	./inc/usb_conf.h	86;"	d
+EP6_IN_Callback	./inc/usb_conf.h	79;"	d
+EP6_OUT_Callback	./inc/usb_conf.h	87;"	d
+EP7_IN_Callback	./inc/usb_conf.h	80;"	d
+EP7_OUT_Callback	./inc/usb_conf.h	88;"	d
+EP_NUM	./inc/usb_conf.h	43;"	d
+EXTI0_IRQHandler	./src/stm32_it.c	/^void EXTI0_IRQHandler(void)$/;"	f
+EXTI15_10_IRQHandler	./src/stm32_it.c	/^void EXTI15_10_IRQHandler(void)$/;"	f
+EXTI_Configuration	./src/hw_config.c	/^void EXTI_Configuration(void)$/;"	f
+EXTI_Enable	./src/usb_prop.c	/^__IO uint8_t EXTI_Enable;$/;"	v
+Enter_LowPowerMode	./src/hw_config.c	/^void Enter_LowPowerMode(void)$/;"	f
+GET_IDLE	./inc/usb_prop.h	/^  GET_IDLE,$/;"	e	enum:_HID_REQUESTS
+GET_PROTOCOL	./inc/usb_prop.h	/^  GET_PROTOCOL,$/;"	e	enum:_HID_REQUESTS
+GET_REPORT	./inc/usb_prop.h	/^  GET_REPORT = 1,$/;"	e	enum:_HID_REQUESTS
+GPIO_Configuration	./src/hw_config.c	/^void GPIO_Configuration(void)$/;"	f
+GPIO_IOAIN	./inc/platform_config.h	165;"	d
+GPIO_IOAIN	./inc/platform_config.h	172;"	d
+GPIO_IOAIN	./inc/platform_config.h	181;"	d
+GPIO_IOAIN	./inc/platform_config.h	191;"	d
+GPIO_IOAIN	./inc/platform_config.h	198;"	d
+GPIO_IOAIN_PIN	./inc/platform_config.h	166;"	d
+GPIO_IOAIN_PIN	./inc/platform_config.h	173;"	d
+GPIO_IOAIN_PIN	./inc/platform_config.h	182;"	d
+GPIO_IOAIN_PIN	./inc/platform_config.h	192;"	d
+GPIO_IOAIN_PIN	./inc/platform_config.h	199;"	d
+GPIO_Mode_AIN	./inc/platform_config.h	184;"	d
+GPIO_Mode_AIN	./inc/platform_config.h	194;"	d
+Get_SerialNum	./src/hw_config.c	/^void Get_SerialNum(void)$/;"	f
+HID_DESCRIPTOR_TYPE	./inc/usb_desc.h	44;"	d
+HID_REQUESTS	./inc/usb_prop.h	/^} HID_REQUESTS;$/;"	t	typeref:enum:_HID_REQUESTS
+HSEStartUpStatus	./src/hw_config.c	/^ErrorStatus HSEStartUpStatus;$/;"	v
+HardFault_Handler	./src/stm32_it.c	/^void HardFault_Handler(void)$/;"	f
+ID1	./inc/platform_config.h	78;"	d
+ID1	./inc/platform_config.h	84;"	d
+ID1	./inc/platform_config.h	90;"	d
+ID2	./inc/platform_config.h	79;"	d
+ID2	./inc/platform_config.h	85;"	d
+ID2	./inc/platform_config.h	91;"	d
+ID3	./inc/platform_config.h	80;"	d
+ID3	./inc/platform_config.h	86;"	d
+ID3	./inc/platform_config.h	92;"	d
+IMR_MSK	./inc/usb_conf.h	69;"	d
+IntToUnicode	./src/hw_config.c	/^static void IntToUnicode (uint32_t value , uint8_t *pbuf , uint8_t len)$/;"	f	file:
+Leave_LowPowerMode	./src/hw_config.c	/^void Leave_LowPowerMode(void)$/;"	f
+MemManage_Handler	./src/stm32_it.c	/^void MemManage_Handler(void)$/;"	f
+NMI_Handler	./src/stm32_it.c	/^void NMI_Handler(void)$/;"	f
+PLLMulTable	./src/system_stm32l1xx.c	/^__I uint8_t PLLMulTable[9] = {3, 4, 6, 8, 12, 16, 24, 32, 48};$/;"	v
+POWERED	./inc/usb_pwr.h	/^  POWERED,$/;"	e	enum:_DEVICE_STATE
+PendSV_Handler	./src/stm32_it.c	/^void PendSV_Handler(void)$/;"	f
+PowerOff	./src/usb_pwr.c	/^RESULT PowerOff()$/;"	f
+PowerOn	./src/usb_pwr.c	/^RESULT PowerOn(void)$/;"	f
+PrevXferComplete	./src/main.c	/^__IO uint8_t PrevXferComplete = 1;$/;"	v
+ProtocolValue	./src/usb_prop.c	/^uint32_t ProtocolValue;$/;"	v
+RCC_AHBPeriph_ALLGPIO	./inc/platform_config.h	154;"	d
+RCC_AHBPeriph_GPIO_DISCONNECT	./inc/platform_config.h	128;"	d
+RCC_AHBPeriph_GPIO_DISCONNECT	./inc/platform_config.h	135;"	d
+RCC_AHBPeriph_GPIO_DISCONNECT	./inc/platform_config.h	147;"	d
+RCC_AHBPeriph_GPIO_DISCONNECT	./inc/platform_config.h	152;"	d
+RCC_AHBPeriph_GPIO_IOAIN	./inc/platform_config.h	164;"	d
+RCC_AHBPeriph_GPIO_IOAIN	./inc/platform_config.h	171;"	d
+RCC_AHBPeriph_GPIO_IOAIN	./inc/platform_config.h	180;"	d
+RCC_AHBPeriph_GPIO_IOAIN	./inc/platform_config.h	190;"	d
+RCC_APB2Periph_GPIO_DISCONNECT	./inc/platform_config.h	100;"	d
+RCC_APB2Periph_GPIO_DISCONNECT	./inc/platform_config.h	106;"	d
+RCC_APB2Periph_GPIO_IOAIN	./inc/platform_config.h	197;"	d
+REPORT_DESCRIPTOR	./inc/usb_prop.h	79;"	d
+RESUME_ESOF	./inc/usb_pwr.h	/^  RESUME_ESOF$/;"	e	enum:_RESUME_STATE
+RESUME_EXTERNAL	./inc/usb_pwr.h	/^  RESUME_EXTERNAL,$/;"	e	enum:_RESUME_STATE
+RESUME_INTERNAL	./inc/usb_pwr.h	/^  RESUME_INTERNAL,$/;"	e	enum:_RESUME_STATE
+RESUME_LATER	./inc/usb_pwr.h	/^  RESUME_LATER,$/;"	e	enum:_RESUME_STATE
+RESUME_OFF	./inc/usb_pwr.h	/^  RESUME_OFF,$/;"	e	enum:_RESUME_STATE
+RESUME_ON	./inc/usb_pwr.h	/^  RESUME_ON,$/;"	e	enum:_RESUME_STATE
+RESUME_START	./inc/usb_pwr.h	/^  RESUME_START,$/;"	e	enum:_RESUME_STATE
+RESUME_STATE	./inc/usb_pwr.h	/^} RESUME_STATE;$/;"	t	typeref:enum:_RESUME_STATE
+RESUME_WAIT	./inc/usb_pwr.h	/^  RESUME_WAIT,$/;"	e	enum:_RESUME_STATE
+Receive_Buffer	./src/usb_endp.c	/^uint8_t Receive_Buffer[2];$/;"	v
+Report_Buf	./src/usb_prop.c	/^uint8_t Report_Buf[2];   $/;"	v
+Request	./src/usb_prop.c	/^__IO uint8_t Request = 0;$/;"	v
+Resume	./src/usb_pwr.c	/^void Resume(RESUME_STATE eResumeSetVal)$/;"	f
+ResumeS	./src/usb_pwr.c	/^ResumeS;$/;"	v	typeref:struct:__anon1
+Resume_Init	./src/usb_pwr.c	/^void Resume_Init(void)$/;"	f
+SET_IDLE	./inc/usb_prop.h	/^  SET_IDLE,$/;"	e	enum:_HID_REQUESTS
+SET_PROTOCOL	./inc/usb_prop.h	/^  SET_PROTOCOL$/;"	e	enum:_HID_REQUESTS
+SET_REPORT	./inc/usb_prop.h	/^  SET_REPORT = 9,$/;"	e	enum:_HID_REQUESTS
+STANDARD_ENDPOINT_DESC_SIZE	./inc/usb_desc.h	56;"	d
+STM32L15_USB_CONNECT	./inc/platform_config.h	126;"	d
+STM32L15_USB_CONNECT	./inc/platform_config.h	136;"	d
+STM32L15_USB_DISCONNECT	./inc/platform_config.h	127;"	d
+STM32L15_USB_DISCONNECT	./inc/platform_config.h	137;"	d
+SUSPENDED	./inc/usb_pwr.h	/^  SUSPENDED,$/;"	e	enum:_DEVICE_STATE
+SVC_Handler	./src/stm32_it.c	/^void SVC_Handler(void)$/;"	f
+SYSCLK_FREQ_24MHz	./src/system_stm32f10x.c	114;"	d	file:
+SYSCLK_FREQ_72MHz	./src/system_stm32f10x.c	121;"	d	file:
+Send_Buffer	./src/stm32_it.c	/^__IO uint8_t Send_Buffer[2];$/;"	v
+SetSysClock	./src/system_stm32f10x.c	/^static void SetSysClock(void)$/;"	f	file:
+SetSysClock	./src/system_stm32f30x.c	/^static void SetSysClock(void)$/;"	f	file:
+SetSysClock	./src/system_stm32f37x.c	/^static void SetSysClock(void)$/;"	f	file:
+SetSysClock	./src/system_stm32l1xx.c	/^static void SetSysClock(void)$/;"	f	file:
+SetSysClockTo24	./src/system_stm32f10x.c	/^static void SetSysClockTo24(void)$/;"	f	file:
+SetSysClockTo36	./src/system_stm32f10x.c	/^static void SetSysClockTo36(void)$/;"	f	file:
+SetSysClockTo48	./src/system_stm32f10x.c	/^static void SetSysClockTo48(void)$/;"	f	file:
+SetSysClockTo56	./src/system_stm32f10x.c	/^static void SetSysClockTo56(void)$/;"	f	file:
+SetSysClockTo72	./src/system_stm32f10x.c	/^static void SetSysClockTo72(void)$/;"	f	file:
+SetSysClockToHSE	./src/system_stm32f10x.c	/^static void SetSysClockToHSE(void)$/;"	f	file:
+Set_System	./src/hw_config.c	/^void Set_System(void)$/;"	f
+Set_USBClock	./src/hw_config.c	/^void Set_USBClock(void)$/;"	f
+String_Descriptor	./src/usb_prop.c	/^ONE_DESCRIPTOR String_Descriptor[4] =$/;"	v
+Suspend	./src/usb_pwr.c	/^void Suspend(void)$/;"	f
+SysTick_Handler	./src/stm32_it.c	/^void SysTick_Handler(void)$/;"	f
+SystemCoreClock	./src/system_stm32f10x.c	/^  uint32_t SystemCoreClock         = HSI_VALUE;        \/*!< System Clock Frequency (Core Clock) *\/$/;"	v
+SystemCoreClock	./src/system_stm32f10x.c	/^  uint32_t SystemCoreClock         = SYSCLK_FREQ_24MHz;        \/*!< System Clock Frequency (Core Clock) *\/$/;"	v
+SystemCoreClock	./src/system_stm32f10x.c	/^  uint32_t SystemCoreClock         = SYSCLK_FREQ_36MHz;        \/*!< System Clock Frequency (Core Clock) *\/$/;"	v
+SystemCoreClock	./src/system_stm32f10x.c	/^  uint32_t SystemCoreClock         = SYSCLK_FREQ_48MHz;        \/*!< System Clock Frequency (Core Clock) *\/$/;"	v
+SystemCoreClock	./src/system_stm32f10x.c	/^  uint32_t SystemCoreClock         = SYSCLK_FREQ_56MHz;        \/*!< System Clock Frequency (Core Clock) *\/$/;"	v
+SystemCoreClock	./src/system_stm32f10x.c	/^  uint32_t SystemCoreClock         = SYSCLK_FREQ_72MHz;        \/*!< System Clock Frequency (Core Clock) *\/$/;"	v
+SystemCoreClock	./src/system_stm32f10x.c	/^  uint32_t SystemCoreClock         = SYSCLK_FREQ_HSE;        \/*!< System Clock Frequency (Core Clock) *\/$/;"	v
+SystemCoreClock	./src/system_stm32f30x.c	/^  uint32_t SystemCoreClock = 72000000;$/;"	v
+SystemCoreClock	./src/system_stm32f37x.c	/^uint32_t SystemCoreClock    = 72000000;$/;"	v
+SystemCoreClock	./src/system_stm32l1xx.c	/^uint32_t SystemCoreClock    = 32000000;$/;"	v
+SystemCoreClockUpdate	./src/system_stm32f10x.c	/^void SystemCoreClockUpdate (void)$/;"	f
+SystemCoreClockUpdate	./src/system_stm32f30x.c	/^void SystemCoreClockUpdate (void)$/;"	f
+SystemCoreClockUpdate	./src/system_stm32f37x.c	/^void SystemCoreClockUpdate (void)$/;"	f
+SystemCoreClockUpdate	./src/system_stm32l1xx.c	/^void SystemCoreClockUpdate (void)$/;"	f
+SystemInit	./src/system_stm32f10x.c	/^void SystemInit (void)$/;"	f
+SystemInit	./src/system_stm32f30x.c	/^void SystemInit(void)$/;"	f
+SystemInit	./src/system_stm32f37x.c	/^void SystemInit (void)$/;"	f
+SystemInit	./src/system_stm32l1xx.c	/^void SystemInit (void)$/;"	f
+SystemInit_ExtMemCtl	./src/system_stm32f10x.c	/^void SystemInit_ExtMemCtl(void) $/;"	f
+SystemInit_ExtMemCtl	./src/system_stm32l1xx.c	/^void SystemInit_ExtMemCtl(void)$/;"	f
+TimingDelay	./src/main.c	/^__IO uint32_t TimingDelay = 0;$/;"	v
+UNCONNECTED	./inc/usb_pwr.h	/^  UNCONNECTED,$/;"	e	enum:_DEVICE_STATE
+USB_CONFIGURATION_DESCRIPTOR_TYPE	./inc/usb_desc.h	39;"	d
+USB_Cable_Config	./src/hw_config.c	/^void USB_Cable_Config (FunctionalState NewState)$/;"	f
+USB_DEVICE_DESCRIPTOR_TYPE	./inc/usb_desc.h	38;"	d
+USB_DISCONNECT	./inc/platform_config.h	104;"	d
+USB_DISCONNECT	./inc/platform_config.h	133;"	d
+USB_DISCONNECT	./inc/platform_config.h	145;"	d
+USB_DISCONNECT	./inc/platform_config.h	150;"	d
+USB_DISCONNECT	./inc/platform_config.h	98;"	d
+USB_DISCONNECT_PIN	./inc/platform_config.h	105;"	d
+USB_DISCONNECT_PIN	./inc/platform_config.h	134;"	d
+USB_DISCONNECT_PIN	./inc/platform_config.h	146;"	d
+USB_DISCONNECT_PIN	./inc/platform_config.h	151;"	d
+USB_DISCONNECT_PIN	./inc/platform_config.h	99;"	d
+USB_ENDPOINT_DESCRIPTOR_TYPE	./inc/usb_desc.h	42;"	d
+USB_FS_WKUP_IRQHandler	./src/stm32_it.c	/^void USB_FS_WKUP_IRQHandler(void)$/;"	f
+USB_INTERFACE_DESCRIPTOR_TYPE	./inc/usb_desc.h	41;"	d
+USB_Interrupts_Config	./src/hw_config.c	/^void USB_Interrupts_Config(void)$/;"	f
+USB_Istr	./src/usb_istr.c	/^void USB_Istr(void)$/;"	f
+USB_LP_IRQHandler	./src/stm32_it.c	/^void USB_LP_IRQHandler(void)$/;"	f
+USB_STRING_DESCRIPTOR_TYPE	./inc/usb_desc.h	40;"	d
+USE_STM32303C_EVAL	./inc/platform_config.h	71;"	d
+UsageFault_Handler	./src/stm32_it.c	/^void UsageFault_Handler(void)$/;"	f
+User_Standard_Requests	./src/usb_prop.c	/^USER_STANDARD_REQUESTS User_Standard_Requests =$/;"	v
+VECT_TAB_OFFSET	./src/system_stm32f10x.c	134;"	d	file:
+VECT_TAB_OFFSET	./src/system_stm32f30x.c	122;"	d	file:
+VECT_TAB_OFFSET	./src/system_stm32f37x.c	124;"	d	file:
+VECT_TAB_OFFSET	./src/system_stm32l1xx.c	132;"	d	file:
+_DEVICE_STATE	./inc/usb_pwr.h	/^typedef enum _DEVICE_STATE$/;"	g
+_HID_REQUESTS	./inc/usb_prop.h	/^typedef enum _HID_REQUESTS$/;"	g
+_RESUME_STATE	./inc/usb_pwr.h	/^typedef enum _RESUME_STATE$/;"	g
+__HW_CONFIG_H	./inc/hw_config.h	31;"	d
+__PLATFORM_CONFIG_H	./inc/platform_config.h	31;"	d
+__STM32F10x_CONF_H	./inc/stm32f10x_conf.h	31;"	d
+__STM32F30X_CONF_H	./inc/stm32f30x_conf.h	30;"	d
+__STM32F37X_CONF_H	./inc/stm32f37x_conf.h	30;"	d
+__STM32L1xx_CONF_H	./inc/stm32l1xx_conf.h	30;"	d
+__STM32_IT_H	./inc/stm32_it.h	31;"	d
+__USB_CONF_H	./inc/usb_conf.h	31;"	d
+__USB_DESC_H	./inc/usb_desc.h	31;"	d
+__USB_ISTR_H	./inc/usb_istr.h	30;"	d
+__USB_PROP_H	./inc/usb_prop.h	31;"	d
+__USB_PWR_H	./inc/usb_pwr.h	30;"	d
+assert_failed	./src/main.c	/^void assert_failed(uint8_t* file, uint32_t line)$/;"	f
+assert_param	./inc/stm32f10x_conf.h	76;"	d
+assert_param	./inc/stm32f10x_conf.h	80;"	d
+assert_param	./inc/stm32f30x_conf.h	73;"	d
+assert_param	./inc/stm32f30x_conf.h	77;"	d
+assert_param	./inc/stm32f37x_conf.h	74;"	d
+assert_param	./inc/stm32f37x_conf.h	78;"	d
+assert_param	./inc/stm32l1xx_conf.h	73;"	d
+assert_param	./inc/stm32l1xx_conf.h	77;"	d
+bDeviceState	./src/usb_pwr.c	/^__IO uint32_t bDeviceState = UNCONNECTED; \/* USB device status *\/$/;"	v
+bESOFcnt	./src/usb_pwr.c	/^  __IO uint8_t bESOFcnt;$/;"	m	struct:__anon1	file:
+bIntPackSOF	./src/usb_istr.c	/^__IO uint8_t bIntPackSOF = 0;  \/* SOFs received between 2 consecutive packets *\/$/;"	v
+calibration_value	./src/hw_config.c	/^__IO uint16_t  ADC1ConvertedValue = 0, ADC1ConvertedVoltage = 0, calibration_value = 0;$/;"	v
+eState	./src/usb_pwr.c	/^  __IO RESUME_STATE eState;$/;"	m	struct:__anon1	file:
+esof_counter	./src/usb_istr.c	/^__IO uint32_t esof_counter =0; \/* expected SOF counter *\/$/;"	v
+fSuspendEnabled	./src/usb_pwr.c	/^__IO bool fSuspendEnabled = TRUE;  \/* true when suspend is possible *\/$/;"	v
+main	./src/main.c	/^int main(void)$/;"	f
+pEpInt_IN	./src/usb_istr.c	/^void (*pEpInt_IN[7])(void) =$/;"	v
+pEpInt_OUT	./src/usb_istr.c	/^void (*pEpInt_OUT[7])(void) =$/;"	v
+remotewakeupon	./src/usb_pwr.c	/^__IO uint32_t remotewakeupon=0;$/;"	v
+wCNTR	./src/usb_istr.c	/^__IO uint32_t wCNTR=0;$/;"	v
+wIstr	./src/usb_istr.c	/^__IO uint16_t wIstr;  \/* ISTR register last read value *\/$/;"	v

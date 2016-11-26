@@ -1,0 +1,11391 @@
+cscope 15 $HOME/work/gd32/code/libs/STM32_USB-FS-Device_Lib_V4.0.0/Projects/Custom_HID -q 0000000799 0000070729
+	@inc/hw_config.h
+
+30 #iâdeà
+__HW_CONFIG_H
+
+
+31 
+	#__HW_CONFIG_H
+
+
+	)
+
+34 
+	~"¶©fÜm_cÚfig.h
+"
+
+35 
+	~"usb_ty³.h
+"
+
+42 
+S‘_Sy¡em
+();
+
+43 
+S‘_USBClock
+();
+
+44 
+EÁ”_LowPow”Mode
+();
+
+45 
+L—ve_LowPow”Mode
+();
+
+46 
+USB_IÁ”ru±s_CÚfig
+();
+
+47 
+USB_CabË_CÚfig
+ (
+FunùiÚ®S‹
+ 
+NewS‹
+);
+
+48 
+GPIO_CÚfigu¿tiÚ
+();
+
+49 
+EXTI_CÚfigu¿tiÚ
+();
+
+50 
+ADC_CÚfigu¿tiÚ
+();
+
+51 
+ADC30x_CÚfigu¿tiÚ
+();
+
+52 
+G‘_S”ŸlNum
+();
+
+53 
+TimšgD–ay_Deüem’t
+();
+
+54 
+D–ay
+(
+__IO
+ 
+ušt32_t
+ 
+nCouÁ
+);
+
+	@inc/platform_config.h
+
+30 #iâdeà
+__PLATFORM_CONFIG_H
+
+
+31 
+	#__PLATFORM_CONFIG_H
+
+
+	)
+
+35 #ià
+defšed
+(
+STM32L1XX_MD
+è|| defšed(
+STM32L1XX_HD
+)|| defšed(
+STM32L1XX_MD_PLUS
+)
+
+36 
+	~"¡m32l1xx.h
+"
+
+37 #ià
+defšed
+ (
+USE_STM32L152_EVAL
+)
+
+38 
+	~"¡m32l152_ev®.h
+"
+
+39 #–ià
+defšed
+ (
+USE_STM32L152D_EVAL
+)
+
+40 
+	~"¡m32l152d_ev®.h
+"
+
+44 #–ià
+defšed
+ (
+STM32F10X_MD
+è|| defšed (
+STM32F10X_HD
+è|| defšed (
+STM32F10X_XL
+)
+
+45 
+	~"¡m32f10x.h
+"
+
+46 #ià
+defšed
+ (
+USE_STM3210B_EVAL
+)
+
+47 
+	~"¡m3210b_ev®.h
+"
+
+48 #–ià
+defšed
+ (
+USE_STM3210E_EVAL
+)
+
+49 
+	~"¡m3210e_ev®.h
+"
+
+53 #–ià
+defšed
+ (
+USE_STM32373C_EVAL
+)
+
+54 
+	~"¡m32f37x.h
+"
+
+55 
+	~"¡m32373c_ev®.h
+"
+
+56 #–ià
+defšed
+ (
+USE_STM32303C_EVAL
+)
+
+57 
+	~"¡m32f30x.h
+"
+
+58 
+	~"¡m32303c_ev®.h
+"
+
+65 #ià!
+defšed
+ (
+USE_STM3210B_EVAL
+è&& !defšed (
+USE_STM3210E_EVAL
+è&& !defšed (
+USE_STM32L152_EVAL
+è&& !defšed (
+USE_STM32L152D_EVAL
+)&& !defšed (
+USE_STM32373C_EVAL
+è&& !defšed (
+USE_STM32303C_EVAL
+)
+
+71 
+	#USE_STM32303C_EVAL
+
+
+	)
+
+76 #ià
+defšed
+(
+STM32L1XX_MD
+è|| defšed(
+STM32L1XX_HD
+è|| defšed(
+STM32L1XX_MD_PLUS
+)
+
+78 
+	#ID1
+ (0x1FF80050)
+
+	)
+
+79 
+	#ID2
+ (0x1FF80054)
+
+	)
+
+80 
+	#ID3
+ (0x1FF80064)
+
+	)
+
+82 #–ià
+defšed
+ (
+STM32F37X
+è|| defšed(
+STM32F30X
+)
+
+84 
+	#ID1
+ (0x1FFFF7AC)
+
+	)
+
+85 
+	#ID2
+ (0x1FFFF7B0)
+
+	)
+
+86 
+	#ID3
+ (0x1FFFF7B4)
+
+	)
+
+90 
+	#ID1
+ (0x1FFFF7E8)
+
+	)
+
+91 
+	#ID2
+ (0x1FFFF7EC)
+
+	)
+
+92 
+	#ID3
+ (0x1FFFF7F0)
+
+	)
+
+97 #ifdeà
+USE_STM3210B_EVAL
+
+
+98 
+	#USB_DISCONNECT
+ 
+GPIOD
+
+
+	)
+
+99 
+	#USB_DISCONNECT_PIN
+ 
+GPIO_Pš_9
+
+
+	)
+
+100 
+	#RCC_APB2P”h_GPIO_DISCONNECT
+ 
+RCC_APB2P”h_GPIOD
+
+
+	)
+
+101 
+	#ADC1_DR_Add»ss
+ ((
+ušt32_t
+)0x4001244C)
+
+	)
+
+103 #–ià
+defšed
+ (
+USE_STM3210E_EVAL
+)
+
+104 
+	#USB_DISCONNECT
+ 
+GPIOB
+
+
+	)
+
+105 
+	#USB_DISCONNECT_PIN
+ 
+GPIO_Pš_14
+
+
+	)
+
+106 
+	#RCC_APB2P”h_GPIO_DISCONNECT
+ 
+RCC_APB2P”h_GPIOB
+
+
+	)
+
+107 
+	#ADC1_DR_Add»ss
+ ((
+ušt32_t
+)0x4001244C)
+
+	)
+
+109 #–ià
+defšed
+ (
+USE_STM32L152_EVAL
+è|| defšed (
+USE_STM32L152D_EVAL
+)
+
+125 #ià!
+defšed
+(
+USB_USE_EXTERNAL_PULLUP
+)
+
+126 
+	#STM32L15_USB_CONNECT
+ 
+	`SYSCFG_USBPuCmd
+(
+ENABLE
+)
+
+	)
+
+127 
+	#STM32L15_USB_DISCONNECT
+ 
+	`SYSCFG_USBPuCmd
+(
+DISABLE
+)
+
+	)
+
+128 
+	#RCC_AHBP”h_GPIO_DISCONNECT
+ 0
+
+	)
+
+130 #–ià
+defšed
+(
+USB_USE_EXTERNAL_PULLUP
+)
+
+133 
+	#USB_DISCONNECT
+ 
+GPIOA
+
+
+	)
+
+134 
+	#USB_DISCONNECT_PIN
+ 
+GPIO_Pš_0
+
+
+	)
+
+135 
+	#RCC_AHBP”h_GPIO_DISCONNECT
+ 
+RCC_AHBP”h_GPIOA
+
+
+	)
+
+136 
+	#STM32L15_USB_CONNECT
+ 
+	`GPIO_Re£tB™s
+(
+USB_DISCONNECT
+, 
+USB_DISCONNECT_PIN
+)
+
+	)
+
+137 
+	#STM32L15_USB_DISCONNECT
+ 
+	`GPIO_S‘B™s
+(
+USB_DISCONNECT
+, 
+USB_DISCONNECT_PIN
+)
+
+	)
+
+140 
+	#ADC1_DR_Add»ss
+ ((
+ušt32_t
+)0x40012458)
+
+	)
+
+144 #ià
+defšed
+ (
+USE_STM32373C_EVAL
+)
+
+145 
+	#USB_DISCONNECT
+ 
+GPIOC
+
+
+	)
+
+146 
+	#USB_DISCONNECT_PIN
+ 
+GPIO_Pš_5
+
+
+	)
+
+147 
+	#RCC_AHBP”h_GPIO_DISCONNECT
+ 
+RCC_AHBP”h_GPIOC
+
+
+	)
+
+149 #ià
+defšed
+ (
+USE_STM32303C_EVAL
+)
+
+150 
+	#USB_DISCONNECT
+ 
+GPIOB
+
+
+	)
+
+151 
+	#USB_DISCONNECT_PIN
+ 
+GPIO_Pš_8
+
+
+	)
+
+152 
+	#RCC_AHBP”h_GPIO_DISCONNECT
+ 
+RCC_AHBP”h_GPIOB
+
+
+	)
+
+154 
+	#RCC_AHBP”h_ALLGPIO
+ (
+RCC_AHBP”h_GPIOA
+ \
+
+	)
+
+155 | 
+	gRCC_AHBP”h_GPIOB
+ \
+
+156 | 
+	gRCC_AHBP”h_GPIOC
+ \
+
+157 | 
+	gRCC_AHBP”h_GPIOD
+ \
+
+158 | 
+	gRCC_AHBP”h_GPIOE
+ \
+
+159 | 
+	gRCC_AHBP”h_GPIOF
+ )
+
+162 #ià
+defšed
+ (
+USE_STM32L152_EVAL
+)
+
+164 
+	#RCC_AHBP”h_GPIO_IOAIN
+ 
+RCC_AHBP”h_GPIOB
+
+
+	)
+
+165 
+	#GPIO_IOAIN
+ 
+GPIOB
+
+
+	)
+
+166 
+	#GPIO_IOAIN_PIN
+ 
+GPIO_Pš_12
+
+
+	)
+
+167 
+	#ADC_AIN_CHANNEL
+ 
+ADC_ChªÃl_18
+
+
+	)
+
+169 #–ià
+defšed
+ (
+USE_STM32L152D_EVAL
+)
+
+171 
+	#RCC_AHBP”h_GPIO_IOAIN
+ 
+RCC_AHBP”h_GPIOF
+
+
+	)
+
+172 
+	#GPIO_IOAIN
+ 
+GPIOF
+
+
+	)
+
+173 
+	#GPIO_IOAIN_PIN
+ 
+GPIO_Pš_10
+
+
+	)
+
+174 
+	#ADC_AIN_CHANNEL
+ 
+ADC_ChªÃl_31
+
+
+	)
+
+176 #–ià
+defšed
+ (
+USE_STM32373C_EVAL
+)
+
+178 
+	#ADC1_DR_Add»ss
+ 0x4001244C
+
+	)
+
+180 
+	#RCC_AHBP”h_GPIO_IOAIN
+ 
+RCC_AHBP”h_GPIOB
+
+
+	)
+
+181 
+	#GPIO_IOAIN
+ 
+GPIOB
+
+
+	)
+
+182 
+	#GPIO_IOAIN_PIN
+ 
+GPIO_Pš_1
+
+
+	)
+
+183 
+	#ADC_AIN_CHANNEL
+ 
+ADC_ChªÃl_9
+
+
+	)
+
+184 
+	#GPIO_Mode_AIN
+ 
+GPIO_Mode_AN
+
+
+	)
+
+186 #–ià
+defšed
+ (
+USE_STM32303C_EVAL
+)
+
+188 
+	#ADC1_DR_Add»ss
+ 0x5000030C
+
+	)
+
+190 
+	#RCC_AHBP”h_GPIO_IOAIN
+ 
+RCC_AHBP”h_GPIOC
+
+
+	)
+
+191 
+	#GPIO_IOAIN
+ 
+GPIOC
+
+
+	)
+
+192 
+	#GPIO_IOAIN_PIN
+ 
+GPIO_Pš_1
+
+
+	)
+
+193 
+	#ADC_AIN_CHANNEL
+ 
+ADC_ChªÃl_7
+
+
+	)
+
+194 
+	#GPIO_Mode_AIN
+ 
+GPIO_Mode_AN
+
+
+	)
+
+197 
+	#RCC_APB2P”h_GPIO_IOAIN
+ 
+RCC_APB2P”h_GPIOC
+
+
+	)
+
+198 
+	#GPIO_IOAIN
+ 
+GPIOC
+
+
+	)
+
+199 
+	#GPIO_IOAIN_PIN
+ 
+GPIO_Pš_4
+
+
+	)
+
+200 
+	#ADC_AIN_CHANNEL
+ 
+ADC_ChªÃl_14
+
+
+	)
+
+	@inc/stm32_it.h
+
+30 #iâdeà
+__STM32_IT_H
+
+
+31 
+	#__STM32_IT_H
+
+
+	)
+
+34 
+	~"¶©fÜm_cÚfig.h
+"
+
+41 
+NMI_HªdËr
+();
+
+42 
+H¬dFauÉ_HªdËr
+();
+
+43 
+MemMªage_HªdËr
+();
+
+44 
+BusFauÉ_HªdËr
+();
+
+45 
+U§geFauÉ_HªdËr
+();
+
+46 
+SVC_HªdËr
+();
+
+47 
+DebugMÚ_HªdËr
+();
+
+48 
+P’dSV_HªdËr
+();
+
+49 
+SysTick_HªdËr
+();
+
+50 
+USB_LP_CAN1_RX0_IRQHªdËr
+();
+
+51 
+DMA1_ChªÃl1_IRQHªdËr
+();
+
+52 
+EXTI9_5_IRQHªdËr
+();
+
+53 
+EXTI15_10_IRQHªdËr
+();
+
+	@inc/stm32f10x_conf.h
+
+30 #iâdeà
+__STM32F10x_CONF_H
+
+
+31 
+	#__STM32F10x_CONF_H
+
+
+	)
+
+35 
+	~"¡m32f10x_adc.h
+"
+
+36 
+	~"¡m32f10x_bkp.h
+"
+
+37 
+	~"¡m32f10x_ÿn.h
+"
+
+38 
+	~"¡m32f10x_üc.h
+"
+
+39 
+	~"¡m32f10x_dac.h
+"
+
+40 
+	~"¡m32f10x_dbgmcu.h
+"
+
+41 
+	~"¡m32f10x_dma.h
+"
+
+42 
+	~"¡m32f10x_exti.h
+"
+
+43 
+	~"¡m32f10x_æash.h
+"
+
+44 
+	~"¡m32f10x_fsmc.h
+"
+
+45 
+	~"¡m32f10x_gpio.h
+"
+
+46 
+	~"¡m32f10x_i2c.h
+"
+
+47 
+	~"¡m32f10x_iwdg.h
+"
+
+48 
+	~"¡m32f10x_pwr.h
+"
+
+49 
+	~"¡m32f10x_rcc.h
+"
+
+50 
+	~"¡m32f10x_¹c.h
+"
+
+51 
+	~"¡m32f10x_sdio.h
+"
+
+52 
+	~"¡m32f10x_¥i.h
+"
+
+53 
+	~"¡m32f10x_tim.h
+"
+
+54 
+	~"¡m32f10x_u§¹.h
+"
+
+55 
+	~"¡m32f10x_wwdg.h
+"
+
+56 
+	~"misc.h
+"
+
+65 #ifdeà 
+USE_FULL_ASSERT
+
+
+76 
+	#as£¹_·¿m
+(
+ex´
+è(Óx´è? ()0 : 
+	`as£¹_çžed
+((
+ušt8_t
+ *)
+__FILE__
+, 
+__LINE__
+))
+
+	)
+
+78 
+as£¹_çžed
+(
+ušt8_t
+* 
+fže
+, 
+ušt32_t
+ 
+lše
+);
+
+80 
+	#as£¹_·¿m
+(
+ex´
+è(()0)
+
+	)
+
+	@inc/stm32f30x_conf.h
+
+29 #iâdeà
+__STM32F30X_CONF_H
+
+
+30 
+	#__STM32F30X_CONF_H
+
+
+	)
+
+34 
+	~"¡m32f30x_adc.h
+"
+
+35 
+	~"¡m32f30x_ÿn.h
+"
+
+36 
+	~"¡m32f30x_üc.h
+"
+
+37 
+	~"¡m32f30x_comp.h
+"
+
+38 
+	~"¡m32f30x_dac.h
+"
+
+39 
+	~"¡m32f30x_dbgmcu.h
+"
+
+40 
+	~"¡m32f30x_dma.h
+"
+
+41 
+	~"¡m32f30x_exti.h
+"
+
+42 
+	~"¡m32f30x_æash.h
+"
+
+43 
+	~"¡m32f30x_gpio.h
+"
+
+44 
+	~"¡m32f30x_syscfg.h
+"
+
+45 
+	~"¡m32f30x_i2c.h
+"
+
+46 
+	~"¡m32f30x_iwdg.h
+"
+
+47 
+	~"¡m32f30x_Ýamp.h
+"
+
+48 
+	~"¡m32f30x_pwr.h
+"
+
+49 
+	~"¡m32f30x_rcc.h
+"
+
+50 
+	~"¡m32f30x_¹c.h
+"
+
+51 
+	~"¡m32f30x_¥i.h
+"
+
+52 
+	~"¡m32f30x_tim.h
+"
+
+53 
+	~"¡m32f30x_u§¹.h
+"
+
+54 
+	~"¡m32f30x_wwdg.h
+"
+
+55 
+	~"¡m32f30x_misc.h
+"
+
+64 #ifdeà 
+USE_FULL_ASSERT
+
+
+73 
+	#as£¹_·¿m
+(
+ex´
+è(Óx´è? ()0 : 
+	`as£¹_çžed
+((
+ušt8_t
+ *)
+__FILE__
+, 
+__LINE__
+))
+
+	)
+
+75 
+as£¹_çžed
+(
+ušt8_t
+* 
+fže
+, 
+ušt32_t
+ 
+lše
+);
+
+77 
+	#as£¹_·¿m
+(
+ex´
+è(()0)
+
+	)
+
+	@inc/stm32f37x_conf.h
+
+29 #iâdeà
+__STM32F37X_CONF_H
+
+
+30 
+	#__STM32F37X_CONF_H
+
+
+	)
+
+34 
+	~"¡m32f37x_adc.h
+"
+
+35 
+	~"¡m32f37x_ÿn.h
+"
+
+36 
+	~"¡m32f37x_ûc.h
+"
+
+37 
+	~"¡m32f37x_üc.h
+"
+
+38 
+	~"¡m32f37x_comp.h
+"
+
+39 
+	~"¡m32f37x_dac.h
+"
+
+40 
+	~"¡m32f37x_dbgmcu.h
+"
+
+41 
+	~"¡m32f37x_dma.h
+"
+
+42 
+	~"¡m32f37x_exti.h
+"
+
+43 
+	~"¡m32f37x_æash.h
+"
+
+44 
+	~"¡m32f37x_gpio.h
+"
+
+45 
+	~"¡m32f37x_syscfg.h
+"
+
+46 
+	~"¡m32f37x_i2c.h
+"
+
+47 
+	~"¡m32f37x_iwdg.h
+"
+
+48 
+	~"¡m32f37x_pwr.h
+"
+
+49 
+	~"¡m32f37x_rcc.h
+"
+
+50 
+	~"¡m32f37x_¹c.h
+"
+
+51 
+	~"¡m32f37x_sdadc.h
+"
+
+52 
+	~"¡m32f37x_¥i.h
+"
+
+53 
+	~"¡m32f37x_tim.h
+"
+
+54 
+	~"¡m32f37x_u§¹.h
+"
+
+55 
+	~"¡m32f37x_wwdg.h
+"
+
+56 
+	~"¡m32f37x_misc.h
+"
+
+65 #ifdeà 
+USE_FULL_ASSERT
+
+
+74 
+	#as£¹_·¿m
+(
+ex´
+è(Óx´è? ()0 : 
+	`as£¹_çžed
+((
+ušt8_t
+ *)
+__FILE__
+, 
+__LINE__
+))
+
+	)
+
+76 
+as£¹_çžed
+(
+ušt8_t
+* 
+fže
+, 
+ušt32_t
+ 
+lše
+);
+
+78 
+	#as£¹_·¿m
+(
+ex´
+è(()0)
+
+	)
+
+	@inc/stm32l1xx_conf.h
+
+29 #iâdeà
+__STM32L1xx_CONF_H
+
+
+30 
+	#__STM32L1xx_CONF_H
+
+
+	)
+
+34 
+	~"¡m32l1xx_adc.h
+"
+
+35 
+	~"¡m32l1xx_üc.h
+"
+
+36 
+	~"¡m32l1xx_comp.h
+"
+
+37 
+	~"¡m32l1xx_dac.h
+"
+
+38 
+	~"¡m32l1xx_dbgmcu.h
+"
+
+39 
+	~"¡m32l1xx_dma.h
+"
+
+40 
+	~"¡m32l1xx_exti.h
+"
+
+41 
+	~"¡m32l1xx_æash.h
+"
+
+42 
+	~"¡m32l1xx_gpio.h
+"
+
+43 
+	~"¡m32l1xx_syscfg.h
+"
+
+44 
+	~"¡m32l1xx_i2c.h
+"
+
+45 
+	~"¡m32l1xx_iwdg.h
+"
+
+46 
+	~"¡m32l1xx_lcd.h
+"
+
+47 
+	~"¡m32l1xx_pwr.h
+"
+
+48 
+	~"¡m32l1xx_rcc.h
+"
+
+49 
+	~"¡m32l1xx_¹c.h
+"
+
+50 
+	~"¡m32l1xx_¥i.h
+"
+
+51 
+	~"¡m32l1xx_tim.h
+"
+
+52 
+	~"¡m32l1xx_u§¹.h
+"
+
+53 
+	~"¡m32l1xx_wwdg.h
+"
+
+54 
+	~"misc.h
+"
+
+63 #ifdeà 
+USE_FULL_ASSERT
+
+
+73 
+	#as£¹_·¿m
+(
+ex´
+è(Óx´è? ()0 : 
+	`as£¹_çžed
+((
+ušt8_t
+ *)
+__FILE__
+, 
+__LINE__
+))
+
+	)
+
+75 
+as£¹_çžed
+(
+ušt8_t
+* 
+fže
+, 
+ušt32_t
+ 
+lše
+);
+
+77 
+	#as£¹_·¿m
+(
+ex´
+è(()0)
+
+	)
+
+	@inc/usb_conf.h
+
+30 #iâdeà
+__USB_CONF_H
+
+
+31 
+	#__USB_CONF_H
+
+
+	)
+
+43 
+	#EP_NUM
+ (2)
+
+	)
+
+50 
+	#BTABLE_ADDRESS
+ (0x00)
+
+	)
+
+54 
+	#ENDP0_RXADDR
+ (0x18)
+
+	)
+
+55 
+	#ENDP0_TXADDR
+ (0x58)
+
+	)
+
+59 
+	#ENDP1_TXADDR
+ (0x100)
+
+	)
+
+60 
+	#ENDP1_RXADDR
+ (0x104)
+
+	)
+
+69 
+	#IMR_MSK
+ (
+CNTR_CTRM
+ | 
+CNTR_WKUPM
+ | 
+CNTR_SUSPM
+ | 
+CNTR_ERRM
+ | 
+CNTR_SOFM
+ \
+
+	)
+
+70 | 
+	gCNTR_ESOFM
+ | 
+	gCNTR_RESETM
+ )
+
+75 
+	#EP2_IN_C®lback
+ 
+NOP_Proûss
+
+
+	)
+
+76 
+	#EP3_IN_C®lback
+ 
+NOP_Proûss
+
+
+	)
+
+77 
+	#EP4_IN_C®lback
+ 
+NOP_Proûss
+
+
+	)
+
+78 
+	#EP5_IN_C®lback
+ 
+NOP_Proûss
+
+
+	)
+
+79 
+	#EP6_IN_C®lback
+ 
+NOP_Proûss
+
+
+	)
+
+80 
+	#EP7_IN_C®lback
+ 
+NOP_Proûss
+
+
+	)
+
+83 
+	#EP2_OUT_C®lback
+ 
+NOP_Proûss
+
+
+	)
+
+84 
+	#EP3_OUT_C®lback
+ 
+NOP_Proûss
+
+
+	)
+
+85 
+	#EP4_OUT_C®lback
+ 
+NOP_Proûss
+
+
+	)
+
+86 
+	#EP5_OUT_C®lback
+ 
+NOP_Proûss
+
+
+	)
+
+87 
+	#EP6_OUT_C®lback
+ 
+NOP_Proûss
+
+
+	)
+
+88 
+	#EP7_OUT_C®lback
+ 
+NOP_Proûss
+
+
+	)
+
+	@inc/usb_desc.h
+
+30 #iâdeà
+__USB_DESC_H
+
+
+31 
+	#__USB_DESC_H
+
+
+	)
+
+38 
+	#USB_DEVICE_DESCRIPTOR_TYPE
+ 0x01
+
+	)
+
+39 
+	#USB_CONFIGURATION_DESCRIPTOR_TYPE
+ 0x02
+
+	)
+
+40 
+	#USB_STRING_DESCRIPTOR_TYPE
+ 0x03
+
+	)
+
+41 
+	#USB_INTERFACE_DESCRIPTOR_TYPE
+ 0x04
+
+	)
+
+42 
+	#USB_ENDPOINT_DESCRIPTOR_TYPE
+ 0x05
+
+	)
+
+44 
+	#HID_DESCRIPTOR_TYPE
+ 0x21
+
+	)
+
+45 
+	#CUSTOMHID_SIZ_HID_DESC
+ 0x09
+
+	)
+
+46 
+	#CUSTOMHID_OFF_HID_DESC
+ 0x12
+
+	)
+
+48 
+	#CUSTOMHID_SIZ_DEVICE_DESC
+ 18
+
+	)
+
+49 
+	#CUSTOMHID_SIZ_CONFIG_DESC
+ 41
+
+	)
+
+50 
+	#CUSTOMHID_SIZ_REPORT_DESC
+ 163
+
+	)
+
+51 
+	#CUSTOMHID_SIZ_STRING_LANGID
+ 4
+
+	)
+
+52 
+	#CUSTOMHID_SIZ_STRING_VENDOR
+ 38
+
+	)
+
+53 
+	#CUSTOMHID_SIZ_STRING_PRODUCT
+ 32
+
+	)
+
+54 
+	#CUSTOMHID_SIZ_STRING_SERIAL
+ 26
+
+	)
+
+56 
+	#STANDARD_ENDPOINT_DESC_SIZE
+ 0x09
+
+	)
+
+59 cÚ¡ 
+ušt8_t
+ 
+Cu¡omHID_DeviûDesütÜ
+[
+CUSTOMHID_SIZ_DEVICE_DESC
+];
+
+60 cÚ¡ 
+ušt8_t
+ 
+Cu¡omHID_CÚfigDesütÜ
+[
+CUSTOMHID_SIZ_CONFIG_DESC
+];
+
+61 cÚ¡ 
+ušt8_t
+ 
+Cu¡omHID_R•ÜtDesütÜ
+[
+CUSTOMHID_SIZ_REPORT_DESC
+];
+
+62 cÚ¡ 
+ušt8_t
+ 
+Cu¡omHID_SŒšgLªgID
+[
+CUSTOMHID_SIZ_STRING_LANGID
+];
+
+63 cÚ¡ 
+ušt8_t
+ 
+Cu¡omHID_SŒšgV’dÜ
+[
+CUSTOMHID_SIZ_STRING_VENDOR
+];
+
+64 cÚ¡ 
+ušt8_t
+ 
+Cu¡omHID_SŒšgProduù
+[
+CUSTOMHID_SIZ_STRING_PRODUCT
+];
+
+65 
+ušt8_t
+ 
+Cu¡omHID_SŒšgS”Ÿl
+[
+CUSTOMHID_SIZ_STRING_SERIAL
+];
+
+	@inc/usb_istr.h
+
+29 #iâdeà
+__USB_ISTR_H
+
+
+30 
+	#__USB_ISTR_H
+
+
+	)
+
+33 
+	~"usb_cÚf.h
+"
+
+40 
+USB_I¡r
+();
+
+44 
+EP1_IN_C®lback
+();
+
+45 
+EP2_IN_C®lback
+();
+
+46 
+EP3_IN_C®lback
+();
+
+47 
+EP4_IN_C®lback
+();
+
+48 
+EP5_IN_C®lback
+();
+
+49 
+EP6_IN_C®lback
+();
+
+50 
+EP7_IN_C®lback
+();
+
+52 
+EP1_OUT_C®lback
+();
+
+53 
+EP2_OUT_C®lback
+();
+
+54 
+EP3_OUT_C®lback
+();
+
+55 
+EP4_OUT_C®lback
+();
+
+56 
+EP5_OUT_C®lback
+();
+
+57 
+EP6_OUT_C®lback
+();
+
+58 
+EP7_OUT_C®lback
+();
+
+61 #ifdeà
+CTR_CALLBACK
+
+
+62 
+CTR_C®lback
+();
+
+65 #ifdeà
+DOVR_CALLBACK
+
+
+66 
+DOVR_C®lback
+();
+
+69 #ifdeà
+ERR_CALLBACK
+
+
+70 
+ERR_C®lback
+();
+
+73 #ifdeà
+WKUP_CALLBACK
+
+
+74 
+WKUP_C®lback
+();
+
+77 #ifdeà
+SUSP_CALLBACK
+
+
+78 
+SUSP_C®lback
+();
+
+81 #ifdeà
+RESET_CALLBACK
+
+
+82 
+RESET_C®lback
+();
+
+85 #ifdeà
+SOF_CALLBACK
+
+
+86 
+SOF_C®lback
+();
+
+89 #ifdeà
+ESOF_CALLBACK
+
+
+90 
+ESOF_C®lback
+();
+
+	@inc/usb_prop.h
+
+30 #iâdeà
+__USB_PROP_H
+
+
+31 
+	#__USB_PROP_H
+
+
+	)
+
+35 
+	e_HID_REQUESTS
+
+
+37 
+	mGET_REPORT
+ = 1,
+
+38 
+	mGET_IDLE
+,
+
+39 
+	mGET_PROTOCOL
+,
+
+41 
+	mSET_REPORT
+ = 9,
+
+42 
+	mSET_IDLE
+,
+
+43 
+	mSET_PROTOCOL
+
+
+44 } 
+	tHID_REQUESTS
+;
+
+49 
+Cu¡omHID_š™
+();
+
+50 
+Cu¡omHID_Re£t
+();
+
+51 
+Cu¡omHID_S‘CÚfigu¿tiÚ
+();
+
+52 
+Cu¡omHID_S‘DeviûAdd»ss
+ ();
+
+53 
+Cu¡omHID_Stus_In
+ ();
+
+54 
+Cu¡omHID_Stus_Out
+ ();
+
+55 
+RESULT
+ 
+Cu¡omHID_D©a_S‘up
+(
+ušt8_t
+);
+
+56 
+RESULT
+ 
+Cu¡omHID_NoD©a_S‘up
+(
+ušt8_t
+);
+
+57 
+RESULT
+ 
+Cu¡omHID_G‘_IÁ”çû_S‘tšg
+(
+ušt8_t
+ 
+IÁ”çû
+, ušt8_ˆ
+AÉ”Ç‹S‘tšg
+);
+
+58 
+ušt8_t
+ *
+Cu¡omHID_G‘DeviûDesütÜ
+(
+ušt16_t
+ );
+
+59 
+ušt8_t
+ *
+Cu¡omHID_G‘CÚfigDesütÜ
+(
+ušt16_t
+);
+
+60 
+ušt8_t
+ *
+Cu¡omHID_G‘SŒšgDesütÜ
+(
+ušt16_t
+);
+
+61 
+RESULT
+ 
+Cu¡omHID_S‘PrÙocÞ
+();
+
+62 
+ušt8_t
+ *
+Cu¡omHID_G‘PrÙocÞV®ue
+(
+ušt16_t
+ 
+L’gth
+);
+
+63 
+RESULT
+ 
+Cu¡omHID_S‘PrÙocÞ
+();
+
+64 
+ušt8_t
+ *
+Cu¡omHID_G‘R•ÜtDesütÜ
+(
+ušt16_t
+ 
+L’gth
+);
+
+65 
+ušt8_t
+ *
+Cu¡omHID_G‘HIDDesütÜ
+(
+ušt16_t
+ 
+L’gth
+);
+
+69 
+	#Cu¡omHID_G‘CÚfigu¿tiÚ
+ 
+NOP_Proûss
+
+
+	)
+
+71 
+	#Cu¡omHID_G‘IÁ”çû
+ 
+NOP_Proûss
+
+
+	)
+
+72 
+	#Cu¡omHID_S‘IÁ”çû
+ 
+NOP_Proûss
+
+
+	)
+
+73 
+	#Cu¡omHID_G‘Stus
+ 
+NOP_Proûss
+
+
+	)
+
+74 
+	#Cu¡omHID_CË¬F—tu»
+ 
+NOP_Proûss
+
+
+	)
+
+75 
+	#Cu¡omHID_S‘EndPoštF—tu»
+ 
+NOP_Proûss
+
+
+	)
+
+76 
+	#Cu¡omHID_S‘DeviûF—tu»
+ 
+NOP_Proûss
+
+
+	)
+
+79 
+	#REPORT_DESCRIPTOR
+ 0x22
+
+	)
+
+	@inc/usb_pwr.h
+
+29 #iâdeà
+__USB_PWR_H
+
+
+30 
+	#__USB_PWR_H
+
+
+	)
+
+34 
+	e_RESUME_STATE
+
+
+36 
+	mRESUME_EXTERNAL
+,
+
+37 
+	mRESUME_INTERNAL
+,
+
+38 
+	mRESUME_LATER
+,
+
+39 
+	mRESUME_WAIT
+,
+
+40 
+	mRESUME_START
+,
+
+41 
+	mRESUME_ON
+,
+
+42 
+	mRESUME_OFF
+,
+
+43 
+	mRESUME_ESOF
+
+
+44 } 
+	tRESUME_STATE
+;
+
+46 
+	e_DEVICE_STATE
+
+
+48 
+	mUNCONNECTED
+,
+
+49 
+	mATTACHED
+,
+
+50 
+	mPOWERED
+,
+
+51 
+	mSUSPENDED
+,
+
+52 
+	mADDRESSED
+,
+
+53 
+	mCONFIGURED
+
+
+54 } 
+	tDEVICE_STATE
+;
+
+59 
+Su¥’d
+();
+
+60 
+Resume_In™
+();
+
+61 
+Resume
+(
+RESUME_STATE
+ 
+eResumeS‘V®
+);
+
+62 
+RESULT
+ 
+Pow”On
+();
+
+63 
+RESULT
+ 
+Pow”Off
+();
+
+65 
+__IO
+ 
+ušt32_t
+ 
+bDeviûS‹
+;
+
+66 
+__IO
+ 
+boÞ
+ 
+fSu¥’dEÇbËd
+;
+
+	@src/hw_config.c
+
+30 
+	~"hw_cÚfig.h
+"
+
+31 
+	~"usb_lib.h
+"
+
+32 
+	~"usb_desc.h
+"
+
+33 
+	~"usb_pwr.h
+"
+
+40 
+E¼ÜStus
+ 
+	gHSES¹UpStus
+;
+
+41 
+ušt32_t
+ 
+	gADC_CÚv”‹dV®ueX
+ = 0;
+
+42 
+ušt32_t
+ 
+	gADC_CÚv”‹dV®ueX_1
+ = 0;
+
+43 
+__IO
+ 
+ušt16_t
+ 
+	gADC1CÚv”‹dV®ue
+ = 0, 
+	gADC1CÚv”‹dVÞge
+ = 0, 
+	gÿlib¿tiÚ_v®ue
+ = 0;
+
+47 
+IÁToUnicode
+ (
+ušt32_t
+ 
+v®ue
+ , 
+ušt8_t
+ *
+pbuf
+ , ušt8_ˆ
+Ën
+);
+
+56 
+	$S‘_Sy¡em
+()
+
+58 #ià
+	`defšed
+ (
+STM32F37X
+è|| defšed (
+STM32F30X
+)
+
+59 
+GPIO_In™Ty³Def
+ 
+GPIO_In™SŒuùu»
+;
+
+62 #ià
+	`defšed
+(
+USB_USE_EXTERNAL_PULLUP
+)
+
+63 
+GPIO_In™Ty³Def
+ 
+GPIO_In™SŒuùu»
+;
+
+73 #ià
+	`defšed
+(
+STM32L1XX_MD
+è|| defšed(
+STM32L1XX_HD
+)|| defšed(
+STM32L1XX_MD_PLUS
+è|| defšed (
+STM32F37X
+è|| defšed (
+STM32F30X
+)
+
+75 
+	`RCC_APB2P”hClockCmd
+(
+RCC_APB2P”h_SYSCFG
+, 
+ENABLE
+);
+
+79 #ià!
+	`defšed
+(
+STM32L1XX_MD
+è&& !defšed(
+STM32L1XX_HD
+è&& !defšed(
+STM32L1XX_MD_PLUS
+è&& !defšed(
+STM32F37X
+è&& !defšed(
+STM32F30X
+)
+
+81 
+	`RCC_APB2P”hClockCmd
+(
+RCC_APB2P”h_GPIO_DISCONNECT
+, 
+ENABLE
+);
+
+84 
+	`RCC_ADCCLKCÚfig
+(
+RCC_PCLK2_Div8
+);
+
+88 
+	`GPIO_CÚfigu¿tiÚ
+();
+
+90 #ià
+	`defšed
+(
+USB_USE_EXTERNAL_PULLUP
+)
+
+92 
+	`RCC_AHBP”hClockCmd
+(
+RCC_AHBP”h_GPIO_DISCONNECT
+, 
+ENABLE
+);
+
+95 
+GPIO_In™SŒuùu»
+.
+GPIO_Pš
+ = 
+USB_DISCONNECT_PIN
+;
+
+96 
+GPIO_In™SŒuùu»
+.
+GPIO_Mode
+ = 
+GPIO_Mode_OUT
+;
+
+97 
+GPIO_In™SŒuùu»
+.
+GPIO_S³ed
+ = 
+GPIO_S³ed_2MHz
+;
+
+98 
+GPIO_In™SŒuùu»
+.
+GPIO_OTy³
+ = 
+GPIO_OTy³_PP
+;
+
+99 
+GPIO_In™SŒuùu»
+.
+GPIO_PuPd
+ = 
+GPIO_PuPd_NOPULL
+;
+
+100 
+	`GPIO_In™
+(
+USB_DISCONNECT
+, &
+GPIO_In™SŒuùu»
+);
+
+103 #ià
+	`defšed
+(
+STM32F37X
+è|| defšed(
+STM32F30X
+)
+
+106 
+	`RCC_AHBP”hClockCmd
+(
+RCC_AHBP”h_GPIO_DISCONNECT
+, 
+ENABLE
+);
+
+109 
+	`RCC_AHBP”hClockCmd
+(
+RCC_AHBP”h_GPIOA
+, 
+ENABLE
+);
+
+110 
+GPIO_In™SŒuùu»
+.
+GPIO_Pš
+ = 
+GPIO_Pš_11
+ | 
+GPIO_Pš_12
+;
+
+111 
+GPIO_In™SŒuùu»
+.
+GPIO_S³ed
+ = 
+GPIO_S³ed_50MHz
+;
+
+112 
+GPIO_In™SŒuùu»
+.
+GPIO_Mode
+ = 
+GPIO_Mode_AF
+;
+
+113 
+GPIO_In™SŒuùu»
+.
+GPIO_OTy³
+ = 
+GPIO_OTy³_PP
+;
+
+114 
+GPIO_In™SŒuùu»
+.
+GPIO_PuPd
+ = 
+GPIO_PuPd_NOPULL
+;
+
+115 
+	`GPIO_In™
+(
+GPIOA
+, &
+GPIO_In™SŒuùu»
+);
+
+118 
+	`GPIO_PšAFCÚfig
+(
+GPIOA
+, 
+GPIO_PšSourû11
+, 
+GPIO_AF_14
+);
+
+119 
+	`GPIO_PšAFCÚfig
+(
+GPIOA
+, 
+GPIO_PšSourû12
+, 
+GPIO_AF_14
+);
+
+122 
+GPIO_In™SŒuùu»
+.
+GPIO_Pš
+ = 
+USB_DISCONNECT_PIN
+;
+
+123 
+GPIO_In™SŒuùu»
+.
+GPIO_S³ed
+ = 
+GPIO_S³ed_2MHz
+;
+
+124 
+GPIO_In™SŒuùu»
+.
+GPIO_Mode
+ = 
+GPIO_Mode_OUT
+;
+
+125 
+GPIO_In™SŒuùu»
+.
+GPIO_OTy³
+ = 
+GPIO_OTy³_OD
+;
+
+126 
+GPIO_In™SŒuùu»
+.
+GPIO_PuPd
+ = 
+GPIO_PuPd_NOPULL
+;
+
+127 
+	`GPIO_In™
+(
+USB_DISCONNECT
+, &
+GPIO_In™SŒuùu»
+);
+
+130 #ià
+	`defšed
+(
+STM32L1XX_MD
+)
+
+132 
+	`STM_EVAL_PBIn™
+(
+Bu‰Ú_LEFT
+, 
+Mode_EXTI
+);
+
+135 
+	`STM_EVAL_PBIn™
+(
+Bu‰Ú_RIGHT
+, 
+Mode_EXTI
+);
+
+138 
+	`STM_EVAL_PBIn™
+(
+Bu‰Ú_KEY
+, 
+Mode_EXTI
+);
+
+139 #ià!
+	`defšed
+(
+STM32L1XX_HD
+)&& !defšed(
+STM32L1XX_MD_PLUS
+è&& !defšed(
+STM32F37X
+è&& !defšed(
+STM32F30X
+)
+
+141 
+	`STM_EVAL_PBIn™
+(
+Bu‰Ú_TAMPER
+, 
+Mode_EXTI
+);
+
+145 
+	`EXTI_CÚfigu¿tiÚ
+();
+
+148 
+	`STM_EVAL_LEDIn™
+(
+LED1
+);
+
+149 
+	`STM_EVAL_LEDIn™
+(
+LED2
+);
+
+150 
+	`STM_EVAL_LEDIn™
+(
+LED3
+);
+
+151 
+	`STM_EVAL_LEDIn™
+(
+LED4
+);
+
+153 #ià
+	`defšed
+ (
+STM32F30X
+)
+
+154 
+	`ADC30x_CÚfigu¿tiÚ
+();
+
+157 
+	`ADC_CÚfigu¿tiÚ
+();
+
+160 
+	}
+}
+
+169 
+	$S‘_USBClock
+()
+
+171 #ià
+	`defšed
+(
+STM32L1XX_MD
+è|| defšed(
+STM32L1XX_HD
+)|| defšed(
+STM32L1XX_MD_PLUS
+)
+
+173 
+	`RCC_APB1P”hClockCmd
+(
+RCC_APB1P”h_USB
+, 
+ENABLE
+);
+
+177 
+	`RCC_USBCLKCÚfig
+(
+RCC_USBCLKSourû_PLLCLK_1Div5
+);
+
+180 
+	`RCC_APB1P”hClockCmd
+(
+RCC_APB1P”h_USB
+, 
+ENABLE
+);
+
+182 
+	}
+}
+
+191 
+	$EÁ”_LowPow”Mode
+()
+
+194 
+bDeviûS‹
+ = 
+SUSPENDED
+;
+
+195 
+	}
+}
+
+204 
+	$L—ve_LowPow”Mode
+()
+
+206 
+DEVICE_INFO
+ *
+pInfo
+ = &
+Deviû_Info
+;
+
+209 ià(
+pInfo
+->
+Cu¼’t_CÚfigu¿tiÚ
+ != 0)
+
+212 
+bDeviûS‹
+ = 
+CONFIGURED
+;
+
+216 
+bDeviûS‹
+ = 
+ATTACHED
+;
+
+219 
+	`Sy¡emIn™
+();
+
+220 #ià
+	`defšed
+(
+STM32L1XX_MD
+è|| defšed(
+STM32L1XX_HD
+)|| defšed(
+STM32L1XX_MD_PLUS
+)
+
+222 
+	`RCC_HSICmd
+(
+ENABLE
+);
+
+224 #ià
+	`defšed
+(
+STM32F30X
+)
+
+225 
+	`ADC30x_CÚfigu¿tiÚ
+();
+
+227 
+	}
+}
+
+236 
+	$USB_IÁ”ru±s_CÚfig
+()
+
+238 
+NVIC_In™Ty³Def
+ 
+NVIC_In™SŒuùu»
+;
+
+241 
+	`NVIC_PriÜ™yGroupCÚfig
+(
+NVIC_PriÜ™yGroup_2
+);
+
+243 #ià
+	`defšed
+(
+STM32L1XX_MD
+è|| defšed(
+STM32L1XX_HD
+)|| defšed(
+STM32L1XX_MD_PLUS
+)
+
+244 
+NVIC_In™SŒuùu»
+.
+NVIC_IRQChªÃl
+ = 
+USB_LP_IRQn
+;
+
+245 
+NVIC_In™SŒuùu»
+.
+NVIC_IRQChªÃlP»em±iÚPriÜ™y
+ = 1;
+
+246 
+NVIC_In™SŒuùu»
+.
+NVIC_IRQChªÃlSubPriÜ™y
+ = 0;
+
+247 
+NVIC_In™SŒuùu»
+.
+NVIC_IRQChªÃlCmd
+ = 
+ENABLE
+;
+
+248 
+	`NVIC_In™
+(&
+NVIC_In™SŒuùu»
+);
+
+251 
+NVIC_In™SŒuùu»
+.
+NVIC_IRQChªÃl
+ = 
+USB_FS_WKUP_IRQn
+;
+
+252 
+NVIC_In™SŒuùu»
+.
+NVIC_IRQChªÃlP»em±iÚPriÜ™y
+ = 0;
+
+253 
+NVIC_In™SŒuùu»
+.
+NVIC_IRQChªÃlCmd
+ = 
+ENABLE
+;
+
+254 
+	`NVIC_In™
+(&
+NVIC_In™SŒuùu»
+);
+
+256 #–ià
+	`defšed
+(
+STM32F37X
+)
+
+258 
+NVIC_In™SŒuùu»
+.
+NVIC_IRQChªÃl
+ = 
+USB_LP_IRQn
+;
+
+259 
+NVIC_In™SŒuùu»
+.
+NVIC_IRQChªÃlP»em±iÚPriÜ™y
+ = 1;
+
+260 
+NVIC_In™SŒuùu»
+.
+NVIC_IRQChªÃlSubPriÜ™y
+ = 0;
+
+261 
+NVIC_In™SŒuùu»
+.
+NVIC_IRQChªÃlCmd
+ = 
+ENABLE
+;
+
+262 
+	`NVIC_In™
+(&
+NVIC_In™SŒuùu»
+);
+
+265 
+NVIC_In™SŒuùu»
+.
+NVIC_IRQChªÃl
+ = 
+USBWakeUp_IRQn
+;
+
+266 
+NVIC_In™SŒuùu»
+.
+NVIC_IRQChªÃlP»em±iÚPriÜ™y
+ = 0;
+
+267 
+NVIC_In™SŒuùu»
+.
+NVIC_IRQChªÃlCmd
+ = 
+ENABLE
+;
+
+268 
+	`NVIC_In™
+(&
+NVIC_In™SŒuùu»
+);
+
+272 
+NVIC_In™SŒuùu»
+.
+NVIC_IRQChªÃl
+ = 
+USB_LP_CAN1_RX0_IRQn
+;
+
+273 
+NVIC_In™SŒuùu»
+.
+NVIC_IRQChªÃlP»em±iÚPriÜ™y
+ = 1;
+
+274 
+NVIC_In™SŒuùu»
+.
+NVIC_IRQChªÃlSubPriÜ™y
+ = 0;
+
+275 
+NVIC_In™SŒuùu»
+.
+NVIC_IRQChªÃlCmd
+ = 
+ENABLE
+;
+
+276 
+	`NVIC_In™
+(&
+NVIC_In™SŒuùu»
+);
+
+279 
+NVIC_In™SŒuùu»
+.
+NVIC_IRQChªÃl
+ = 
+USBWakeUp_IRQn
+;
+
+280 
+NVIC_In™SŒuùu»
+.
+NVIC_IRQChªÃlP»em±iÚPriÜ™y
+ = 0;
+
+281 
+NVIC_In™SŒuùu»
+.
+NVIC_IRQChªÃlCmd
+ = 
+ENABLE
+;
+
+282 
+	`NVIC_In™
+(&
+NVIC_In™SŒuùu»
+);
+
+286 
+NVIC_In™SŒuùu»
+.
+NVIC_IRQChªÃl
+ = 
+EXTI9_5_IRQn
+;
+
+287 
+NVIC_In™SŒuùu»
+.
+NVIC_IRQChªÃlP»em±iÚPriÜ™y
+ = 0;
+
+288 
+	`NVIC_In™
+(&
+NVIC_In™SŒuùu»
+);
+
+291 
+NVIC_In™SŒuùu»
+.
+NVIC_IRQChªÃl
+ = 
+EXTI15_10_IRQn
+;
+
+292 
+NVIC_In™SŒuùu»
+.
+NVIC_IRQChªÃlP»em±iÚPriÜ™y
+ = 0;
+
+293 
+	`NVIC_In™
+(&
+NVIC_In™SŒuùu»
+);
+
+296 
+NVIC_In™SŒuùu»
+.
+NVIC_IRQChªÃl
+ = 
+DMA1_ChªÃl1_IRQn
+;
+
+297 
+NVIC_In™SŒuùu»
+.
+NVIC_IRQChªÃlP»em±iÚPriÜ™y
+ = 2;
+
+298 
+	`NVIC_In™
+(&
+NVIC_In™SŒuùu»
+);
+
+300 
+	}
+}
+
+309 
+	$USB_CabË_CÚfig
+ (
+FunùiÚ®S‹
+ 
+NewS‹
+)
+
+311 #ià
+	`defšed
+(
+STM32L1XX_MD
+è|| defšed (
+STM32L1XX_HD
+)|| (
+STM32L1XX_MD_PLUS
+)
+
+312 ià(
+NewS‹
+ !ð
+DISABLE
+)
+
+314 
+STM32L15_USB_CONNECT
+;
+
+318 
+STM32L15_USB_DISCONNECT
+;
+
+322 ià(
+NewS‹
+ !ð
+DISABLE
+)
+
+324 
+	`GPIO_Re£tB™s
+(
+USB_DISCONNECT
+, 
+USB_DISCONNECT_PIN
+);
+
+328 
+	`GPIO_S‘B™s
+(
+USB_DISCONNECT
+, 
+USB_DISCONNECT_PIN
+);
+
+331 
+	}
+}
+
+340 
+	$GPIO_CÚfigu¿tiÚ
+()
+
+342 
+GPIO_In™Ty³Def
+ 
+GPIO_In™SŒuùu»
+;
+
+344 #ià
+	`defšed
+(
+STM32L1XX_MD
+è|| defšed(
+STM32L1XX_HD
+)|| defšed(
+STM32L1XX_MD_PLUS
+è|| defšed (
+STM32F37X
+è|| defšed (
+STM32F30X
+)
+
+345 
+	`RCC_AHBP”hClockCmd
+(
+RCC_AHBP”h_GPIO_DISCONNECT
+ |
+
+346 
+RCC_AHBP”h_GPIO_IOAIN
+ , 
+ENABLE
+);
+
+348 
+	`RCC_APB2P”hClockCmd
+(
+RCC_APB2P”h_GPIO_DISCONNECT
+ |
+
+349 
+RCC_APB2P”h_GPIO_IOAIN
+ , 
+ENABLE
+);
+
+352 
+GPIO_In™SŒuùu»
+.
+GPIO_Pš
+ = 
+USB_DISCONNECT_PIN
+;
+
+353 
+GPIO_In™SŒuùu»
+.
+GPIO_S³ed
+ = 
+GPIO_S³ed_50MHz
+;
+
+354 
+GPIO_In™SŒuùu»
+.
+GPIO_Mode
+ = 
+GPIO_Mode_Out_OD
+;
+
+355 
+	`GPIO_In™
+(
+USB_DISCONNECT
+, &
+GPIO_In™SŒuùu»
+);
+
+359 
+GPIO_In™SŒuùu»
+.
+GPIO_Pš
+ = 
+GPIO_IOAIN_PIN
+;
+
+360 
+GPIO_In™SŒuùu»
+.
+GPIO_Mode
+ = 
+GPIO_Mode_AIN
+;
+
+361 
+	`GPIO_In™
+(
+GPIO_IOAIN
+, &
+GPIO_In™SŒuùu»
+);
+
+362 
+	}
+}
+
+371 
+	$EXTI_CÚfigu¿tiÚ
+()
+
+373 
+EXTI_In™Ty³Def
+ 
+EXTI_In™SŒuùu»
+;
+
+375 #ià
+	`defšed
+ (
+USE_STM32L152_EVAL
+)
+
+377 
+EXTI_In™SŒuùu»
+.
+EXTI_Lše
+ = 
+RIGHT_BUTTON_EXTI_LINE
+;
+
+378 
+EXTI_In™SŒuùu»
+.
+EXTI_Mode
+ = 
+EXTI_Mode_IÁ”ru±
+;
+
+379 
+EXTI_In™SŒuùu»
+.
+EXTI_Trigg”
+ = 
+EXTI_Trigg”_Risšg_F®lšg
+;
+
+380 
+EXTI_In™SŒuùu»
+.
+EXTI_LšeCmd
+ = 
+ENABLE
+;
+
+381 
+	`EXTI_In™
+(&
+EXTI_In™SŒuùu»
+);
+
+384 
+	`EXTI_CË¬ITP’dšgB™
+(
+RIGHT_BUTTON_EXTI_LINE
+);
+
+387 
+EXTI_In™SŒuùu»
+.
+EXTI_Lše
+ = 
+LEFT_BUTTON_EXTI_LINE
+;
+
+388 
+	`EXTI_In™
+(&
+EXTI_In™SŒuùu»
+);
+
+391 
+	`EXTI_CË¬ITP’dšgB™
+(
+LEFT_BUTTON_EXTI_LINE
+);
+
+395 
+EXTI_In™SŒuùu»
+.
+EXTI_Lše
+ = 
+KEY_BUTTON_EXTI_LINE
+;
+
+396 
+EXTI_In™SŒuùu»
+.
+EXTI_Mode
+ = 
+EXTI_Mode_IÁ”ru±
+;
+
+397 
+EXTI_In™SŒuùu»
+.
+EXTI_Trigg”
+ = 
+EXTI_Trigg”_Risšg_F®lšg
+;
+
+398 
+EXTI_In™SŒuùu»
+.
+EXTI_LšeCmd
+ = 
+ENABLE
+;
+
+399 
+	`EXTI_In™
+(&
+EXTI_In™SŒuùu»
+);
+
+402 
+	`EXTI_CË¬ITP’dšgB™
+(
+KEY_BUTTON_EXTI_LINE
+);
+
+405 #ià!
+	`defšed
+ (
+USE_STM32L152D_EVAL
+è&& !defšed (
+STM32F30X
+)
+
+406 
+EXTI_In™SŒuùu»
+.
+EXTI_Lše
+ = 
+TAMPER_BUTTON_EXTI_LINE
+;
+
+407 
+EXTI_In™SŒuùu»
+.
+EXTI_Mode
+ = 
+EXTI_Mode_IÁ”ru±
+;
+
+408 
+EXTI_In™SŒuùu»
+.
+EXTI_Trigg”
+ = 
+EXTI_Trigg”_Risšg_F®lšg
+;
+
+409 
+EXTI_In™SŒuùu»
+.
+EXTI_LšeCmd
+ = 
+ENABLE
+;
+
+410 
+	`EXTI_In™
+(&
+EXTI_In™SŒuùu»
+);
+
+413 
+	`EXTI_CË¬ITP’dšgB™
+(
+TAMPER_BUTTON_EXTI_LINE
+);
+
+418 
+	`EXTI_CË¬ITP’dšgB™
+(
+EXTI_Lše18
+);
+
+419 
+EXTI_In™SŒuùu»
+.
+EXTI_Lše
+ = 
+EXTI_Lše18
+;
+
+420 
+EXTI_In™SŒuùu»
+.
+EXTI_Trigg”
+ = 
+EXTI_Trigg”_Risšg
+;
+
+421 
+EXTI_In™SŒuùu»
+.
+EXTI_LšeCmd
+ = 
+ENABLE
+;
+
+422 
+	`EXTI_In™
+(&
+EXTI_In™SŒuùu»
+);
+
+423 
+	}
+}
+
+424 #ià!
+defšed
+ (
+STM32F30X
+)
+
+432 
+	$ADC_CÚfigu¿tiÚ
+()
+
+434 
+ADC_In™Ty³Def
+ 
+ADC_In™SŒuùu»
+;
+
+435 
+DMA_In™Ty³Def
+ 
+DMA_In™SŒuùu»
+;
+
+437 
+	`RCC_AHBP”hClockCmd
+(
+RCC_AHBP”h_DMA1
+, 
+ENABLE
+);
+
+440 
+	`RCC_APB2P”hClockCmd
+(
+RCC_APB2P”h_ADC1
+, 
+ENABLE
+);
+
+443 
+	`DMA_DeIn™
+(
+DMA1_ChªÃl1
+);
+
+444 
+DMA_In™SŒuùu»
+.
+DMA_P”h”®Ba£Addr
+ = 
+ADC1_DR_Add»ss
+;
+
+445 
+DMA_In™SŒuùu»
+.
+DMA_MemÜyBa£Addr
+ = (
+ušt32_t
+)&
+ADC_CÚv”‹dV®ueX
+;
+
+446 
+DMA_In™SŒuùu»
+.
+DMA_DIR
+ = 
+DMA_DIR_P”h”®SRC
+;
+
+447 
+DMA_In™SŒuùu»
+.
+DMA_BufãrSize
+ = 1;
+
+448 
+DMA_In™SŒuùu»
+.
+DMA_P”h”®Inc
+ = 
+DMA_P”h”®Inc_Di§bË
+;
+
+449 
+DMA_In™SŒuùu»
+.
+DMA_MemÜyInc
+ = 
+DMA_MemÜyInc_Di§bË
+;
+
+450 
+DMA_In™SŒuùu»
+.
+DMA_P”h”®D©aSize
+ = 
+DMA_P”h”®D©aSize_H®fWÜd
+;
+
+451 
+DMA_In™SŒuùu»
+.
+DMA_MemÜyD©aSize
+ = 
+DMA_MemÜyD©aSize_H®fWÜd
+;
+
+452 
+DMA_In™SŒuùu»
+.
+DMA_Mode
+ = 
+DMA_Mode_CœcuÏr
+;
+
+453 
+DMA_In™SŒuùu»
+.
+DMA_PriÜ™y
+ = 
+DMA_PriÜ™y_High
+;
+
+454 
+DMA_In™SŒuùu»
+.
+DMA_M2M
+ = 
+DMA_M2M_Di§bË
+;
+
+455 
+	`DMA_In™
+(
+DMA1_ChªÃl1
+, &
+DMA_In™SŒuùu»
+);
+
+458 
+	`DMA_Cmd
+(
+DMA1_ChªÃl1
+, 
+ENABLE
+);
+
+461 
+	`DMA_ITCÚfig
+(
+DMA1_ChªÃl1
+, 
+DMA_IT_TC
+, 
+ENABLE
+);
+
+463 #ià
+	`defšed
+(
+STM32L1XX_MD
+è|| defšed(
+STM32L1XX_HD
+)|| defšed(
+STM32L1XX_MD_PLUS
+)
+
+465 
+	`RCC_HSICmd
+(
+ENABLE
+);
+
+468 
+	`ADC_SŒuùIn™
+(&
+ADC_In™SŒuùu»
+);
+
+469 
+ADC_In™SŒuùu»
+.
+ADC_SÿnCÚvMode
+ = 
+ENABLE
+;
+
+470 
+ADC_In™SŒuùu»
+.
+ADC_CÚtšuousCÚvMode
+ = 
+ENABLE
+;
+
+471 
+ADC_In™SŒuùu»
+.
+ADC_D©aAlign
+ = 
+ADC_D©aAlign_Right
+;
+
+472 
+ADC_In™SŒuùu»
+.
+ADC_NbrOfCÚv”siÚ
+ = 1;
+
+473 
+	`ADC_In™
+(
+ADC1
+, &
+ADC_In™SŒuùu»
+);
+
+475 #ià
+	`defšed
+ (
+USE_STM32L152D_EVAL
+)
+
+477 
+	`ADC_ReguÏrChªÃlCÚfig
+(
+ADC1
+, 
+ADC_ChªÃl_31
+, 1, 
+ADC_Sam¶eTime_384Cyþes
+);
+
+481 
+	`ADC_ReguÏrChªÃlCÚfig
+(
+ADC1
+, 
+ADC_ChªÃl_18
+, 1, 
+ADC_Sam¶eTime_384Cyþes
+);
+
+484 #ià!
+	`defšed
+ (
+USE_STM32373C_EVAL
+)
+
+486 
+	`ADC_DMAReque¡Aá”La¡T¿nsãrCmd
+(
+ADC1
+, 
+ENABLE
+);
+
+489 
+	`ADC_DMACmd
+(
+ADC1
+, 
+ENABLE
+);
+
+492 
+	`ADC_Cmd
+(
+ADC1
+, 
+ENABLE
+);
+
+496 #ià!
+	`defšed
+ (
+USE_STM32373C_EVAL
+)
+
+497 
+ADC_In™SŒuùu»
+.
+ADC_Mode
+ = 
+ADC_Mode_Ind•’d’t
+;
+
+500 
+ADC_In™SŒuùu»
+.
+ADC_SÿnCÚvMode
+ = 
+ENABLE
+;
+
+501 
+ADC_In™SŒuùu»
+.
+ADC_CÚtšuousCÚvMode
+ = 
+ENABLE
+;
+
+502 
+ADC_In™SŒuùu»
+.
+ADC_Ex‹º®TrigCÚv
+ = 
+ADC_Ex‹º®TrigCÚv_NÚe
+;
+
+503 
+ADC_In™SŒuùu»
+.
+ADC_D©aAlign
+ = 
+ADC_D©aAlign_Right
+;
+
+504 
+ADC_In™SŒuùu»
+.
+ADC_NbrOfChªÃl
+ = 1;
+
+505 
+	`ADC_In™
+(
+ADC1
+, &
+ADC_In™SŒuùu»
+);
+
+508 
+	`ADC_ReguÏrChªÃlCÚfig
+(
+ADC1
+, 
+ADC_AIN_CHANNEL
+, 1, 
+ADC_Sam¶eTime_55Cyþes5
+);
+
+511 
+	`ADC_DMACmd
+(
+ADC1
+, 
+ENABLE
+);
+
+514 
+	`ADC_Cmd
+(
+ADC1
+, 
+ENABLE
+);
+
+517 
+	`ADC_Re£tC®ib¿tiÚ
+(
+ADC1
+);
+
+519 
+	`ADC_G‘Re£tC®ib¿tiÚStus
+(
+ADC1
+));
+
+521 
+	`ADC_S¹C®ib¿tiÚ
+(
+ADC1
+);
+
+524 
+	`ADC_G‘C®ib¿tiÚStus
+(
+ADC1
+));
+
+527 
+	}
+}
+
+536 
+	$G‘_S”ŸlNum
+()
+
+538 
+ušt32_t
+ 
+Deviû_S”Ÿl0
+, 
+Deviû_S”Ÿl1
+, 
+Deviû_S”Ÿl2
+;
+
+540 
+Deviû_S”Ÿl0
+ = *(
+ušt32_t
+*)
+ID1
+;
+
+541 
+Deviû_S”Ÿl1
+ = *(
+ušt32_t
+*)
+ID2
+;
+
+542 
+Deviû_S”Ÿl2
+ = *(
+ušt32_t
+*)
+ID3
+;
+
+544 
+Deviû_S”Ÿl0
+ +ð
+Deviû_S”Ÿl2
+;
+
+546 ià(
+Deviû_S”Ÿl0
+ != 0)
+
+548 
+	`IÁToUnicode
+ (
+Deviû_S”Ÿl0
+, &
+Cu¡omHID_SŒšgS”Ÿl
+[2] , 8);
+
+549 
+	`IÁToUnicode
+ (
+Deviû_S”Ÿl1
+, &
+Cu¡omHID_SŒšgS”Ÿl
+[18], 4);
+
+551 
+	}
+}
+
+560 
+	$IÁToUnicode
+ (
+ušt32_t
+ 
+v®ue
+ , 
+ušt8_t
+ *
+pbuf
+ , ušt8_ˆ
+Ën
+)
+
+562 
+ušt8_t
+ 
+idx
+ = 0;
+
+564  
+idx
+ = 0 ; idx < 
+Ën
+ ; idx ++)
+
+566 ifÐ((
+v®ue
+ >> 28)) < 0xA )
+
+568 
+pbuf
+[ 2* 
+idx
+] = (
+v®ue
+ >> 28) + '0';
+
+572 
+pbuf
+[2* 
+idx
+] = (
+v®ue
+ >> 28) + 'A' - 10;
+
+575 
+v®ue
+ = value << 4;
+
+577 
+pbuf
+[ 2* 
+idx
+ + 1] = 0;
+
+579 
+	}
+}
+
+588 #ià
+defšed
+ (
+STM32F30X
+)
+
+590 
+	$ADC30x_CÚfigu¿tiÚ
+()
+
+592 
+ADC_In™Ty³Def
+ 
+ADC_In™SŒuùu»
+;
+
+593 
+ADC_CommÚIn™Ty³Def
+ 
+ADC_CommÚIn™SŒuùu»
+;
+
+594 
+DMA_In™Ty³Def
+ 
+DMA_In™SŒuùu»
+;
+
+597 
+	`RCC_AHBP”hClockCmd
+(
+RCC_AHBP”h_DMA1
+, 
+ENABLE
+);
+
+599 
+	`DMA_DeIn™
+(
+DMA1_ChªÃl1
+);
+
+600 
+DMA_In™SŒuùu»
+.
+DMA_P”h”®Ba£Addr
+ = 
+ADC1_DR_Add»ss
+;
+
+601 
+DMA_In™SŒuùu»
+.
+DMA_MemÜyBa£Addr
+ = (
+ušt32_t
+)&
+ADC_CÚv”‹dV®ueX
+;
+
+602 
+DMA_In™SŒuùu»
+.
+DMA_DIR
+ = 
+DMA_DIR_P”h”®SRC
+;
+
+603 
+DMA_In™SŒuùu»
+.
+DMA_BufãrSize
+ = 1;
+
+604 
+DMA_In™SŒuùu»
+.
+DMA_P”h”®Inc
+ = 
+DMA_P”h”®Inc_Di§bË
+;
+
+605 
+DMA_In™SŒuùu»
+.
+DMA_MemÜyInc
+ = 
+DMA_MemÜyInc_Di§bË
+;
+
+606 
+DMA_In™SŒuùu»
+.
+DMA_P”h”®D©aSize
+ = 
+DMA_P”h”®D©aSize_WÜd
+;
+
+607 
+DMA_In™SŒuùu»
+.
+DMA_MemÜyD©aSize
+ = 
+DMA_MemÜyD©aSize_WÜd
+;
+
+608 
+DMA_In™SŒuùu»
+.
+DMA_Mode
+ = 
+DMA_Mode_CœcuÏr
+;
+
+609 
+DMA_In™SŒuùu»
+.
+DMA_PriÜ™y
+ = 
+DMA_PriÜ™y_Medium
+;
+
+610 
+DMA_In™SŒuùu»
+.
+DMA_M2M
+ = 
+DMA_M2M_Di§bË
+;
+
+611 
+	`DMA_In™
+(
+DMA1_ChªÃl1
+, &
+DMA_In™SŒuùu»
+);
+
+614 
+	`DMA_Cmd
+(
+DMA1_ChªÃl1
+, 
+ENABLE
+);
+
+617 
+	`DMA_ITCÚfig
+(
+DMA1_ChªÃl1
+, 
+DMA_IT_TC
+, 
+ENABLE
+);
+
+620 
+	`RCC_ADCCLKCÚfig
+(
+RCC_ADC12PLLCLK_Div2
+);
+
+623 
+	`RCC_AHBP”hClockCmd
+(
+RCC_AHBP”h_ADC12
+, 
+ENABLE
+);
+
+624 
+	`ADC_DeIn™
+(
+ADC1
+);
+
+625 
+	`ADC_SŒuùIn™
+(&
+ADC_In™SŒuùu»
+);
+
+628 
+	`ADC_VÞgeReguÏtÜCmd
+(
+ADC1
+, 
+ENABLE
+);
+
+629 
+	`ADC_S–eùC®ib¿tiÚMode
+(
+ADC1
+, 
+ADC_C®ib¿tiÚMode_SšgË
+);
+
+630 
+	`ADC_S¹C®ib¿tiÚ
+(
+ADC1
+);
+
+632 
+	`ADC_G‘C®ib¿tiÚStus
+(
+ADC1
+è!ð
+RESET
+ );
+
+633 
+ÿlib¿tiÚ_v®ue
+ = 
+	`ADC_G‘C®ib¿tiÚV®ue
+(
+ADC1
+);
+
+636 
+ADC_CommÚIn™SŒuùu»
+.
+ADC_Mode
+ = 
+ADC_Mode_Ind•’d’t
+;
+
+637 
+ADC_CommÚIn™SŒuùu»
+.
+ADC_Clock
+ = 
+ADC_Clock_AsynClkMode
+;
+
+638 
+ADC_CommÚIn™SŒuùu»
+.
+ADC_DMAAcûssMode
+ = 
+ADC_DMAAcûssMode_Di§bËd
+;
+
+639 
+ADC_CommÚIn™SŒuùu»
+.
+ADC_DMAMode
+ = 
+ADC_DMAMode_OÃShÙ
+;
+
+640 
+ADC_CommÚIn™SŒuùu»
+.
+ADC_TwoSam¶šgD–ay
+ = 0;
+
+641 
+	`ADC_CommÚIn™
+(
+ADC1
+, &
+ADC_CommÚIn™SŒuùu»
+);
+
+644 
+	`ADC_DMACmd
+(
+ADC1
+, 
+ENABLE
+);
+
+645 
+	`ADC_DMACÚfig
+(
+ADC1
+, 
+ADC_DMAMode_CœcuÏr
+);
+
+647 
+ADC_In™SŒuùu»
+.
+ADC_CÚtšuousCÚvMode
+ = 
+ADC_CÚtšuousCÚvMode_EÇbË
+;
+
+648 
+ADC_In™SŒuùu»
+.
+ADC_ResÞutiÚ
+ = 
+ADC_ResÞutiÚ_12b
+;
+
+649 
+ADC_In™SŒuùu»
+.
+ADC_Ex‹º®TrigCÚvEv’t
+ = 
+ADC_Ex‹º®TrigCÚvEv’t_0
+;
+
+650 
+ADC_In™SŒuùu»
+.
+ADC_Ex‹º®TrigEv’tEdge
+ = 
+ADC_Ex‹º®TrigEv’tEdge_NÚe
+;
+
+651 
+ADC_In™SŒuùu»
+.
+ADC_D©aAlign
+ = 
+ADC_D©aAlign_Right
+;
+
+652 
+ADC_In™SŒuùu»
+.
+ADC_Ov”runMode
+ = 
+ADC_Ov”runMode_Di§bË
+;
+
+653 
+ADC_In™SŒuùu»
+.
+ADC_AutoInjMode
+ = 
+ADC_AutoInjec_Di§bË
+;
+
+654 
+ADC_In™SŒuùu»
+.
+ADC_NbrOfRegChªÃl
+ = 1;
+
+655 
+	`ADC_In™
+(
+ADC1
+, &
+ADC_In™SŒuùu»
+);
+
+658 
+	`ADC_ReguÏrChªÃlCÚfig
+(
+ADC1
+, 
+ADC_ChªÃl_7
+, 1, 
+ADC_Sam¶eTime_7Cyþes5
+);
+
+661 
+	`ADC_Cmd
+(
+ADC1
+, 
+ENABLE
+);
+
+664 !
+	`ADC_G‘FÏgStus
+(
+ADC1
+, 
+ADC_FLAG_RDY
+));
+
+667 
+	`ADC_S¹CÚv”siÚ
+(
+ADC1
+);
+
+670 
+	`ADC_G‘FÏgStus
+(
+ADC1
+, 
+ADC_FLAG_EOC
+è=ð
+RESET
+);
+
+673 
+ADC_CÚv”‹dV®ueX
+ =
+	`ADC_G‘CÚv”siÚV®ue
+(
+ADC1
+);
+
+674 
+	}
+}
+
+	@src/main.c
+
+30 
+	~"hw_cÚfig.h
+"
+
+31 
+	~"usb_lib.h
+"
+
+32 
+	~"usb_pwr.h
+"
+
+39 
+__IO
+ 
+ušt8_t
+ 
+	gP»vXãrCom¶‘e
+ = 1;
+
+40 
+__IO
+ 
+ušt32_t
+ 
+	gTimšgD–ay
+ = 0;
+
+42 
+D–ay
+(
+__IO
+ 
+ušt32_t
+ 
+nCouÁ
+);
+
+53 
+	$maš
+()
+
+55 
+	`S‘_Sy¡em
+();
+
+57 
+	`USB_IÁ”ru±s_CÚfig
+();
+
+59 
+	`S‘_USBClock
+();
+
+61 
+	`USB_In™
+();
+
+66 
+	}
+}
+
+75 
+	$D–ay
+(
+__IO
+ 
+ušt32_t
+ 
+nCouÁ
+)
+
+77 
+TimšgD–ay
+ = 
+nCouÁ
+;
+
+78 ; 
+nCouÁ
+!= 0;nCount--);
+
+79 
+	}
+}
+
+81 #ifdeà 
+USE_FULL_ASSERT
+
+
+91 
+	$as£¹_çžed
+(
+ušt8_t
+* 
+fže
+, 
+ušt32_t
+ 
+lše
+)
+
+100 
+	}
+}
+
+	@src/stm32_it.c
+
+33 
+	~"¡m32_™.h
+"
+
+34 
+	~"usb_i¡r.h
+"
+
+35 
+	~"usb_lib.h
+"
+
+36 
+	~"usb_pwr.h
+"
+
+37 
+	~"hw_cÚfig.h
+"
+
+43 
+__IO
+ 
+ušt8_t
+ 
+	gS’d_Bufãr
+[2];
+
+44 
+__IO
+ 
+ušt8_t
+ 
+P»vXãrCom¶‘e
+;
+
+45 
+ušt32_t
+ 
+ADC_CÚv”‹dV®ueX
+;
+
+46 
+ušt32_t
+ 
+ADC_CÚv”‹dV®ueX_1
+;
+
+47 
+__IO
+ 
+ušt32_t
+ 
+TimšgD–ay
+;
+
+63 
+	$NMI_HªdËr
+()
+
+65 
+	}
+}
+
+74 
+	$H¬dFauÉ_HªdËr
+()
+
+80 
+	}
+}
+
+89 
+	$MemMªage_HªdËr
+()
+
+95 
+	}
+}
+
+104 
+	$BusFauÉ_HªdËr
+()
+
+110 
+	}
+}
+
+119 
+	$U§geFauÉ_HªdËr
+()
+
+125 
+	}
+}
+
+134 
+	$SVC_HªdËr
+()
+
+136 
+	}
+}
+
+145 
+	$DebugMÚ_HªdËr
+()
+
+147 
+	}
+}
+
+156 
+	$P’dSV_HªdËr
+()
+
+158 
+	}
+}
+
+167 
+	$SysTick_HªdËr
+()
+
+169 
+TimšgD–ay
+--;
+
+170 
+	}
+}
+
+184 #ià
+defšed
+(
+STM32L1XX_MD
+è|| defšed(
+STM32L1XX_HD
+)|| defšed(
+STM32L1XX_MD_PLUS
+è|| defšed (
+STM32F37X
+)
+
+185 
+	$USB_LP_IRQHªdËr
+()
+
+187 
+	$USB_LP_CAN1_RX0_IRQHªdËr
+()
+
+190 
+	`USB_I¡r
+();
+
+191 
+	}
+}
+
+193 #ià
+defšed
+(
+STM32L1XX_MD
+)
+
+201 
+	$EXTI15_10_IRQHªdËr
+()
+
+204 if(
+	`EXTI_G‘ITStus
+(
+RIGHT_BUTTON_EXTI_LINE
+è!ð
+RESET
+)
+
+206 ià((
+P»vXãrCom¶‘e
+è&& (
+bDeviûS‹
+ =ð
+CONFIGURED
+))
+
+208 
+S’d_Bufãr
+[0] = 0x05;
+
+210 ià(
+	`STM_EVAL_PBG‘S‹
+(
+Bu‰Ú_RIGHT
+è=ð
+B™_RESET
+)
+
+212 
+S’d_Bufãr
+[1] = 0x01;
+
+216 
+S’d_Bufãr
+[1] = 0x00;
+
+220 
+	`USB_SIL_Wr™e
+(
+EP1_IN
+, (
+ušt8_t
+*è
+S’d_Bufãr
+, 2);
+
+222 
+	`S‘EPTxV®id
+(
+ENDP1
+);
+
+224 
+P»vXãrCom¶‘e
+ = 0;
+
+227 
+	`EXTI_CË¬ITP’dšgB™
+(
+RIGHT_BUTTON_EXTI_LINE
+);
+
+231 if(
+	`EXTI_G‘ITStus
+(
+LEFT_BUTTON_EXTI_LINE
+è!ð
+RESET
+)
+
+233 ià((
+P»vXãrCom¶‘e
+è&& (
+bDeviûS‹
+ =ð
+CONFIGURED
+))
+
+235 
+S’d_Bufãr
+[0] = 0x06;
+
+237 ià(
+	`STM_EVAL_PBG‘S‹
+(
+Bu‰Ú_LEFT
+è=ð
+B™_RESET
+)
+
+239 
+S’d_Bufãr
+[1] = 0x01;
+
+243 
+S’d_Bufãr
+[1] = 0x00;
+
+247 
+	`USB_SIL_Wr™e
+(
+EP1_IN
+, (
+ušt8_t
+*è
+S’d_Bufãr
+, 2);
+
+249 
+	`S‘EPTxV®id
+(
+ENDP1
+);
+
+251 
+P»vXãrCom¶‘e
+ = 0;
+
+254 
+	`EXTI_CË¬ITP’dšgB™
+(
+LEFT_BUTTON_EXTI_LINE
+);
+
+256 
+	}
+}
+
+265 
+	$DMA1_ChªÃl1_IRQHªdËr
+()
+
+267 
+S’d_Bufãr
+[0] = 0x07;
+
+269 if((
+ADC_CÚv”‹dV®ueX
+ >>4è- (
+ADC_CÚv”‹dV®ueX_1
+ >>4) > 4)
+
+271 ià((
+P»vXãrCom¶‘e
+è&& (
+bDeviûS‹
+ =ð
+CONFIGURED
+))
+
+273 
+S’d_Bufãr
+[1] = (
+ušt8_t
+)(
+ADC_CÚv”‹dV®ueX
+ >>4);
+
+276 
+	`USB_SIL_Wr™e
+(
+EP1_IN
+, (
+ušt8_t
+*è
+S’d_Bufãr
+, 2);
+
+277 
+	`S‘EPTxV®id
+(
+ENDP1
+);
+
+278 
+ADC_CÚv”‹dV®ueX_1
+ = 
+ADC_CÚv”‹dV®ueX
+;
+
+279 
+P»vXãrCom¶‘e
+ = 0;
+
+283 
+	`DMA_CË¬FÏg
+(
+DMA1_FLAG_TC1
+);
+
+284 
+	}
+}
+
+293 #ià
+defšed
+(
+STM32L1XX_MD
+è|| defšed(
+STM32L1XX_HD
+)|| defšed(
+STM32L1XX_MD_PLUS
+)
+
+294 
+	$EXTI0_IRQHªdËr
+()
+
+295 #–ià
+	`defšed
+ (
+STM32F37X
+)
+
+296 
+	$EXTI2_TS_IRQHªdËr
+()
+
+298 
+	$EXTI9_5_IRQHªdËr
+()
+
+301 if(
+	`EXTI_G‘ITStus
+(
+KEY_BUTTON_EXTI_LINE
+è!ð
+RESET
+)
+
+303 ià((
+P»vXãrCom¶‘e
+è&& (
+bDeviûS‹
+ =ð
+CONFIGURED
+))
+
+305 
+S’d_Bufãr
+[0] = 0x05;
+
+306 #ià
+	`defšed
+(
+STM32L1XX_HD
+)|| defšed(
+STM32L1XX_MD_PLUS
+)
+
+307 ià(!
+	`STM_EVAL_PBG‘S‹
+(
+Bu‰Ú_KEY
+è=ð
+B™_RESET
+)
+
+309 ià(
+	`STM_EVAL_PBG‘S‹
+(
+Bu‰Ú_KEY
+è=ð
+B™_RESET
+)
+
+312 
+S’d_Bufãr
+[1] = 0x01;
+
+316 
+S’d_Bufãr
+[1] = 0x00;
+
+320 
+	`USB_SIL_Wr™e
+(
+EP1_IN
+, (
+ušt8_t
+*è
+S’d_Bufãr
+, 2);
+
+321 
+	`S‘EPTxV®id
+(
+ENDP1
+);
+
+322 
+P»vXãrCom¶‘e
+ = 0;
+
+325 
+	`EXTI_CË¬ITP’dšgB™
+(
+KEY_BUTTON_EXTI_LINE
+);
+
+327 
+	}
+}
+
+328 #ià!
+defšed
+(
+STM32L1XX_MD
+è&& !defšed(
+STM32L1XX_HD
+è&& !defšed(
+STM32L1XX_MD_PLUS
+)&& ! defšed (
+STM32F37X
+è&& ! defšed (
+STM32F30X
+)
+
+336 
+	$EXTI15_10_IRQHªdËr
+()
+
+338 if(
+	`EXTI_G‘ITStus
+(
+TAMPER_BUTTON_EXTI_LINE
+è!ð
+RESET
+)
+
+340 ià((
+P»vXãrCom¶‘e
+è&& (
+bDeviûS‹
+ =ð
+CONFIGURED
+))
+
+342 
+S’d_Bufãr
+[0] = 0x06;
+
+344 ià(
+	`STM_EVAL_PBG‘S‹
+(
+Bu‰Ú_TAMPER
+è=ð
+B™_RESET
+)
+
+346 
+S’d_Bufãr
+[1] = 0x01;
+
+350 
+S’d_Bufãr
+[1] = 0x00;
+
+354 
+	`USB_SIL_Wr™e
+(
+EP1_IN
+, (
+ušt8_t
+*è
+S’d_Bufãr
+, 2);
+
+356 
+	`S‘EPTxV®id
+(
+ENDP1
+);
+
+358 
+P»vXãrCom¶‘e
+ = 0;
+
+361 
+	`EXTI_CË¬ITP’dšgB™
+(
+TAMPER_BUTTON_EXTI_LINE
+);
+
+363 
+	}
+}
+
+375 #ià
+defšed
+(
+STM32L1XX_MD
+è|| defšed(
+STM32L1XX_HD
+)|| defšed(
+STM32L1XX_MD_PLUS
+)
+
+376 
+	$USB_FS_WKUP_IRQHªdËr
+()
+
+378 
+	$USBWakeUp_IRQHªdËr
+()
+
+381 
+	`EXTI_CË¬ITP’dšgB™
+(
+EXTI_Lše18
+);
+
+382 
+	}
+}
+
+	@src/system_stm32f10x.c
+
+71 
+	~"¡m32f10x.h
+"
+
+112 #ià
+defšed
+ (
+STM32F10X_LD_VL
+è|| (defšed 
+STM32F10X_MD_VL
+è|| (defšed 
+STM32F10X_HD_VL
+)
+
+114 
+	#SYSCLK_FREQ_24MHz
+ 24000000
+
+	)
+
+121 
+	#SYSCLK_FREQ_72MHz
+ 72000000
+
+	)
+
+127 #ià
+defšed
+ (
+STM32F10X_HD
+è|| (defšed 
+STM32F10X_XL
+è|| (defšed 
+STM32F10X_HD_VL
+)
+
+134 
+	#VECT_TAB_OFFSET
+ 0x0
+
+	)
+
+157 #ifdeà
+SYSCLK_FREQ_HSE
+
+
+158 
+ušt32_t
+ 
+	gSy¡emCÜeClock
+ = 
+SYSCLK_FREQ_HSE
+;
+
+159 #–ià
+defšed
+ 
+SYSCLK_FREQ_24MHz
+
+
+160 
+ušt32_t
+ 
+	gSy¡emCÜeClock
+ = 
+SYSCLK_FREQ_24MHz
+;
+
+161 #–ià
+defšed
+ 
+SYSCLK_FREQ_36MHz
+
+
+162 
+ušt32_t
+ 
+	gSy¡emCÜeClock
+ = 
+SYSCLK_FREQ_36MHz
+;
+
+163 #–ià
+defšed
+ 
+SYSCLK_FREQ_48MHz
+
+
+164 
+ušt32_t
+ 
+	gSy¡emCÜeClock
+ = 
+SYSCLK_FREQ_48MHz
+;
+
+165 #–ià
+defšed
+ 
+SYSCLK_FREQ_56MHz
+
+
+166 
+ušt32_t
+ 
+	gSy¡emCÜeClock
+ = 
+SYSCLK_FREQ_56MHz
+;
+
+167 #–ià
+defšed
+ 
+SYSCLK_FREQ_72MHz
+
+
+168 
+ušt32_t
+ 
+	gSy¡emCÜeClock
+ = 
+SYSCLK_FREQ_72MHz
+;
+
+170 
+ušt32_t
+ 
+	gSy¡emCÜeClock
+ = 
+HSI_VALUE
+;
+
+173 
+__I
+ 
+ušt8_t
+ 
+	gAHBP»scTabË
+[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+
+182 
+S‘SysClock
+();
+
+184 #ifdeà
+SYSCLK_FREQ_HSE
+
+
+185 
+S‘SysClockToHSE
+();
+
+186 #–ià
+defšed
+ 
+SYSCLK_FREQ_24MHz
+
+
+187 
+S‘SysClockTo24
+();
+
+188 #–ià
+defšed
+ 
+SYSCLK_FREQ_36MHz
+
+
+189 
+S‘SysClockTo36
+();
+
+190 #–ià
+defšed
+ 
+SYSCLK_FREQ_48MHz
+
+
+191 
+S‘SysClockTo48
+();
+
+192 #–ià
+defšed
+ 
+SYSCLK_FREQ_56MHz
+
+
+193 
+S‘SysClockTo56
+();
+
+194 #–ià
+defšed
+ 
+SYSCLK_FREQ_72MHz
+
+
+195 
+S‘SysClockTo72
+();
+
+198 #ifdeà
+DATA_IN_ExtSRAM
+
+
+199 
+Sy¡emIn™_ExtMemCŽ
+();
+
+218 
+	$Sy¡emIn™
+ ()
+
+222 
+RCC
+->
+CR
+ |ð(
+ušt32_t
+)0x00000001;
+
+226 
+RCC
+->
+CFGR
+ &ð(
+ušt32_t
+)0xF8FF0000;
+
+229 
+RCC
+->
+CR
+ &ð(
+ušt32_t
+)0xFEF6FFFF;
+
+232 
+RCC
+->
+CR
+ &ð(
+ušt32_t
+)0xFFFBFFFF;
+
+235 
+RCC
+->
+CFGR
+ &ð(
+ušt32_t
+)0xFF80FFFF;
+
+237 #ià
+	`defšed
+ (
+STM32F10X_LD_VL
+è|| defšed (
+STM32F10X_MD_VL
+è|| (
+defšed
+ 
+STM32F10X_HD_VL
+)
+
+239 
+RCC
+->
+CIR
+ = 0x009F0000;
+
+242 
+RCC
+->
+CFGR2
+ = 0x00000000;
+
+245 
+RCC
+->
+CIR
+ = 0x009F0000;
+
+248 #ià
+	`defšed
+ (
+STM32F10X_HD
+è|| (
+defšed
+ 
+STM32F10X_XL
+è|| (defšed 
+STM32F10X_HD_VL
+)
+
+249 #ifdeà
+DATA_IN_ExtSRAM
+
+
+250 
+	`Sy¡emIn™_ExtMemCŽ
+();
+
+256 
+	`S‘SysClock
+();
+
+258 #ifdeà
+VECT_TAB_SRAM
+
+
+259 
+SCB
+->
+VTOR
+ = 
+SRAM_BASE
+ | 
+VECT_TAB_OFFSET
+;
+
+261 
+SCB
+->
+VTOR
+ = 
+FLASH_BASE
+ | 
+VECT_TAB_OFFSET
+;
+
+263 
+	}
+}
+
+300 
+	$Sy¡emCÜeClockUpd©e
+ ()
+
+302 
+ušt32_t
+ 
+tmp
+ = 0, 
+¶lmuÎ
+ = 0, 
+¶lsourû
+ = 0;
+
+304 #ià
+	`defšed
+ (
+STM32F10X_LD_VL
+è|| defšed (
+STM32F10X_MD_VL
+è|| (
+defšed
+ 
+STM32F10X_HD_VL
+)
+
+305 
+ušt32_t
+ 
+´ediv1çùÜ
+ = 0;
+
+309 
+tmp
+ = 
+RCC
+->
+CFGR
+ & 
+RCC_CFGR_SWS
+;
+
+311 
+tmp
+)
+
+314 
+Sy¡emCÜeClock
+ = 
+HSI_VALUE
+;
+
+317 
+Sy¡emCÜeClock
+ = 
+HSE_VALUE
+;
+
+322 
+¶lmuÎ
+ = 
+RCC
+->
+CFGR
+ & 
+RCC_CFGR_PLLMULL
+;
+
+323 
+¶lsourû
+ = 
+RCC
+->
+CFGR
+ & 
+RCC_CFGR_PLLSRC
+;
+
+325 
+¶lmuÎ
+ = (…llmull >> 18) + 2;
+
+327 ià(
+¶lsourû
+ == 0x00)
+
+330 
+Sy¡emCÜeClock
+ = (
+HSI_VALUE
+ >> 1è* 
+¶lmuÎ
+;
+
+334 #ià
+	`defšed
+ (
+STM32F10X_LD_VL
+è|| defšed (
+STM32F10X_MD_VL
+è|| (
+defšed
+ 
+STM32F10X_HD_VL
+)
+
+335 
+´ediv1çùÜ
+ = (
+RCC
+->
+CFGR2
+ & 
+RCC_CFGR2_PREDIV1
+) + 1;
+
+337 
+Sy¡emCÜeClock
+ = (
+HSE_VALUE
+ / 
+´ediv1çùÜ
+è* 
+¶lmuÎ
+;
+
+340 ià((
+RCC
+->
+CFGR
+ & 
+RCC_CFGR_PLLXTPRE
+è!ð(
+ušt32_t
+)
+RESET
+)
+
+342 
+Sy¡emCÜeClock
+ = (
+HSE_VALUE
+ >> 1è* 
+¶lmuÎ
+;
+
+346 
+Sy¡emCÜeClock
+ = 
+HSE_VALUE
+ * 
+¶lmuÎ
+;
+
+354 
+Sy¡emCÜeClock
+ = 
+HSI_VALUE
+;
+
+360 
+tmp
+ = 
+AHBP»scTabË
+[((
+RCC
+->
+CFGR
+ & 
+RCC_CFGR_HPRE
+) >> 4)];
+
+362 
+Sy¡emCÜeClock
+ >>ð
+tmp
+;
+
+363 
+	}
+}
+
+370 
+	$S‘SysClock
+()
+
+372 #ifdeà
+SYSCLK_FREQ_HSE
+
+
+373 
+	`S‘SysClockToHSE
+();
+
+374 #–ià
+defšed
+ 
+SYSCLK_FREQ_24MHz
+
+
+375 
+	`S‘SysClockTo24
+();
+
+376 #–ià
+defšed
+ 
+SYSCLK_FREQ_36MHz
+
+
+377 
+	`S‘SysClockTo36
+();
+
+378 #–ià
+defšed
+ 
+SYSCLK_FREQ_48MHz
+
+
+379 
+	`S‘SysClockTo48
+();
+
+380 #–ià
+defšed
+ 
+SYSCLK_FREQ_56MHz
+
+
+381 
+	`S‘SysClockTo56
+();
+
+382 #–ià
+defšed
+ 
+SYSCLK_FREQ_72MHz
+
+
+383 
+	`S‘SysClockTo72
+();
+
+388 
+	}
+}
+
+396 #ifdeà
+DATA_IN_ExtSRAM
+
+
+406 
+	$Sy¡emIn™_ExtMemCŽ
+()
+
+412 
+RCC
+->
+AHBENR
+ = 0x00000114;
+
+415 
+RCC
+->
+APB2ENR
+ = 0x000001E0;
+
+423 
+GPIOD
+->
+CRL
+ = 0x44BB44BB;
+
+424 
+GPIOD
+->
+CRH
+ = 0xBBBBBBBB;
+
+426 
+GPIOE
+->
+CRL
+ = 0xB44444BB;
+
+427 
+GPIOE
+->
+CRH
+ = 0xBBBBBBBB;
+
+429 
+GPIOF
+->
+CRL
+ = 0x44BBBBBB;
+
+430 
+GPIOF
+->
+CRH
+ = 0xBBBB4444;
+
+432 
+GPIOG
+->
+CRL
+ = 0x44BBBBBB;
+
+433 
+GPIOG
+->
+CRH
+ = 0x44444B44;
+
+438 
+FSMC_Bªk1
+->
+BTCR
+[4] = 0x00001011;
+
+439 
+FSMC_Bªk1
+->
+BTCR
+[5] = 0x00000200;
+
+440 
+	}
+}
+
+443 #ifdeà
+SYSCLK_FREQ_HSE
+
+
+451 
+	$S‘SysClockToHSE
+()
+
+453 
+__IO
+ 
+ušt32_t
+ 
+S¹UpCouÁ”
+ = 0, 
+HSEStus
+ = 0;
+
+457 
+RCC
+->
+CR
+ |ð((
+ušt32_t
+)
+RCC_CR_HSEON
+);
+
+462 
+HSEStus
+ = 
+RCC
+->
+CR
+ & 
+RCC_CR_HSERDY
+;
+
+463 
+S¹UpCouÁ”
+++;
+
+464 } (
+HSEStus
+ =ð0è&& (
+S¹UpCouÁ”
+ !ð
+HSE_STARTUP_TIMEOUT
+));
+
+466 ià((
+RCC
+->
+CR
+ & 
+RCC_CR_HSERDY
+è!ð
+RESET
+)
+
+468 
+HSEStus
+ = (
+ušt32_t
+)0x01;
+
+472 
+HSEStus
+ = (
+ušt32_t
+)0x00;
+
+475 ià(
+HSEStus
+ =ð(
+ušt32_t
+)0x01)
+
+478 #ià!
+defšed
+ 
+STM32F10X_LD_VL
+ && !defšed 
+STM32F10X_MD_VL
+ && !defšed 
+STM32F10X_HD_VL
+
+
+480 
+FLASH
+->
+ACR
+ |ð
+FLASH_ACR_PRFTBE
+;
+
+483 
+FLASH
+->
+ACR
+ &ð(
+ušt32_t
+)((ušt32_t)~
+FLASH_ACR_LATENCY
+);
+
+485 
+FLASH
+->
+ACR
+ |ð(
+ušt32_t
+)
+FLASH_ACR_LATENCY_0
+;
+
+489 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)
+RCC_CFGR_HPRE_DIV1
+;
+
+492 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)
+RCC_CFGR_PPRE2_DIV1
+;
+
+495 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)
+RCC_CFGR_PPRE1_DIV1
+;
+
+498 
+RCC
+->
+CFGR
+ &ð(
+ušt32_t
+)((ušt32_t)~(
+RCC_CFGR_SW
+));
+
+499 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)
+RCC_CFGR_SW_HSE
+;
+
+502 (
+RCC
+->
+CFGR
+ & (
+ušt32_t
+)
+RCC_CFGR_SWS
+) != (uint32_t)0x04)
+
+510 
+	}
+}
+
+511 #–ià
+defšed
+ 
+SYSCLK_FREQ_24MHz
+
+
+519 
+	$S‘SysClockTo24
+()
+
+521 
+__IO
+ 
+ušt32_t
+ 
+S¹UpCouÁ”
+ = 0, 
+HSEStus
+ = 0;
+
+525 
+RCC
+->
+CR
+ |ð((
+ušt32_t
+)
+RCC_CR_HSEON
+);
+
+530 
+HSEStus
+ = 
+RCC
+->
+CR
+ & 
+RCC_CR_HSERDY
+;
+
+531 
+S¹UpCouÁ”
+++;
+
+532 } (
+HSEStus
+ =ð0è&& (
+S¹UpCouÁ”
+ !ð
+HSE_STARTUP_TIMEOUT
+));
+
+534 ià((
+RCC
+->
+CR
+ & 
+RCC_CR_HSERDY
+è!ð
+RESET
+)
+
+536 
+HSEStus
+ = (
+ušt32_t
+)0x01;
+
+540 
+HSEStus
+ = (
+ušt32_t
+)0x00;
+
+543 ià(
+HSEStus
+ =ð(
+ušt32_t
+)0x01)
+
+545 #ià!
+defšed
+ 
+STM32F10X_LD_VL
+ && !defšed 
+STM32F10X_MD_VL
+ && !defšed 
+STM32F10X_HD_VL
+
+
+547 
+FLASH
+->
+ACR
+ |ð
+FLASH_ACR_PRFTBE
+;
+
+550 
+FLASH
+->
+ACR
+ &ð(
+ušt32_t
+)((ušt32_t)~
+FLASH_ACR_LATENCY
+);
+
+551 
+FLASH
+->
+ACR
+ |ð(
+ušt32_t
+)
+FLASH_ACR_LATENCY_0
+;
+
+555 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)
+RCC_CFGR_HPRE_DIV1
+;
+
+558 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)
+RCC_CFGR_PPRE2_DIV1
+;
+
+561 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)
+RCC_CFGR_PPRE1_DIV1
+;
+
+563 #ià
+	`defšed
+ (
+STM32F10X_LD_VL
+è|| defšed (
+STM32F10X_MD_VL
+è|| defšed (
+STM32F10X_HD_VL
+)
+
+565 
+RCC
+->
+CFGR
+ &ð(
+ušt32_t
+)((ušt32_t)~(
+RCC_CFGR_PLLSRC
+ | 
+RCC_CFGR_PLLXTPRE
+ | 
+RCC_CFGR_PLLMULL
+));
+
+566 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)(
+RCC_CFGR_PLLSRC_PREDIV1
+ | 
+RCC_CFGR_PLLXTPRE_PREDIV1_Div2
+ | 
+RCC_CFGR_PLLMULL6
+);
+
+569 
+RCC
+->
+CFGR
+ &ð(
+ušt32_t
+)((ušt32_t)~(
+RCC_CFGR_PLLSRC
+ | 
+RCC_CFGR_PLLXTPRE
+ | 
+RCC_CFGR_PLLMULL
+));
+
+570 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)(
+RCC_CFGR_PLLSRC_HSE
+ | 
+RCC_CFGR_PLLXTPRE_HSE_Div2
+ | 
+RCC_CFGR_PLLMULL6
+);
+
+574 
+RCC
+->
+CR
+ |ð
+RCC_CR_PLLON
+;
+
+577 (
+RCC
+->
+CR
+ & 
+RCC_CR_PLLRDY
+) == 0)
+
+582 
+RCC
+->
+CFGR
+ &ð(
+ušt32_t
+)((ušt32_t)~(
+RCC_CFGR_SW
+));
+
+583 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)
+RCC_CFGR_SW_PLL
+;
+
+586 (
+RCC
+->
+CFGR
+ & (
+ušt32_t
+)
+RCC_CFGR_SWS
+) != (uint32_t)0x08)
+
+594 
+	}
+}
+
+595 #–ià
+defšed
+ 
+SYSCLK_FREQ_36MHz
+
+
+603 
+	$S‘SysClockTo36
+()
+
+605 
+__IO
+ 
+ušt32_t
+ 
+S¹UpCouÁ”
+ = 0, 
+HSEStus
+ = 0;
+
+609 
+RCC
+->
+CR
+ |ð((
+ušt32_t
+)
+RCC_CR_HSEON
+);
+
+614 
+HSEStus
+ = 
+RCC
+->
+CR
+ & 
+RCC_CR_HSERDY
+;
+
+615 
+S¹UpCouÁ”
+++;
+
+616 } (
+HSEStus
+ =ð0è&& (
+S¹UpCouÁ”
+ !ð
+HSE_STARTUP_TIMEOUT
+));
+
+618 ià((
+RCC
+->
+CR
+ & 
+RCC_CR_HSERDY
+è!ð
+RESET
+)
+
+620 
+HSEStus
+ = (
+ušt32_t
+)0x01;
+
+624 
+HSEStus
+ = (
+ušt32_t
+)0x00;
+
+627 ià(
+HSEStus
+ =ð(
+ušt32_t
+)0x01)
+
+630 
+FLASH
+->
+ACR
+ |ð
+FLASH_ACR_PRFTBE
+;
+
+633 
+FLASH
+->
+ACR
+ &ð(
+ušt32_t
+)((ušt32_t)~
+FLASH_ACR_LATENCY
+);
+
+634 
+FLASH
+->
+ACR
+ |ð(
+ušt32_t
+)
+FLASH_ACR_LATENCY_1
+;
+
+637 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)
+RCC_CFGR_HPRE_DIV1
+;
+
+640 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)
+RCC_CFGR_PPRE2_DIV1
+;
+
+643 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)
+RCC_CFGR_PPRE1_DIV1
+;
+
+646 
+RCC
+->
+CFGR
+ &ð(
+ušt32_t
+)((ušt32_t)~(
+RCC_CFGR_PLLSRC
+ | 
+RCC_CFGR_PLLXTPRE
+ | 
+RCC_CFGR_PLLMULL
+));
+
+647 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)(
+RCC_CFGR_PLLSRC_HSE
+ | 
+RCC_CFGR_PLLXTPRE_HSE_Div2
+ | 
+RCC_CFGR_PLLMULL9
+);
+
+650 
+RCC
+->
+CR
+ |ð
+RCC_CR_PLLON
+;
+
+653 (
+RCC
+->
+CR
+ & 
+RCC_CR_PLLRDY
+) == 0)
+
+658 
+RCC
+->
+CFGR
+ &ð(
+ušt32_t
+)((ušt32_t)~(
+RCC_CFGR_SW
+));
+
+659 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)
+RCC_CFGR_SW_PLL
+;
+
+662 (
+RCC
+->
+CFGR
+ & (
+ušt32_t
+)
+RCC_CFGR_SWS
+) != (uint32_t)0x08)
+
+670 
+	}
+}
+
+671 #–ià
+defšed
+ 
+SYSCLK_FREQ_48MHz
+
+
+679 
+	$S‘SysClockTo48
+()
+
+681 
+__IO
+ 
+ušt32_t
+ 
+S¹UpCouÁ”
+ = 0, 
+HSEStus
+ = 0;
+
+685 
+RCC
+->
+CR
+ |ð((
+ušt32_t
+)
+RCC_CR_HSEON
+);
+
+690 
+HSEStus
+ = 
+RCC
+->
+CR
+ & 
+RCC_CR_HSERDY
+;
+
+691 
+S¹UpCouÁ”
+++;
+
+692 } (
+HSEStus
+ =ð0è&& (
+S¹UpCouÁ”
+ !ð
+HSE_STARTUP_TIMEOUT
+));
+
+694 ià((
+RCC
+->
+CR
+ & 
+RCC_CR_HSERDY
+è!ð
+RESET
+)
+
+696 
+HSEStus
+ = (
+ušt32_t
+)0x01;
+
+700 
+HSEStus
+ = (
+ušt32_t
+)0x00;
+
+703 ià(
+HSEStus
+ =ð(
+ušt32_t
+)0x01)
+
+706 
+FLASH
+->
+ACR
+ |ð
+FLASH_ACR_PRFTBE
+;
+
+709 
+FLASH
+->
+ACR
+ &ð(
+ušt32_t
+)((ušt32_t)~
+FLASH_ACR_LATENCY
+);
+
+710 
+FLASH
+->
+ACR
+ |ð(
+ušt32_t
+)
+FLASH_ACR_LATENCY_1
+;
+
+713 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)
+RCC_CFGR_HPRE_DIV1
+;
+
+716 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)
+RCC_CFGR_PPRE2_DIV1
+;
+
+719 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)
+RCC_CFGR_PPRE1_DIV2
+;
+
+722 
+RCC
+->
+CFGR
+ &ð(
+ušt32_t
+)((ušt32_t)~(
+RCC_CFGR_PLLSRC
+ | 
+RCC_CFGR_PLLXTPRE
+ | 
+RCC_CFGR_PLLMULL
+));
+
+723 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)(
+RCC_CFGR_PLLSRC_HSE
+ | 
+RCC_CFGR_PLLMULL6
+);
+
+726 
+RCC
+->
+CR
+ |ð
+RCC_CR_PLLON
+;
+
+729 (
+RCC
+->
+CR
+ & 
+RCC_CR_PLLRDY
+) == 0)
+
+734 
+RCC
+->
+CFGR
+ &ð(
+ušt32_t
+)((ušt32_t)~(
+RCC_CFGR_SW
+));
+
+735 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)
+RCC_CFGR_SW_PLL
+;
+
+738 (
+RCC
+->
+CFGR
+ & (
+ušt32_t
+)
+RCC_CFGR_SWS
+) != (uint32_t)0x08)
+
+746 
+	}
+}
+
+748 #–ià
+defšed
+ 
+SYSCLK_FREQ_56MHz
+
+
+756 
+	$S‘SysClockTo56
+()
+
+758 
+__IO
+ 
+ušt32_t
+ 
+S¹UpCouÁ”
+ = 0, 
+HSEStus
+ = 0;
+
+762 
+RCC
+->
+CR
+ |ð((
+ušt32_t
+)
+RCC_CR_HSEON
+);
+
+767 
+HSEStus
+ = 
+RCC
+->
+CR
+ & 
+RCC_CR_HSERDY
+;
+
+768 
+S¹UpCouÁ”
+++;
+
+769 } (
+HSEStus
+ =ð0è&& (
+S¹UpCouÁ”
+ !ð
+HSE_STARTUP_TIMEOUT
+));
+
+771 ià((
+RCC
+->
+CR
+ & 
+RCC_CR_HSERDY
+è!ð
+RESET
+)
+
+773 
+HSEStus
+ = (
+ušt32_t
+)0x01;
+
+777 
+HSEStus
+ = (
+ušt32_t
+)0x00;
+
+780 ià(
+HSEStus
+ =ð(
+ušt32_t
+)0x01)
+
+783 
+FLASH
+->
+ACR
+ |ð
+FLASH_ACR_PRFTBE
+;
+
+786 
+FLASH
+->
+ACR
+ &ð(
+ušt32_t
+)((ušt32_t)~
+FLASH_ACR_LATENCY
+);
+
+787 
+FLASH
+->
+ACR
+ |ð(
+ušt32_t
+)
+FLASH_ACR_LATENCY_2
+;
+
+790 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)
+RCC_CFGR_HPRE_DIV1
+;
+
+793 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)
+RCC_CFGR_PPRE2_DIV1
+;
+
+796 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)
+RCC_CFGR_PPRE1_DIV2
+;
+
+800 
+RCC
+->
+CFGR
+ &ð(
+ušt32_t
+)((ušt32_t)~(
+RCC_CFGR_PLLSRC
+ | 
+RCC_CFGR_PLLXTPRE
+ | 
+RCC_CFGR_PLLMULL
+));
+
+801 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)(
+RCC_CFGR_PLLSRC_HSE
+ | 
+RCC_CFGR_PLLMULL7
+);
+
+804 
+RCC
+->
+CR
+ |ð
+RCC_CR_PLLON
+;
+
+807 (
+RCC
+->
+CR
+ & 
+RCC_CR_PLLRDY
+) == 0)
+
+812 
+RCC
+->
+CFGR
+ &ð(
+ušt32_t
+)((ušt32_t)~(
+RCC_CFGR_SW
+));
+
+813 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)
+RCC_CFGR_SW_PLL
+;
+
+816 (
+RCC
+->
+CFGR
+ & (
+ušt32_t
+)
+RCC_CFGR_SWS
+) != (uint32_t)0x08)
+
+824 
+	}
+}
+
+826 #–ià
+defšed
+ 
+SYSCLK_FREQ_72MHz
+
+
+834 
+	$S‘SysClockTo72
+()
+
+836 
+__IO
+ 
+ušt32_t
+ 
+S¹UpCouÁ”
+ = 0, 
+HSEStus
+ = 0;
+
+840 
+RCC
+->
+CR
+ |ð((
+ušt32_t
+)
+RCC_CR_HSEON
+);
+
+845 
+HSEStus
+ = 
+RCC
+->
+CR
+ & 
+RCC_CR_HSERDY
+;
+
+846 
+S¹UpCouÁ”
+++;
+
+847 } (
+HSEStus
+ =ð0è&& (
+S¹UpCouÁ”
+ !ð
+HSE_STARTUP_TIMEOUT
+));
+
+849 ià((
+RCC
+->
+CR
+ & 
+RCC_CR_HSERDY
+è!ð
+RESET
+)
+
+851 
+HSEStus
+ = (
+ušt32_t
+)0x01;
+
+855 
+HSEStus
+ = (
+ušt32_t
+)0x00;
+
+858 ià(
+HSEStus
+ =ð(
+ušt32_t
+)0x01)
+
+861 
+FLASH
+->
+ACR
+ |ð
+FLASH_ACR_PRFTBE
+;
+
+864 
+FLASH
+->
+ACR
+ &ð(
+ušt32_t
+)((ušt32_t)~
+FLASH_ACR_LATENCY
+);
+
+865 
+FLASH
+->
+ACR
+ |ð(
+ušt32_t
+)
+FLASH_ACR_LATENCY_2
+;
+
+869 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)
+RCC_CFGR_HPRE_DIV1
+;
+
+872 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)
+RCC_CFGR_PPRE2_DIV1
+;
+
+875 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)
+RCC_CFGR_PPRE1_DIV2
+;
+
+878 
+RCC
+->
+CFGR
+ &ð(
+ušt32_t
+)((ušt32_t)~(
+RCC_CFGR_PLLSRC
+ | 
+RCC_CFGR_PLLXTPRE
+ |
+
+879 
+RCC_CFGR_PLLMULL
+));
+
+880 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)(
+RCC_CFGR_PLLSRC_HSE
+ | 
+RCC_CFGR_PLLMULL9
+);
+
+883 
+RCC
+->
+CR
+ |ð
+RCC_CR_PLLON
+;
+
+886 (
+RCC
+->
+CR
+ & 
+RCC_CR_PLLRDY
+) == 0)
+
+891 
+RCC
+->
+CFGR
+ &ð(
+ušt32_t
+)((ušt32_t)~(
+RCC_CFGR_SW
+));
+
+892 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)
+RCC_CFGR_SW_PLL
+;
+
+895 (
+RCC
+->
+CFGR
+ & (
+ušt32_t
+)
+RCC_CFGR_SWS
+) != (uint32_t)0x08)
+
+903 
+	}
+}
+
+	@src/system_stm32f30x.c
+
+102 
+	~"¡m32f30x.h
+"
+
+122 
+	#VECT_TAB_OFFSET
+ 0x0
+
+	)
+
+140 
+ušt32_t
+ 
+	gSy¡emCÜeClock
+ = 72000000;
+
+142 
+__I
+ 
+ušt8_t
+ 
+	gAHBP»scTabË
+[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+
+152 
+S‘SysClock
+();
+
+169 
+	$Sy¡emIn™
+()
+
+172 #ià(
+__FPU_PRESENT
+ =ð1è&& (
+__FPU_USED
+ == 1)
+
+173 
+SCB
+->
+CPACR
+ |= ((3UL << 10*2)|(3UL << 11*2));
+
+178 
+RCC
+->
+CR
+ |ð(
+ušt32_t
+)0x00000001;
+
+181 
+RCC
+->
+CFGR
+ &= 0xF87FC00C;
+
+184 
+RCC
+->
+CR
+ &ð(
+ušt32_t
+)0xFEF6FFFF;
+
+187 
+RCC
+->
+CR
+ &ð(
+ušt32_t
+)0xFFFBFFFF;
+
+190 
+RCC
+->
+CFGR
+ &ð(
+ušt32_t
+)0xFF80FFFF;
+
+193 
+RCC
+->
+CFGR2
+ &ð(
+ušt32_t
+)0xFFFFFFF0;
+
+196 
+RCC
+->
+CFGR3
+ &ð(
+ušt32_t
+)0xFF00FCCC;
+
+199 
+RCC
+->
+CIR
+ = 0x00000000;
+
+203 
+	`S‘SysClock
+();
+
+205 #ifdeà
+VECT_TAB_SRAM
+
+
+206 
+SCB
+->
+VTOR
+ = 
+SRAM_BASE
+ | 
+VECT_TAB_OFFSET
+;
+
+208 
+SCB
+->
+VTOR
+ = 
+FLASH_BASE
+ | 
+VECT_TAB_OFFSET
+;
+
+210 
+	}
+}
+
+248 
+	$Sy¡emCÜeClockUpd©e
+ ()
+
+250 
+ušt32_t
+ 
+tmp
+ = 0, 
+¶lmuÎ
+ = 0, 
+¶lsourû
+ = 0, 
+´ediv1çùÜ
+ = 0;
+
+253 
+tmp
+ = 
+RCC
+->
+CFGR
+ & 
+RCC_CFGR_SWS
+;
+
+255 
+tmp
+)
+
+258 
+Sy¡emCÜeClock
+ = 
+HSI_VALUE
+;
+
+261 
+Sy¡emCÜeClock
+ = 
+HSE_VALUE
+;
+
+265 
+¶lmuÎ
+ = 
+RCC
+->
+CFGR
+ & 
+RCC_CFGR_PLLMULL
+;
+
+266 
+¶lsourû
+ = 
+RCC
+->
+CFGR
+ & 
+RCC_CFGR_PLLSRC
+;
+
+267 
+¶lmuÎ
+ = (…llmull >> 18) + 2;
+
+269 ià(
+¶lsourû
+ == 0x00)
+
+272 
+Sy¡emCÜeClock
+ = (
+HSI_VALUE
+ >> 1è* 
+¶lmuÎ
+;
+
+276 
+´ediv1çùÜ
+ = (
+RCC
+->
+CFGR2
+ & 
+RCC_CFGR2_PREDIV1
+) + 1;
+
+278 
+Sy¡emCÜeClock
+ = (
+HSE_VALUE
+ / 
+´ediv1çùÜ
+è* 
+¶lmuÎ
+;
+
+282 
+Sy¡emCÜeClock
+ = 
+HSI_VALUE
+;
+
+287 
+tmp
+ = 
+AHBP»scTabË
+[((
+RCC
+->
+CFGR
+ & 
+RCC_CFGR_HPRE
+) >> 4)];
+
+289 
+Sy¡emCÜeClock
+ >>ð
+tmp
+;
+
+290 
+	}
+}
+
+300 
+	$S‘SysClock
+()
+
+302 
+__IO
+ 
+ušt32_t
+ 
+S¹UpCouÁ”
+ = 0, 
+HSEStus
+ = 0;
+
+310 
+RCC
+->
+CR
+ |ð((
+ušt32_t
+)
+RCC_CR_HSEON
+);
+
+315 
+HSEStus
+ = 
+RCC
+->
+CR
+ & 
+RCC_CR_HSERDY
+;
+
+316 
+S¹UpCouÁ”
+++;
+
+317 } (
+HSEStus
+ =ð0è&& (
+S¹UpCouÁ”
+ !ð
+HSE_STARTUP_TIMEOUT
+));
+
+319 ià((
+RCC
+->
+CR
+ & 
+RCC_CR_HSERDY
+è!ð
+RESET
+)
+
+321 
+HSEStus
+ = (
+ušt32_t
+)0x01;
+
+325 
+HSEStus
+ = (
+ušt32_t
+)0x00;
+
+328 ià(
+HSEStus
+ =ð(
+ušt32_t
+)0x01)
+
+331 
+FLASH
+->
+ACR
+ = 
+FLASH_ACR_PRFTBE
+ | (
+ušt32_t
+)
+FLASH_ACR_LATENCY_1
+;
+
+334 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)
+RCC_CFGR_HPRE_DIV1
+;
+
+337 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)
+RCC_CFGR_PPRE2_DIV1
+;
+
+340 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)
+RCC_CFGR_PPRE1_DIV2
+;
+
+343 
+RCC
+->
+CFGR
+ &ð(
+ušt32_t
+)((ušt32_t)~(
+RCC_CFGR_PLLSRC
+ | 
+RCC_CFGR_PLLXTPRE
+ | 
+RCC_CFGR_PLLMULL
+));
+
+344 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)(
+RCC_CFGR_PLLSRC_PREDIV1
+ | 
+RCC_CFGR_PLLXTPRE_PREDIV1
+ | 
+RCC_CFGR_PLLMULL9
+);
+
+347 
+RCC
+->
+CR
+ |ð
+RCC_CR_PLLON
+;
+
+350 (
+RCC
+->
+CR
+ & 
+RCC_CR_PLLRDY
+) == 0)
+
+355 
+RCC
+->
+CFGR
+ &ð(
+ušt32_t
+)((ušt32_t)~(
+RCC_CFGR_SW
+));
+
+356 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)
+RCC_CFGR_SW_PLL
+;
+
+359 (
+RCC
+->
+CFGR
+ & (
+ušt32_t
+)
+RCC_CFGR_SWS
+è!ð(ušt32_t)
+RCC_CFGR_SWS_PLL
+)
+
+367 
+	}
+}
+
+	@src/system_stm32f37x.c
+
+103 
+	~"¡m32f37x.h
+"
+
+124 
+	#VECT_TAB_OFFSET
+ 0x0
+
+	)
+
+141 
+ušt32_t
+ 
+	gSy¡emCÜeClock
+ = 72000000;
+
+142 
+__I
+ 
+ušt8_t
+ 
+	gAHBP»scTabË
+[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+
+152 
+S‘SysClock
+();
+
+169 
+	$Sy¡emIn™
+ ()
+
+172 #ià(
+__FPU_PRESENT
+ =ð1è&& (
+__FPU_USED
+ == 1)
+
+173 
+SCB
+->
+CPACR
+ |= ((3UL << 10*2)|(3UL << 11*2));
+
+177 
+RCC
+->
+CR
+ |ð(
+ušt32_t
+)0x00000001;
+
+180 
+RCC
+->
+CFGR
+ &ð(
+ušt32_t
+)0x00FF0000;
+
+183 
+RCC
+->
+CR
+ &ð(
+ušt32_t
+)0xFEF6FFFF;
+
+186 
+RCC
+->
+CR
+ &ð(
+ušt32_t
+)0xFFFBFFFF;
+
+189 
+RCC
+->
+CFGR
+ &ð(
+ušt32_t
+)0xFF80FFFF;
+
+192 
+RCC
+->
+CFGR2
+ &ð(
+ušt32_t
+)0xFFFFFFF0;
+
+195 
+RCC
+->
+CFGR3
+ &ð(
+ušt32_t
+)0xFFF0F8C;
+
+198 
+RCC
+->
+CIR
+ = 0x00000000;
+
+201 
+	`S‘SysClock
+();
+
+204 #ifdeà
+VECT_TAB_SRAM
+
+
+205 
+SCB
+->
+VTOR
+ = 
+SRAM_BASE
+ | 
+VECT_TAB_OFFSET
+;
+
+207 
+SCB
+->
+VTOR
+ = 
+FLASH_BASE
+ | 
+VECT_TAB_OFFSET
+;
+
+209 
+	}
+}
+
+246 
+	$Sy¡emCÜeClockUpd©e
+ ()
+
+248 
+ušt32_t
+ 
+tmp
+ = 0, 
+¶lmuÎ
+ = 0, 
+¶lsourû
+ = 0, 
+´ediv1çùÜ
+ = 0;
+
+251 
+tmp
+ = 
+RCC
+->
+CFGR
+ & 
+RCC_CFGR_SWS
+;
+
+253 
+tmp
+)
+
+256 
+Sy¡emCÜeClock
+ = 
+HSI_VALUE
+;
+
+259 
+Sy¡emCÜeClock
+ = 
+HSE_VALUE
+;
+
+263 
+¶lmuÎ
+ = 
+RCC
+->
+CFGR
+ & 
+RCC_CFGR_PLLMULL
+;
+
+264 
+¶lsourû
+ = 
+RCC
+->
+CFGR
+ & 
+RCC_CFGR_PLLSRC
+;
+
+265 
+¶lmuÎ
+ = (…llmull >> 18) + 2;
+
+267 ià(
+¶lsourû
+ == 0x00)
+
+270 
+Sy¡emCÜeClock
+ = (
+HSI_VALUE
+ >> 1è* 
+¶lmuÎ
+;
+
+274 
+´ediv1çùÜ
+ = (
+RCC
+->
+CFGR2
+ & 
+RCC_CFGR2_PREDIV1
+) + 1;
+
+276 
+Sy¡emCÜeClock
+ = (
+HSE_VALUE
+ / 
+´ediv1çùÜ
+è* 
+¶lmuÎ
+;
+
+280 
+Sy¡emCÜeClock
+ = 
+HSI_VALUE
+;
+
+285 
+tmp
+ = 
+AHBP»scTabË
+[((
+RCC
+->
+CFGR
+ & 
+RCC_CFGR_HPRE
+) >> 4)];
+
+287 
+Sy¡emCÜeClock
+ >>ð
+tmp
+;
+
+288 
+	}
+}
+
+298 
+	$S‘SysClock
+()
+
+300 
+__IO
+ 
+ušt32_t
+ 
+S¹UpCouÁ”
+ = 0, 
+HSEStus
+ = 0;
+
+308 
+RCC
+->
+CR
+ |ð((
+ušt32_t
+)
+RCC_CR_HSEON
+);
+
+313 
+HSEStus
+ = 
+RCC
+->
+CR
+ & 
+RCC_CR_HSERDY
+;
+
+314 
+S¹UpCouÁ”
+++;
+
+315 } (
+HSEStus
+ =ð0è&& (
+S¹UpCouÁ”
+ !ð
+HSE_STARTUP_TIMEOUT
+));
+
+317 ià((
+RCC
+->
+CR
+ & 
+RCC_CR_HSERDY
+è!ð
+RESET
+)
+
+319 
+HSEStus
+ = (
+ušt32_t
+)0x01;
+
+323 
+HSEStus
+ = (
+ušt32_t
+)0x00;
+
+326 ià(
+HSEStus
+ =ð(
+ušt32_t
+)0x01)
+
+329 
+FLASH
+->
+ACR
+ = 
+FLASH_ACR_PRFTBE
+ | (
+ušt32_t
+)
+FLASH_ACR_LATENCY_1
+;
+
+332 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)
+RCC_CFGR_HPRE_DIV1
+;
+
+335 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)
+RCC_CFGR_PPRE2_DIV1
+;
+
+338 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)
+RCC_CFGR_PPRE1_DIV2
+;
+
+341 
+RCC
+->
+CFGR
+ &ð(
+ušt32_t
+)((ušt32_t)~(
+RCC_CFGR_PLLSRC
+ | 
+RCC_CFGR_PLLXTPRE
+ | 
+RCC_CFGR_PLLMULL
+));
+
+342 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)(
+RCC_CFGR_PLLSRC_PREDIV1
+ | 
+RCC_CFGR_PLLXTPRE_PREDIV1
+ | 
+RCC_CFGR_PLLMULL9
+);
+
+345 
+RCC
+->
+CR
+ |ð
+RCC_CR_PLLON
+;
+
+348 (
+RCC
+->
+CR
+ & 
+RCC_CR_PLLRDY
+) == 0)
+
+353 
+RCC
+->
+CFGR
+ &ð(
+ušt32_t
+)((ušt32_t)~(
+RCC_CFGR_SW
+));
+
+354 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)
+RCC_CFGR_SW_PLL
+;
+
+357 (
+RCC
+->
+CFGR
+ & (
+ušt32_t
+)
+RCC_CFGR_SWS
+è!ð(ušt32_t)
+RCC_CFGR_SWS_PLL
+)
+
+365 
+	}
+}
+
+	@src/system_stm32l1xx.c
+
+107 
+	~"¡m32l1xx.h
+"
+
+132 
+	#VECT_TAB_OFFSET
+ 0x0
+
+	)
+
+149 
+ušt32_t
+ 
+	gSy¡emCÜeClock
+ = 32000000;
+
+150 
+__I
+ 
+ušt8_t
+ 
+	gPLLMulTabË
+[9] = {3, 4, 6, 8, 12, 16, 24, 32, 48};
+
+151 
+__I
+ 
+ušt8_t
+ 
+	gAHBP»scTabË
+[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+
+161 
+S‘SysClock
+();
+
+162 #ifdeà
+DATA_IN_ExtSRAM
+
+
+163 
+Sy¡emIn™_ExtMemCŽ
+();
+
+181 
+	$Sy¡emIn™
+ ()
+
+184 
+RCC
+->
+CR
+ |ð(
+ušt32_t
+)0x00000100;
+
+187 
+RCC
+->
+CFGR
+ &ð(
+ušt32_t
+)0x88FFC00C;
+
+190 
+RCC
+->
+CR
+ &ð(
+ušt32_t
+)0xEEFEFFFE;
+
+193 
+RCC
+->
+CR
+ &ð(
+ušt32_t
+)0xFFFBFFFF;
+
+196 
+RCC
+->
+CFGR
+ &ð(
+ušt32_t
+)0xFF02FFFF;
+
+199 
+RCC
+->
+CIR
+ = 0x00000000;
+
+201 #ifdeà
+DATA_IN_ExtSRAM
+
+
+202 
+	`Sy¡emIn™_ExtMemCŽ
+();
+
+206 
+	`S‘SysClock
+();
+
+208 #ifdeà
+VECT_TAB_SRAM
+
+
+209 
+SCB
+->
+VTOR
+ = 
+SRAM_BASE
+ | 
+VECT_TAB_OFFSET
+;
+
+211 
+SCB
+->
+VTOR
+ = 
+FLASH_BASE
+ | 
+VECT_TAB_OFFSET
+;
+
+213 
+	}
+}
+
+253 
+	$Sy¡emCÜeClockUpd©e
+ ()
+
+255 
+ušt32_t
+ 
+tmp
+ = 0, 
+¶lmul
+ = 0, 
+¶ldiv
+ = 0, 
+¶lsourû
+ = 0, 
+msœªge
+ = 0;
+
+258 
+tmp
+ = 
+RCC
+->
+CFGR
+ & 
+RCC_CFGR_SWS
+;
+
+260 
+tmp
+)
+
+263 
+msœªge
+ = (
+RCC
+->
+ICSCR
+ & 
+RCC_ICSCR_MSIRANGE
+) >> 13;
+
+264 
+Sy¡emCÜeClock
+ = (32768 * (1 << (
+msœªge
+ + 1)));
+
+267 
+Sy¡emCÜeClock
+ = 
+HSI_VALUE
+;
+
+270 
+Sy¡emCÜeClock
+ = 
+HSE_VALUE
+;
+
+274 
+¶lmul
+ = 
+RCC
+->
+CFGR
+ & 
+RCC_CFGR_PLLMUL
+;
+
+275 
+¶ldiv
+ = 
+RCC
+->
+CFGR
+ & 
+RCC_CFGR_PLLDIV
+;
+
+276 
+¶lmul
+ = 
+PLLMulTabË
+[(pllmul >> 18)];
+
+277 
+¶ldiv
+ = (plldiv >> 22) + 1;
+
+279 
+¶lsourû
+ = 
+RCC
+->
+CFGR
+ & 
+RCC_CFGR_PLLSRC
+;
+
+281 ià(
+¶lsourû
+ == 0x00)
+
+284 
+Sy¡emCÜeClock
+ = (((
+HSI_VALUE
+è* 
+¶lmul
+è/ 
+¶ldiv
+);
+
+289 
+Sy¡emCÜeClock
+ = (((
+HSE_VALUE
+è* 
+¶lmul
+è/ 
+¶ldiv
+);
+
+293 
+msœªge
+ = (
+RCC
+->
+ICSCR
+ & 
+RCC_ICSCR_MSIRANGE
+) >> 13;
+
+294 
+Sy¡emCÜeClock
+ = (32768 * (1 << (
+msœªge
+ + 1)));
+
+299 
+tmp
+ = 
+AHBP»scTabË
+[((
+RCC
+->
+CFGR
+ & 
+RCC_CFGR_HPRE
+) >> 4)];
+
+301 
+Sy¡emCÜeClock
+ >>ð
+tmp
+;
+
+302 
+	}
+}
+
+312 
+	$S‘SysClock
+()
+
+314 
+__IO
+ 
+ušt32_t
+ 
+S¹UpCouÁ”
+ = 0, 
+HSEStus
+ = 0;
+
+318 
+RCC
+->
+CR
+ |ð((
+ušt32_t
+)
+RCC_CR_HSEON
+);
+
+323 
+HSEStus
+ = 
+RCC
+->
+CR
+ & 
+RCC_CR_HSERDY
+;
+
+324 
+S¹UpCouÁ”
+++;
+
+325 } (
+HSEStus
+ =ð0è&& (
+S¹UpCouÁ”
+ !ð
+HSE_STARTUP_TIMEOUT
+));
+
+327 ià((
+RCC
+->
+CR
+ & 
+RCC_CR_HSERDY
+è!ð
+RESET
+)
+
+329 
+HSEStus
+ = (
+ušt32_t
+)0x01;
+
+333 
+HSEStus
+ = (
+ušt32_t
+)0x00;
+
+336 ià(
+HSEStus
+ =ð(
+ušt32_t
+)0x01)
+
+339 
+FLASH
+->
+ACR
+ |ð
+FLASH_ACR_ACC64
+;
+
+342 
+FLASH
+->
+ACR
+ |ð
+FLASH_ACR_PRFTEN
+;
+
+345 
+FLASH
+->
+ACR
+ |ð
+FLASH_ACR_LATENCY
+;
+
+348 
+RCC
+->
+APB1ENR
+ |ð
+RCC_APB1ENR_PWREN
+;
+
+351 
+PWR
+->
+CR
+ = 
+PWR_CR_VOS_0
+;
+
+354 (
+PWR
+->
+CSR
+ & 
+PWR_CSR_VOSF
+è!ð
+RESET
+)
+
+359 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)
+RCC_CFGR_HPRE_DIV1
+;
+
+362 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)
+RCC_CFGR_PPRE2_DIV1
+;
+
+365 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)
+RCC_CFGR_PPRE1_DIV1
+;
+
+368 
+RCC
+->
+CFGR
+ &ð(
+ušt32_t
+)((ušt32_t)~(
+RCC_CFGR_PLLSRC
+ | 
+RCC_CFGR_PLLMUL
+ |
+
+369 
+RCC_CFGR_PLLDIV
+));
+
+370 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)(
+RCC_CFGR_PLLSRC_HSE
+ | 
+RCC_CFGR_PLLMUL12
+ | 
+RCC_CFGR_PLLDIV3
+);
+
+373 
+RCC
+->
+CR
+ |ð
+RCC_CR_PLLON
+;
+
+376 (
+RCC
+->
+CR
+ & 
+RCC_CR_PLLRDY
+) == 0)
+
+381 
+RCC
+->
+CFGR
+ &ð(
+ušt32_t
+)((ušt32_t)~(
+RCC_CFGR_SW
+));
+
+382 
+RCC
+->
+CFGR
+ |ð(
+ušt32_t
+)
+RCC_CFGR_SW_PLL
+;
+
+385 (
+RCC
+->
+CFGR
+ & (
+ušt32_t
+)
+RCC_CFGR_SWS
+è!ð(ušt32_t)
+RCC_CFGR_SWS_PLL
+)
+
+394 
+	}
+}
+
+396 #ifdeà
+DATA_IN_ExtSRAM
+
+
+405 
+	$Sy¡emIn™_ExtMemCŽ
+()
+
+428 
+RCC
+->
+AHBENR
+ = 0x000080D8;
+
+431 
+GPIOD
+->
+AFR
+[0] = 0x00CC00CC;
+
+432 
+GPIOD
+->
+AFR
+[1] = 0xCCCCCCCC;
+
+434 
+GPIOD
+->
+MODER
+ = 0xAAAA0A0A;
+
+436 
+GPIOD
+->
+OSPEEDR
+ = 0xFFFF0F0F;
+
+438 
+GPIOD
+->
+OTYPER
+ = 0x00000000;
+
+440 
+GPIOD
+->
+PUPDR
+ = 0x00000000;
+
+443 
+GPIOE
+->
+AFR
+[0] = 0xC00000CC;
+
+444 
+GPIOE
+->
+AFR
+[1] = 0xCCCCCCCC;
+
+446 
+GPIOE
+->
+MODER
+ = 0xAAAA800A;
+
+448 
+GPIOE
+->
+OSPEEDR
+ = 0xFFFFC00F;
+
+450 
+GPIOE
+->
+OTYPER
+ = 0x00000000;
+
+452 
+GPIOE
+->
+PUPDR
+ = 0x00000000;
+
+455 
+GPIOF
+->
+AFR
+[0] = 0x00CCCCCC;
+
+456 
+GPIOF
+->
+AFR
+[1] = 0xCCCC0000;
+
+458 
+GPIOF
+->
+MODER
+ = 0xAA000AAA;
+
+460 
+GPIOF
+->
+OSPEEDR
+ = 0xFF000FFF;
+
+462 
+GPIOF
+->
+OTYPER
+ = 0x00000000;
+
+464 
+GPIOF
+->
+PUPDR
+ = 0x00000000;
+
+467 
+GPIOG
+->
+AFR
+[0] = 0x00CCCCCC;
+
+468 
+GPIOG
+->
+AFR
+[1] = 0x00000C00;
+
+470 
+GPIOG
+->
+MODER
+ = 0x00200AAA;
+
+472 
+GPIOG
+->
+OSPEEDR
+ = 0x00300FFF;
+
+474 
+GPIOG
+->
+OTYPER
+ = 0x00000000;
+
+476 
+GPIOG
+->
+PUPDR
+ = 0x00000000;
+
+480 
+RCC
+->
+AHBENR
+ = 0x400080D8;
+
+483 
+FSMC_Bªk1
+->
+BTCR
+[4] = 0x00001011;
+
+484 
+FSMC_Bªk1
+->
+BTCR
+[5] = 0x00000300;
+
+485 
+FSMC_Bªk1E
+->
+BWTR
+[4] = 0x0FFFFFFF;
+
+518 
+	}
+}
+
+	@src/usb_desc.c
+
+30 
+	~"usb_lib.h
+"
+
+31 
+	~"usb_desc.h
+"
+
+42 cÚ¡ 
+ušt8_t
+ 
+	gCu¡omHID_DeviûDesütÜ
+[
+CUSTOMHID_SIZ_DEVICE_DESC
+] =
+
+45 
+USB_DEVICE_DESCRIPTOR_TYPE
+,
+
+71 cÚ¡ 
+ušt8_t
+ 
+	gCu¡omHID_CÚfigDesütÜ
+[
+CUSTOMHID_SIZ_CONFIG_DESC
+] =
+
+74 
+USB_CONFIGURATION_DESCRIPTOR_TYPE
+,
+
+75 
+CUSTOMHID_SIZ_CONFIG_DESC
+,
+
+88 
+USB_INTERFACE_DESCRIPTOR_TYPE
+,
+
+99 
+HID_DESCRIPTOR_TYPE
+,
+
+105 
+CUSTOMHID_SIZ_REPORT_DESC
+,
+
+110 
+USB_ENDPOINT_DESCRIPTOR_TYPE
+,
+
+120 
+USB_ENDPOINT_DESCRIPTOR_TYPE
+,
+
+131 cÚ¡ 
+ušt8_t
+ 
+	gCu¡omHID_R•ÜtDesütÜ
+[
+CUSTOMHID_SIZ_REPORT_DESC
+] =
+
+250 cÚ¡ 
+ušt8_t
+ 
+	gCu¡omHID_SŒšgLªgID
+[
+CUSTOMHID_SIZ_STRING_LANGID
+] =
+
+252 
+CUSTOMHID_SIZ_STRING_LANGID
+,
+
+253 
+USB_STRING_DESCRIPTOR_TYPE
+,
+
+259 cÚ¡ 
+ušt8_t
+ 
+	gCu¡omHID_SŒšgV’dÜ
+[
+CUSTOMHID_SIZ_STRING_VENDOR
+] =
+
+261 
+CUSTOMHID_SIZ_STRING_VENDOR
+,
+
+262 
+USB_STRING_DESCRIPTOR_TYPE
+,
+
+269 cÚ¡ 
+ušt8_t
+ 
+	gCu¡omHID_SŒšgProduù
+[
+CUSTOMHID_SIZ_STRING_PRODUCT
+] =
+
+271 
+CUSTOMHID_SIZ_STRING_PRODUCT
+,
+
+272 
+USB_STRING_DESCRIPTOR_TYPE
+,
+
+277 
+ušt8_t
+ 
+	gCu¡omHID_SŒšgS”Ÿl
+[
+CUSTOMHID_SIZ_STRING_SERIAL
+] =
+
+279 
+CUSTOMHID_SIZ_STRING_SERIAL
+,
+
+280 
+USB_STRING_DESCRIPTOR_TYPE
+,
+
+	@src/usb_endp.c
+
+31 
+	~"hw_cÚfig.h
+"
+
+32 
+	~"usb_lib.h
+"
+
+33 
+	~"usb_i¡r.h
+"
+
+39 
+ušt8_t
+ 
+	gReûive_Bufãr
+[2];
+
+40 
+__IO
+ 
+ušt8_t
+ 
+P»vXãrCom¶‘e
+;
+
+50 
+	$EP1_OUT_C®lback
+()
+
+52 
+B™AùiÚ
+ 
+Led_S‹
+;
+
+55 
+	`USB_SIL_R—d
+(
+EP1_OUT
+, 
+Reûive_Bufãr
+);
+
+57 ià(
+Reûive_Bufãr
+[1] == 0)
+
+59 
+Led_S‹
+ = 
+B™_RESET
+;
+
+63 
+Led_S‹
+ = 
+B™_SET
+;
+
+67 
+Reûive_Bufãr
+[0])
+
+70 ià(
+Led_S‹
+ !ð
+B™_RESET
+)
+
+72 
+	`STM_EVAL_LEDOn
+(
+LED1
+);
+
+76 
+	`STM_EVAL_LEDOff
+(
+LED1
+);
+
+80 ià(
+Led_S‹
+ !ð
+B™_RESET
+)
+
+82 
+	`STM_EVAL_LEDOn
+(
+LED2
+);
+
+86 
+	`STM_EVAL_LEDOff
+(
+LED2
+);
+
+90 ià(
+Led_S‹
+ !ð
+B™_RESET
+)
+
+92 
+	`STM_EVAL_LEDOn
+(
+LED3
+);
+
+96 
+	`STM_EVAL_LEDOff
+(
+LED3
+);
+
+100 ià(
+Led_S‹
+ !ð
+B™_RESET
+)
+
+102 
+	`STM_EVAL_LEDOn
+(
+LED4
+);
+
+106 
+	`STM_EVAL_LEDOff
+(
+LED4
+);
+
+110 
+	`STM_EVAL_LEDOff
+(
+LED1
+);
+
+111 
+	`STM_EVAL_LEDOff
+(
+LED2
+);
+
+112 
+	`STM_EVAL_LEDOff
+(
+LED3
+);
+
+113 
+	`STM_EVAL_LEDOff
+(
+LED4
+);
+
+117 
+	`S‘EPRxStus
+(
+ENDP1
+, 
+EP_RX_VALID
+);
+
+119 
+	}
+}
+
+128 
+	$EP1_IN_C®lback
+()
+
+130 
+P»vXãrCom¶‘e
+ = 1;
+
+131 
+	}
+}
+
+	@src/usb_istr.c
+
+30 
+	~"usb_lib.h
+"
+
+31 
+	~"usb_´Ý.h
+"
+
+32 
+	~"usb_pwr.h
+"
+
+33 
+	~"usb_i¡r.h
+"
+
+39 
+__IO
+ 
+ušt16_t
+ 
+	gwI¡r
+;
+
+40 
+__IO
+ 
+ušt8_t
+ 
+	gbIÁPackSOF
+ = 0;
+
+41 
+__IO
+ 
+ušt32_t
+ 
+	gesof_couÁ”
+ =0;
+
+42 
+__IO
+ 
+ušt32_t
+ 
+	gwCNTR
+=0;
+
+48 (*
+pEpIÁ_IN
+[7])() =
+
+50 
+EP1_IN_C®lback
+,
+
+51 
+EP2_IN_C®lback
+,
+
+52 
+EP3_IN_C®lback
+,
+
+53 
+EP4_IN_C®lback
+,
+
+54 
+EP5_IN_C®lback
+,
+
+55 
+EP6_IN_C®lback
+,
+
+56 
+EP7_IN_C®lback
+,
+
+57 
+	}
+};
+
+59 (*
+pEpIÁ_OUT
+[7])() =
+
+61 
+EP1_OUT_C®lback
+,
+
+62 
+EP2_OUT_C®lback
+,
+
+63 
+EP3_OUT_C®lback
+,
+
+64 
+EP4_OUT_C®lback
+,
+
+65 
+EP5_OUT_C®lback
+,
+
+66 
+EP6_OUT_C®lback
+,
+
+67 
+EP7_OUT_C®lback
+,
+
+68 
+	}
+};
+
+77 
+	$USB_I¡r
+()
+
+79 
+ušt32_t
+ 
+i
+=0;
+
+80 
+__IO
+ 
+ušt32_t
+ 
+EP
+[8];
+
+82 
+wI¡r
+ = 
+	`_G‘ISTR
+();
+
+84 #ià(
+IMR_MSK
+ & 
+ISTR_CTR
+)
+
+85 ià(
+wI¡r
+ & 
+ISTR_CTR
+ & 
+wIÁ”ru±_Mask
+)
+
+89 
+	`CTR_LP
+();
+
+90 #ifdeà
+CTR_CALLBACK
+
+
+91 
+	`CTR_C®lback
+();
+
+96 #ià(
+IMR_MSK
+ & 
+ISTR_RESET
+)
+
+97 ià(
+wI¡r
+ & 
+ISTR_RESET
+ & 
+wIÁ”ru±_Mask
+)
+
+99 
+	`_S‘ISTR
+((
+ušt16_t
+)
+CLR_RESET
+);
+
+100 
+Deviû_PrÝ”ty
+.
+	`Re£t
+();
+
+101 #ifdeà
+RESET_CALLBACK
+
+
+102 
+	`RESET_C®lback
+();
+
+107 #ià(
+IMR_MSK
+ & 
+ISTR_DOVR
+)
+
+108 ià(
+wI¡r
+ & 
+ISTR_DOVR
+ & 
+wIÁ”ru±_Mask
+)
+
+110 
+	`_S‘ISTR
+((
+ušt16_t
+)
+CLR_DOVR
+);
+
+111 #ifdeà
+DOVR_CALLBACK
+
+
+112 
+	`DOVR_C®lback
+();
+
+117 #ià(
+IMR_MSK
+ & 
+ISTR_ERR
+)
+
+118 ià(
+wI¡r
+ & 
+ISTR_ERR
+ & 
+wIÁ”ru±_Mask
+)
+
+120 
+	`_S‘ISTR
+((
+ušt16_t
+)
+CLR_ERR
+);
+
+121 #ifdeà
+ERR_CALLBACK
+
+
+122 
+	`ERR_C®lback
+();
+
+127 #ià(
+IMR_MSK
+ & 
+ISTR_WKUP
+)
+
+128 ià(
+wI¡r
+ & 
+ISTR_WKUP
+ & 
+wIÁ”ru±_Mask
+)
+
+130 
+	`_S‘ISTR
+((
+ušt16_t
+)
+CLR_WKUP
+);
+
+131 
+	`Resume
+(
+RESUME_EXTERNAL
+);
+
+132 #ifdeà
+WKUP_CALLBACK
+
+
+133 
+	`WKUP_C®lback
+();
+
+138 #ià(
+IMR_MSK
+ & 
+ISTR_SUSP
+)
+
+139 ià(
+wI¡r
+ & 
+ISTR_SUSP
+ & 
+wIÁ”ru±_Mask
+)
+
+143 ià(
+fSu¥’dEÇbËd
+)
+
+145 
+	`Su¥’d
+();
+
+150 
+	`Resume
+(
+RESUME_LATER
+);
+
+153 
+	`_S‘ISTR
+((
+ušt16_t
+)
+CLR_SUSP
+);
+
+154 #ifdeà
+SUSP_CALLBACK
+
+
+155 
+	`SUSP_C®lback
+();
+
+160 #ià(
+IMR_MSK
+ & 
+ISTR_SOF
+)
+
+161 ià(
+wI¡r
+ & 
+ISTR_SOF
+ & 
+wIÁ”ru±_Mask
+)
+
+163 
+	`_S‘ISTR
+((
+ušt16_t
+)
+CLR_SOF
+);
+
+164 
+bIÁPackSOF
+++;
+
+166 #ifdeà
+SOF_CALLBACK
+
+
+167 
+	`SOF_C®lback
+();
+
+172 #ià(
+IMR_MSK
+ & 
+ISTR_ESOF
+)
+
+173 ià(
+wI¡r
+ & 
+ISTR_ESOF
+ & 
+wIÁ”ru±_Mask
+)
+
+176 
+	`_S‘ISTR
+((
+ušt16_t
+)
+CLR_ESOF
+);
+
+178 ià((
+	`_G‘FNR
+()&
+FNR_RXDP
+)!=0)
+
+181 
+esof_couÁ”
+ ++;
+
+184 ià((
+esof_couÁ”
+ >3)&&((
+	`_G‘CNTR
+()&
+CNTR_FSUSP
+)==0))
+
+189 
+wCNTR
+ = 
+	`_G‘CNTR
+();
+
+192 
+i
+=0;i<8;i++è
+EP
+[i] = 
+	`_G‘ENDPOINT
+(i);
+
+195 
+wCNTR
+|=
+CNTR_FRES
+;
+
+196 
+	`_S‘CNTR
+(
+wCNTR
+);
+
+199 
+wCNTR
+&=~
+CNTR_FRES
+;
+
+200 
+	`_S‘CNTR
+(
+wCNTR
+);
+
+203 (
+	`_G‘ISTR
+()&
+ISTR_RESET
+) == 0);
+
+206 
+	`_S‘ISTR
+((
+ušt16_t
+)
+CLR_RESET
+);
+
+209 
+i
+=0;i<8;i++)
+
+210 
+	`_S‘ENDPOINT
+(
+i
+, 
+EP
+[i]);
+
+212 
+esof_couÁ”
+ = 0;
+
+217 
+esof_couÁ”
+ = 0;
+
+221 
+	`Resume
+(
+RESUME_ESOF
+);
+
+223 #ifdeà
+ESOF_CALLBACK
+
+
+224 
+	`ESOF_C®lback
+();
+
+228 
+	}
+}
+
+	@src/usb_prop.c
+
+31 
+	~"hw_cÚfig.h
+"
+
+32 
+	~"usb_lib.h
+"
+
+33 
+	~"usb_cÚf.h
+"
+
+34 
+	~"usb_´Ý.h
+"
+
+35 
+	~"usb_desc.h
+"
+
+36 
+	~"usb_pwr.h
+"
+
+43 
+ušt32_t
+ 
+	gPrÙocÞV®ue
+;
+
+44 
+__IO
+ 
+ušt8_t
+ 
+	gEXTI_EÇbË
+;
+
+45 
+__IO
+ 
+ušt8_t
+ 
+	gReque¡
+ = 0;
+
+46 
+ušt8_t
+ 
+	gR•Üt_Buf
+[2];
+
+51 
+DEVICE
+ 
+	gDeviû_TabË
+ =
+
+53 
+EP_NUM
+,
+
+57 
+DEVICE_PROP
+ 
+	gDeviû_PrÝ”ty
+ =
+
+59 
+Cu¡omHID_š™
+,
+
+60 
+Cu¡omHID_Re£t
+,
+
+61 
+Cu¡omHID_Stus_In
+,
+
+62 
+Cu¡omHID_Stus_Out
+,
+
+63 
+Cu¡omHID_D©a_S‘up
+,
+
+64 
+Cu¡omHID_NoD©a_S‘up
+,
+
+65 
+Cu¡omHID_G‘_IÁ”çû_S‘tšg
+,
+
+66 
+Cu¡omHID_G‘DeviûDesütÜ
+,
+
+67 
+Cu¡omHID_G‘CÚfigDesütÜ
+,
+
+68 
+Cu¡omHID_G‘SŒšgDesütÜ
+,
+
+72 
+USER_STANDARD_REQUESTS
+ 
+	gU£r_Snd¬d_Reque¡s
+ =
+
+74 
+Cu¡omHID_G‘CÚfigu¿tiÚ
+,
+
+75 
+Cu¡omHID_S‘CÚfigu¿tiÚ
+,
+
+76 
+Cu¡omHID_G‘IÁ”çû
+,
+
+77 
+Cu¡omHID_S‘IÁ”çû
+,
+
+78 
+Cu¡omHID_G‘Stus
+,
+
+79 
+Cu¡omHID_CË¬F—tu»
+,
+
+80 
+Cu¡omHID_S‘EndPoštF—tu»
+,
+
+81 
+Cu¡omHID_S‘DeviûF—tu»
+,
+
+82 
+Cu¡omHID_S‘DeviûAdd»ss
+
+
+85 
+ONE_DESCRIPTOR
+ 
+	gDeviû_DesütÜ
+ =
+
+87 (
+ušt8_t
+*)
+Cu¡omHID_DeviûDesütÜ
+,
+
+88 
+CUSTOMHID_SIZ_DEVICE_DESC
+
+
+91 
+ONE_DESCRIPTOR
+ 
+	gCÚfig_DesütÜ
+ =
+
+93 (
+ušt8_t
+*)
+Cu¡omHID_CÚfigDesütÜ
+,
+
+94 
+CUSTOMHID_SIZ_CONFIG_DESC
+
+
+97 
+ONE_DESCRIPTOR
+ 
+	gCu¡omHID_R•Üt_DesütÜ
+ =
+
+99 (
+ušt8_t
+ *)
+Cu¡omHID_R•ÜtDesütÜ
+,
+
+100 
+CUSTOMHID_SIZ_REPORT_DESC
+
+
+103 
+ONE_DESCRIPTOR
+ 
+	gCu¡omHID_Hid_DesütÜ
+ =
+
+105 (
+ušt8_t
+*)
+Cu¡omHID_CÚfigDesütÜ
+ + 
+CUSTOMHID_OFF_HID_DESC
+,
+
+106 
+CUSTOMHID_SIZ_HID_DESC
+
+
+109 
+ONE_DESCRIPTOR
+ 
+	gSŒšg_DesütÜ
+[4] =
+
+111 {(
+ušt8_t
+*)
+Cu¡omHID_SŒšgLªgID
+, 
+CUSTOMHID_SIZ_STRING_LANGID
+},
+
+112 {(
+ušt8_t
+*)
+Cu¡omHID_SŒšgV’dÜ
+, 
+CUSTOMHID_SIZ_STRING_VENDOR
+},
+
+113 {(
+ušt8_t
+*)
+Cu¡omHID_SŒšgProduù
+, 
+CUSTOMHID_SIZ_STRING_PRODUCT
+},
+
+114 {(
+ušt8_t
+*)
+Cu¡omHID_SŒšgS”Ÿl
+, 
+CUSTOMHID_SIZ_STRING_SERIAL
+}
+
+121 
+ušt8_t
+ *
+Cu¡omHID_S‘R•Üt_F—tu»
+(
+ušt16_t
+ 
+L’gth
+);
+
+133 
+	$Cu¡omHID_š™
+()
+
+137 
+	`G‘_S”ŸlNum
+();
+
+139 
+pInfÜm©iÚ
+->
+Cu¼’t_CÚfigu¿tiÚ
+ = 0;
+
+141 
+	`Pow”On
+();
+
+144 
+	`USB_SIL_In™
+();
+
+146 
+bDeviûS‹
+ = 
+UNCONNECTED
+;
+
+147 
+	}
+}
+
+156 
+	$Cu¡omHID_Re£t
+()
+
+159 
+pInfÜm©iÚ
+->
+Cu¼’t_CÚfigu¿tiÚ
+ = 0;
+
+160 
+pInfÜm©iÚ
+->
+Cu¼’t_IÁ”çû
+ = 0;
+
+163 
+pInfÜm©iÚ
+->
+Cu¼’t_F—tu»
+ = 
+Cu¡omHID_CÚfigDesütÜ
+[7];
+
+165 
+	`S‘BTABLE
+(
+BTABLE_ADDRESS
+);
+
+168 
+	`S‘EPTy³
+(
+ENDP0
+, 
+EP_CONTROL
+);
+
+169 
+	`S‘EPTxStus
+(
+ENDP0
+, 
+EP_TX_STALL
+);
+
+170 
+	`S‘EPRxAddr
+(
+ENDP0
+, 
+ENDP0_RXADDR
+);
+
+171 
+	`S‘EPTxAddr
+(
+ENDP0
+, 
+ENDP0_TXADDR
+);
+
+172 
+	`CË¬_Stus_Out
+(
+ENDP0
+);
+
+173 
+	`S‘EPRxCouÁ
+(
+ENDP0
+, 
+Deviû_PrÝ”ty
+.
+MaxPack‘Size
+);
+
+174 
+	`S‘EPRxV®id
+(
+ENDP0
+);
+
+177 
+	`S‘EPTy³
+(
+ENDP1
+, 
+EP_INTERRUPT
+);
+
+178 
+	`S‘EPTxAddr
+(
+ENDP1
+, 
+ENDP1_TXADDR
+);
+
+179 
+	`S‘EPRxAddr
+(
+ENDP1
+, 
+ENDP1_RXADDR
+);
+
+180 
+	`S‘EPTxCouÁ
+(
+ENDP1
+, 2);
+
+181 
+	`S‘EPRxCouÁ
+(
+ENDP1
+, 2);
+
+182 
+	`S‘EPRxStus
+(
+ENDP1
+, 
+EP_RX_VALID
+);
+
+183 
+	`S‘EPTxStus
+(
+ENDP1
+, 
+EP_TX_NAK
+);
+
+186 
+	`S‘DeviûAdd»ss
+(0);
+
+187 
+bDeviûS‹
+ = 
+ATTACHED
+;
+
+188 
+	}
+}
+
+197 
+	$Cu¡omHID_S‘CÚfigu¿tiÚ
+()
+
+199 ià(
+pInfÜm©iÚ
+->
+Cu¼’t_CÚfigu¿tiÚ
+ != 0)
+
+202 
+bDeviûS‹
+ = 
+CONFIGURED
+;
+
+205 #ià
+	`defšed
+(
+STM32L1XX_MD
+è|| defšed(
+STM32L1XX_HD
+)|| defšed(
+STM32L1XX_MD_PLUS
+)|| defšed(
+STM32F37X
+)
+
+206 
+	`ADC_Soáw¬eS¹CÚv
+(
+ADC1
+);
+
+207 #–ià
+	`defšed
+ (
+STM32F30X
+)
+
+208 
+	`ADC_S¹CÚv”siÚ
+(
+ADC1
+);
+
+210 
+	`ADC_Soáw¬eS¹CÚvCmd
+(
+ADC1
+, 
+ENABLE
+);
+
+213 
+	}
+}
+
+221 
+	$Cu¡omHID_S‘DeviûAdd»ss
+ ()
+
+223 
+bDeviûS‹
+ = 
+ADDRESSED
+;
+
+224 
+	}
+}
+
+232 
+	$Cu¡omHID_Stus_In
+()
+
+234 
+B™AùiÚ
+ 
+Led_S‹
+;
+
+236 ià(
+R•Üt_Buf
+[1] == 0)
+
+238 
+Led_S‹
+ = 
+B™_RESET
+;
+
+242 
+Led_S‹
+ = 
+B™_SET
+;
+
+245 
+R•Üt_Buf
+[0])
+
+250 ià(
+Led_S‹
+ !ð
+B™_RESET
+)
+
+252 
+	`STM_EVAL_LEDOn
+(
+LED1
+);
+
+256 
+	`STM_EVAL_LEDOff
+(
+LED1
+);
+
+260 ià(
+Led_S‹
+ !ð
+B™_RESET
+)
+
+262 
+	`STM_EVAL_LEDOn
+(
+LED2
+);
+
+266 
+	`STM_EVAL_LEDOff
+(
+LED2
+);
+
+270 ià(
+Led_S‹
+ !ð
+B™_RESET
+)
+
+272 
+	`STM_EVAL_LEDOn
+(
+LED3
+);
+
+276 
+	`STM_EVAL_LEDOff
+(
+LED3
+);
+
+280 ià(
+Led_S‹
+ !ð
+B™_RESET
+)
+
+282 
+	`STM_EVAL_LEDOn
+(
+LED4
+);
+
+286 
+	`STM_EVAL_LEDOff
+(
+LED4
+);
+
+290 
+	`STM_EVAL_LEDOff
+(
+LED1
+);
+
+291 
+	`STM_EVAL_LEDOff
+(
+LED2
+);
+
+292 
+	`STM_EVAL_LEDOff
+(
+LED3
+);
+
+293 
+	`STM_EVAL_LEDOff
+(
+LED4
+);
+
+296 
+	}
+}
+
+305 
+	$Cu¡omHID_Stus_Out
+ ()
+
+307 
+	}
+}
+
+316 
+RESULT
+ 
+	$Cu¡omHID_D©a_S‘up
+(
+ušt8_t
+ 
+Reque¡No
+)
+
+318 
+ušt8_t
+ *(*
+CÝyRoutše
+)(
+ušt16_t
+);
+
+320 ià(
+pInfÜm©iÚ
+->
+USBwIndex
+ != 0)
+
+321  
+USB_UNSUPPORT
+;
+
+323 
+CÝyRoutše
+ = 
+NULL
+;
+
+325 ià((
+Reque¡No
+ =ð
+GET_DESCRIPTOR
+)
+
+326 && (
+Ty³_Rec›Á
+ =ð(
+STANDARD_REQUEST
+ | 
+INTERFACE_RECIPIENT
+))
+
+330 ià(
+pInfÜm©iÚ
+->
+USBwV®ue1
+ =ð
+REPORT_DESCRIPTOR
+)
+
+332 
+CÝyRoutše
+ = 
+Cu¡omHID_G‘R•ÜtDesütÜ
+;
+
+334 ià(
+pInfÜm©iÚ
+->
+USBwV®ue1
+ =ð
+HID_DESCRIPTOR_TYPE
+)
+
+336 
+CÝyRoutše
+ = 
+Cu¡omHID_G‘HIDDesütÜ
+;
+
+342 iàÐ(
+Ty³_Rec›Á
+ =ð(
+CLASS_REQUEST
+ | 
+INTERFACE_RECIPIENT
+)) )
+
+344  
+Reque¡No
+ )
+
+346 
+GET_PROTOCOL
+:
+
+347 
+CÝyRoutše
+ = 
+Cu¡omHID_G‘PrÙocÞV®ue
+;
+
+349 
+SET_REPORT
+:
+
+350 
+CÝyRoutše
+ = 
+Cu¡omHID_S‘R•Üt_F—tu»
+;
+
+351 
+Reque¡
+ = 
+SET_REPORT
+;
+
+358 ià(
+CÝyRoutše
+ =ð
+NULL
+)
+
+360  
+USB_UNSUPPORT
+;
+
+363 
+pInfÜm©iÚ
+->
+CŒl_Info
+.
+CÝyD©a
+ = 
+CÝyRoutše
+;
+
+364 
+pInfÜm©iÚ
+->
+CŒl_Info
+.
+Usb_wOff£t
+ = 0;
+
+365 (*
+CÝyRoutše
+)(0);
+
+366  
+USB_SUCCESS
+;
+
+367 
+	}
+}
+
+376 
+ušt8_t
+ *
+	$Cu¡omHID_S‘R•Üt_F—tu»
+(
+ušt16_t
+ 
+L’gth
+)
+
+378 ià(
+L’gth
+ == 0)
+
+380 
+pInfÜm©iÚ
+->
+CŒl_Info
+.
+Usb_wL’gth
+ = 2;
+
+381  
+NULL
+;
+
+385  
+R•Üt_Buf
+;
+
+387 
+	}
+}
+
+396 
+RESULT
+ 
+	$Cu¡omHID_NoD©a_S‘up
+(
+ušt8_t
+ 
+Reque¡No
+)
+
+398 ià((
+Ty³_Rec›Á
+ =ð(
+CLASS_REQUEST
+ | 
+INTERFACE_RECIPIENT
+))
+
+399 && (
+Reque¡No
+ =ð
+SET_PROTOCOL
+))
+
+401  
+	`Cu¡omHID_S‘PrÙocÞ
+();
+
+406  
+USB_UNSUPPORT
+;
+
+408 
+	}
+}
+
+417 
+ušt8_t
+ *
+	$Cu¡omHID_G‘DeviûDesütÜ
+(
+ušt16_t
+ 
+L’gth
+)
+
+419  
+	`Snd¬d_G‘DesütÜD©a
+(
+L’gth
+, &
+Deviû_DesütÜ
+);
+
+420 
+	}
+}
+
+429 
+ušt8_t
+ *
+	$Cu¡omHID_G‘CÚfigDesütÜ
+(
+ušt16_t
+ 
+L’gth
+)
+
+431  
+	`Snd¬d_G‘DesütÜD©a
+(
+L’gth
+, &
+CÚfig_DesütÜ
+);
+
+432 
+	}
+}
+
+441 
+ušt8_t
+ *
+	$Cu¡omHID_G‘SŒšgDesütÜ
+(
+ušt16_t
+ 
+L’gth
+)
+
+443 
+ušt8_t
+ 
+wV®ue0
+ = 
+pInfÜm©iÚ
+->
+USBwV®ue0
+;
+
+444 ià(
+wV®ue0
+ > 4)
+
+446  
+NULL
+;
+
+450  
+	`Snd¬d_G‘DesütÜD©a
+(
+L’gth
+, &
+SŒšg_DesütÜ
+[
+wV®ue0
+]);
+
+452 
+	}
+}
+
+461 
+ušt8_t
+ *
+	$Cu¡omHID_G‘R•ÜtDesütÜ
+(
+ušt16_t
+ 
+L’gth
+)
+
+463  
+	`Snd¬d_G‘DesütÜD©a
+(
+L’gth
+, &
+Cu¡omHID_R•Üt_DesütÜ
+);
+
+464 
+	}
+}
+
+473 
+ušt8_t
+ *
+	$Cu¡omHID_G‘HIDDesütÜ
+(
+ušt16_t
+ 
+L’gth
+)
+
+475  
+	`Snd¬d_G‘DesütÜD©a
+(
+L’gth
+, &
+Cu¡omHID_Hid_DesütÜ
+);
+
+476 
+	}
+}
+
+487 
+RESULT
+ 
+	$Cu¡omHID_G‘_IÁ”çû_S‘tšg
+(
+ušt8_t
+ 
+IÁ”çû
+, ušt8_ˆ
+AÉ”Ç‹S‘tšg
+)
+
+489 ià(
+AÉ”Ç‹S‘tšg
+ > 0)
+
+491  
+USB_UNSUPPORT
+;
+
+493 ià(
+IÁ”çû
+ > 0)
+
+495  
+USB_UNSUPPORT
+;
+
+497  
+USB_SUCCESS
+;
+
+498 
+	}
+}
+
+507 
+RESULT
+ 
+	$Cu¡omHID_S‘PrÙocÞ
+()
+
+509 
+ušt8_t
+ 
+wV®ue0
+ = 
+pInfÜm©iÚ
+->
+USBwV®ue0
+;
+
+510 
+PrÙocÞV®ue
+ = 
+wV®ue0
+;
+
+511  
+USB_SUCCESS
+;
+
+512 
+	}
+}
+
+521 
+ušt8_t
+ *
+	$Cu¡omHID_G‘PrÙocÞV®ue
+(
+ušt16_t
+ 
+L’gth
+)
+
+523 ià(
+L’gth
+ == 0)
+
+525 
+pInfÜm©iÚ
+->
+CŒl_Info
+.
+Usb_wL’gth
+ = 1;
+
+526  
+NULL
+;
+
+530  (
+ušt8_t
+ *)(&
+PrÙocÞV®ue
+);
+
+532 
+	}
+}
+
+	@src/usb_pwr.c
+
+30 
+	~"usb_lib.h
+"
+
+31 
+	~"usb_cÚf.h
+"
+
+32 
+	~"usb_pwr.h
+"
+
+33 
+	~"hw_cÚfig.h
+"
+
+39 
+__IO
+ 
+ušt32_t
+ 
+	gbDeviûS‹
+ = 
+UNCONNECTED
+;
+
+40 
+__IO
+ 
+boÞ
+ 
+	gfSu¥’dEÇbËd
+ = 
+TRUE
+;
+
+41 
+__IO
+ 
+ušt32_t
+ 
+	gEP
+[8];
+
+45 
+__IO
+ 
+RESUME_STATE
+ 
+	meS‹
+;
+
+46 
+__IO
+ 
+ušt8_t
+ 
+	mbESOFút
+;
+
+48 
+	gResumeS
+;
+
+50 
+__IO
+ 
+ušt32_t
+ 
+	g»mÙewakeupÚ
+=0;
+
+64 
+RESULT
+ 
+	$Pow”On
+()
+
+66 
+ušt16_t
+ 
+wRegV®
+;
+
+69 
+	`USB_CabË_CÚfig
+(
+ENABLE
+);
+
+72 
+wRegV®
+ = 
+CNTR_FRES
+;
+
+73 
+	`_S‘CNTR
+(
+wRegV®
+);
+
+76 
+wIÁ”ru±_Mask
+ = 0;
+
+77 
+	`_S‘CNTR
+(
+wIÁ”ru±_Mask
+);
+
+79 
+	`_S‘ISTR
+(0);
+
+81 
+wIÁ”ru±_Mask
+ = 
+CNTR_RESETM
+ | 
+CNTR_SUSPM
+ | 
+CNTR_WKUPM
+;
+
+82 
+	`_S‘CNTR
+(
+wIÁ”ru±_Mask
+);
+
+84  
+USB_SUCCESS
+;
+
+85 
+	}
+}
+
+94 
+RESULT
+ 
+	$Pow”Off
+()
+
+97 
+	`_S‘CNTR
+(
+CNTR_FRES
+);
+
+99 
+	`_S‘ISTR
+(0);
+
+101 
+	`USB_CabË_CÚfig
+(
+DISABLE
+);
+
+103 
+	`_S‘CNTR
+(
+CNTR_FRES
+ + 
+CNTR_PDWN
+);
+
+107  
+USB_SUCCESS
+;
+
+108 
+	}
+}
+
+117 
+	$Su¥’d
+()
+
+119 
+ušt32_t
+ 
+i
+ =0;
+
+120 
+ušt16_t
+ 
+wCNTR
+;
+
+121 
+ušt32_t
+ 
+tm´eg
+ = 0;
+
+122 
+__IO
+ 
+ušt32_t
+ 
+§vePWR_CR
+=0;
+
+127 
+wCNTR
+ = 
+	`_G‘CNTR
+();
+
+132 
+i
+=0;i<8;i++è
+EP
+[i] = 
+	`_G‘ENDPOINT
+(i);
+
+135 
+wCNTR
+|=
+CNTR_RESETM
+;
+
+136 
+	`_S‘CNTR
+(
+wCNTR
+);
+
+139 
+wCNTR
+|=
+CNTR_FRES
+;
+
+140 
+	`_S‘CNTR
+(
+wCNTR
+);
+
+143 
+wCNTR
+&=~
+CNTR_FRES
+;
+
+144 
+	`_S‘CNTR
+(
+wCNTR
+);
+
+147 (
+	`_G‘ISTR
+()&
+ISTR_RESET
+) == 0);
+
+150 
+	`_S‘ISTR
+((
+ušt16_t
+)
+CLR_RESET
+);
+
+153 
+i
+=0;i<8;i++)
+
+154 
+	`_S‘ENDPOINT
+(
+i
+, 
+EP
+[i]);
+
+157 
+wCNTR
+ |ð
+CNTR_FSUSP
+;
+
+158 
+	`_S‘CNTR
+(
+wCNTR
+);
+
+161 
+wCNTR
+ = 
+	`_G‘CNTR
+();
+
+162 
+wCNTR
+ |ð
+CNTR_LPMODE
+;
+
+163 
+	`_S‘CNTR
+(
+wCNTR
+);
+
+167 
+§vePWR_CR
+ = 
+PWR
+->
+CR
+;
+
+168 
+tm´eg
+ = 
+PWR
+->
+CR
+;
+
+170 
+tm´eg
+ &ð((
+ušt32_t
+)0xFFFFFFFC);
+
+172 
+tm´eg
+ |ð
+PWR_ReguÏtÜ_LowPow”
+;
+
+174 
+PWR
+->
+CR
+ = 
+tm´eg
+;
+
+176 #ià
+	`defšed
+ (
+STM32F30X
+è|| defšed (
+STM32F37X
+)
+
+177 
+SCB
+->
+SCR
+ |ð
+SCB_SCR_SLEEPDEEP_Msk
+;
+
+179 
+SCB
+->
+SCR
+ |ð
+SCB_SCR_SLEEPDEEP
+;
+
+183 if((
+	`_G‘ISTR
+()&
+ISTR_WKUP
+)==0)
+
+185 
+	`__WFI
+();
+
+187 #ià
+	`defšed
+ (
+STM32F30X
+è|| defšed (
+STM32F37X
+)
+
+188 
+SCB
+->
+SCR
+ &ð(
+ušt32_t
+)~((ušt32_t)
+SCB_SCR_SLEEPDEEP_Msk
+);
+
+190 
+SCB
+->
+SCR
+ &ð(
+ušt32_t
+)~((ušt32_t)
+SCB_SCR_SLEEPDEEP
+);
+
+196 
+	`_S‘ISTR
+(
+CLR_WKUP
+);
+
+198 
+wCNTR
+ = 
+	`_G‘CNTR
+();
+
+199 
+wCNTR
+&=~
+CNTR_FSUSP
+;
+
+200 
+	`_S‘CNTR
+(
+wCNTR
+);
+
+204 
+PWR
+->
+CR
+ = 
+§vePWR_CR
+;
+
+207 #ià
+	`defšed
+ (
+STM32F30X
+è|| defšed (
+STM32F37X
+)
+
+208 
+SCB
+->
+SCR
+ &ð(
+ušt32_t
+)~((ušt32_t)
+SCB_SCR_SLEEPDEEP_Msk
+);
+
+210 
+SCB
+->
+SCR
+ &ð(
+ušt32_t
+)~((ušt32_t)
+SCB_SCR_SLEEPDEEP
+);
+
+213 
+	}
+}
+
+222 
+	$Resume_In™
+()
+
+224 
+ušt16_t
+ 
+wCNTR
+;
+
+231 
+wCNTR
+ = 
+	`_G‘CNTR
+();
+
+232 
+wCNTR
+ &ð(~
+CNTR_LPMODE
+);
+
+233 
+	`_S‘CNTR
+(
+wCNTR
+);
+
+237 
+	`L—ve_LowPow”Mode
+();
+
+240 
+	`_S‘CNTR
+(
+IMR_MSK
+);
+
+245 
+	}
+}
+
+259 
+	$Resume
+(
+RESUME_STATE
+ 
+eResumeS‘V®
+)
+
+261 
+ušt16_t
+ 
+wCNTR
+;
+
+263 ià(
+eResumeS‘V®
+ !ð
+RESUME_ESOF
+)
+
+264 
+ResumeS
+.
+eS‹
+ = 
+eResumeS‘V®
+;
+
+265 
+ResumeS
+.
+eS‹
+)
+
+267 
+RESUME_EXTERNAL
+:
+
+268 ià(
+»mÙewakeupÚ
+ ==0)
+
+270 
+	`Resume_In™
+();
+
+271 
+ResumeS
+.
+eS‹
+ = 
+RESUME_OFF
+;
+
+275 
+ResumeS
+.
+eS‹
+ = 
+RESUME_ON
+;
+
+278 
+RESUME_INTERNAL
+:
+
+279 
+	`Resume_In™
+();
+
+280 
+ResumeS
+.
+eS‹
+ = 
+RESUME_START
+;
+
+281 
+»mÙewakeupÚ
+ = 1;
+
+283 
+RESUME_LATER
+:
+
+284 
+ResumeS
+.
+bESOFút
+ = 2;
+
+285 
+ResumeS
+.
+eS‹
+ = 
+RESUME_WAIT
+;
+
+287 
+RESUME_WAIT
+:
+
+288 
+ResumeS
+.
+bESOFút
+--;
+
+289 ià(
+ResumeS
+.
+bESOFút
+ == 0)
+
+290 
+ResumeS
+.
+eS‹
+ = 
+RESUME_START
+;
+
+292 
+RESUME_START
+:
+
+293 
+wCNTR
+ = 
+	`_G‘CNTR
+();
+
+294 
+wCNTR
+ |ð
+CNTR_RESUME
+;
+
+295 
+	`_S‘CNTR
+(
+wCNTR
+);
+
+296 
+ResumeS
+.
+eS‹
+ = 
+RESUME_ON
+;
+
+297 
+ResumeS
+.
+bESOFút
+ = 10;
+
+299 
+RESUME_ON
+:
+
+300 
+ResumeS
+.
+bESOFút
+--;
+
+301 ià(
+ResumeS
+.
+bESOFút
+ == 0)
+
+303 
+wCNTR
+ = 
+	`_G‘CNTR
+();
+
+304 
+wCNTR
+ &ð(~
+CNTR_RESUME
+);
+
+305 
+	`_S‘CNTR
+(
+wCNTR
+);
+
+306 
+ResumeS
+.
+eS‹
+ = 
+RESUME_OFF
+;
+
+307 
+»mÙewakeupÚ
+ = 0;
+
+310 
+RESUME_OFF
+:
+
+311 
+RESUME_ESOF
+:
+
+313 
+ResumeS
+.
+eS‹
+ = 
+RESUME_OFF
+;
+
+316 
+	}
+}
+
+	@
+1
+.
+0
+24
+419
+inc/hw_config.h
+inc/platform_config.h
+inc/stm32_it.h
+inc/stm32f10x_conf.h
+inc/stm32f30x_conf.h
+inc/stm32f37x_conf.h
+inc/stm32l1xx_conf.h
+inc/usb_conf.h
+inc/usb_desc.h
+inc/usb_istr.h
+inc/usb_prop.h
+inc/usb_pwr.h
+src/hw_config.c
+src/main.c
+src/stm32_it.c
+src/system_stm32f10x.c
+src/system_stm32f30x.c
+src/system_stm32f37x.c
+src/system_stm32l1xx.c
+src/usb_desc.c
+src/usb_endp.c
+src/usb_istr.c
+src/usb_prop.c
+src/usb_pwr.c
