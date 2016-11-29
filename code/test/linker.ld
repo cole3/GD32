@@ -16,7 +16,7 @@ MEMORY {
 
 _estack = ORIGIN(RAM)+LENGTH(RAM); /* end of the stack */
 _seemul = ORIGIN(EEMUL); /* start of the eeprom emulation area */
-_min_stack = 0x100; /* minimum stack space to reserve for the user app */
+_min_stack = 0x0fff; /* minimum stack space to reserve for the user app */
 
 
 /* check valid alignment for the vector table */
