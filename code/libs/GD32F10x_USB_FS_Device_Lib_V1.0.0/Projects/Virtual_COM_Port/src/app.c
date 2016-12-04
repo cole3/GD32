@@ -22,7 +22,7 @@ USB_DEVICE_HANDLE  USB_Device_dev;
   * @param  None
   * @retval None
   */
-int main(void)
+void Virtual_COM_Port_Init(void)
 {
     /* Hardware platform initialization */
     USB_HWP_Init();
@@ -41,10 +41,6 @@ int main(void)
 
     /* Connect the USB device */
     USBD_Connect(&USB_Device_dev);
-
-    while (1)
-    {
-    }
 }
 
 /************************ (C) COPYRIGHT 2014 GIGADEVICE *****END OF FILE****/

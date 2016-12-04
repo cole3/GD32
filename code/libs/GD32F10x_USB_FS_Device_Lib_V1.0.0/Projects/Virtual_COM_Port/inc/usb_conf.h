@@ -56,9 +56,9 @@
 #endif
 
 #if defined(USE_GD32F103C_EVAL)
-    #define USB_PULLUP                      GPIOD
-    #define USB_PULLUP_PIN                  GPIO_PIN_13
-    #define RCC_APB2Periph_GPIO_PULLUP      RCC_APB2PERIPH_GPIOD
+    #define USB_PULLUP                      GPIOC
+    #define USB_PULLUP_PIN                  GPIO_PIN_9
+    #define RCC_APB2Periph_GPIO_PULLUP      RCC_APB2PERIPH_GPIOC
 #endif
 
 #if defined(USE_GD32F103E_EVAL)

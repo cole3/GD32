@@ -55,6 +55,8 @@ void led_trigger(void)
 }
 
 extern void USB_Mouse_Init(void);
+//extern void USB_MSC_Init(void);
+//extern void Virtual_COM_Port_Init(void);
 
 int main()
 {
@@ -64,8 +66,10 @@ int main()
 
     print("start\n");
     USB_Mouse_Init();
+    //USB_MSC_Init();
+    //Virtual_COM_Port_Init();
     GPIO_ResetBits(BLUE_LED_PORT, BLUE_LED_PIN);
-    //print("end\n");
+    print("end\n");
 
     while(1) {
         if (c > 'Z') {

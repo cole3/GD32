@@ -8,15 +8,16 @@ GDB=$(CROSS_COMPILE)-gdb
 TOP=$(PWD)
 LIBS+=libgd32.a libgd32all.a
 
-USB_MODULE=USB_Mouse
+#USB_MODULE=USB_Mouse
+#USB_MODULE=USB_MSC
+USB_MODULE=Virtual_COM_Port
 
 SRCPATH1=$(TOP)/Libraries/CMSIS
 SRCPATH2=$(TOP)/Libraries/GD32F10x_StdPeriph_Driver/src
 SRCPATH3=$(TOP)/Libraries/GD32_USB_Device_Driver/src
 SRCPATH4=$(TOP)/Libraries/GD32_USB_Device_Library/Core/src
-SRCPATH5=$(TOP)/Libraries/GD32_USB_Device_Library/Class/hid/src
-SRCPATH6=$(TOP)/Projects/$(USB_MODULE)/src
-SRCPATH7=$(TOP)/Utilities/GD32_EVAL/GD32103C_EVAL
+SRCPATH5=$(TOP)/Projects/$(USB_MODULE)/src
+SRCPATH6=$(TOP)/Utilities/GD32_EVAL/GD32103C_EVAL
 
 CFLAGSlib=-g -mcpu=cortex-m3 -mthumb -O0 -Wall -Werror -c
 CFLAGSlib+=-D GD32F10X_HD -D VECT_TAB_FLASH -D USE_GD32F103C_EVAL
@@ -24,11 +25,22 @@ CFLAGSlib+=-D USE_STDPERIPH_DRIVER
 CFLAGSlib+= -I$(TOP)/Libraries/CMSIS \
 			-I$(TOP)/Libraries/GD32F10x_StdPeriph_Driver/inc \
 			-I$(TOP)/Libraries/GD32_USB_Device_Driver/inc \
-			-I$(TOP)/Libraries/GD32_USB_Device_Library/Class/hid/inc \
 			-I$(TOP)/Libraries/GD32_USB_Device_Library/Core/inc \
 			-I$(TOP)/Projects/$(USB_MODULE)/inc \
 			-I$(TOP)/Utilities/GD32_EVAL/GD32103C_EVAL
 
+ifeq "$(USB_MODULE)" "USB_Mouse"
+SRCPATH7=$(TOP)/Libraries/GD32_USB_Device_Library/Class/hid/src
+CFLAGSlib+= -I$(TOP)/Libraries/GD32_USB_Device_Library/Class/hid/inc
+endif
+ifeq "$(USB_MODULE)" "USB_MSC"
+SRCPATH7=$(TOP)/Libraries/GD32_USB_Device_Library/Class/msc/src
+CFLAGSlib+= -I$(TOP)/Libraries/GD32_USB_Device_Library/Class/msc/inc
+endif
+ifeq "$(USB_MODULE)" "Virtual_COM_Port"
+SRCPATH7=$(TOP)/Libraries/GD32_USB_Device_Library/Class/cdc/src
+CFLAGSlib+= -I$(TOP)/Libraries/GD32_USB_Device_Library/Class/cdc/inc
+endif
 
 all: libs
 libs: $(LIBS)
@@ -61,7 +73,7 @@ libgd32all.a:
 	@echo "Building $@ part5..."
 	@cd $(SRCPATH5) && \
 		$(CC) $(CFLAGSlib) \
-		usbd_hid_core.c
+		*.c
 	@echo "Building $@ part6..."
 	@cd $(SRCPATH6) && \
 		$(CC) $(CFLAGSlib) \
@@ -89,5 +101,6 @@ clean:
 	rm -f $(SRCPATH4)/*.o
 	rm -f $(SRCPATH5)/*.o
 	rm -f $(SRCPATH6)/*.o
+	rm -f $(SRCPATH7)/*.o
 	rm -f $(LIBS)
 

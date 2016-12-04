@@ -45,13 +45,13 @@
     #define NAND_FLASH_END_ADDRESS          ((uint32_t)(0x08000000 + 0x10000))
 
 #elif defined(USE_GD32F103C_EVAL)
-    #define USB_PULLUP                      GPIOD
-    #define USB_PULLUP_PIN                  GPIO_PIN_13
-    #define RCC_APB2Periph_GPIO_PULLUP      RCC_APB2PERIPH_GPIOD
+    #define USB_PULLUP                      GPIOC
+    #define USB_PULLUP_PIN                  GPIO_PIN_9
+    #define RCC_APB2Periph_GPIO_PULLUP      RCC_APB2PERIPH_GPIOC
 
     #define PAGE_SIZE                       ((uint32_t)(2048))
-    #define NAND_FLASH_BASE_ADDRESS         ((uint32_t)(0x08000000 + 0x04000))
-    #define NAND_FLASH_END_ADDRESS          ((uint32_t)(0x08000000 + 0x24000))
+    #define NAND_FLASH_BASE_ADDRESS         ((uint32_t)(0x08000000 + 0x40000))
+    #define NAND_FLASH_END_ADDRESS          ((uint32_t)(0x08000000 + 0x80000))
 
 #elif defined(USE_GD32F103E_EVAL)
     #define USB_PULLUP                      GPIOG

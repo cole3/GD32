@@ -72,6 +72,10 @@ void  USB_LP_CAN1_RX0_IRQHandler (void)
     USB_Ifr();
 }
 
+void EXTI15_10_IRQHandler(void)
+{
+}
+
 #ifdef USB_DEVICE_LOW_PWR_MODE_SUPPORT
 
 /**
@@ -82,6 +86,11 @@ void  USB_LP_CAN1_RX0_IRQHandler (void)
 void  USBWakeUp_IRQHandler (void)
 {
     EXTI_ClearINTBitState(EXTI_LINE18);
+}
+#else
+
+void  USBWakeUp_IRQHandler (void)
+{
 }
 
 #endif
