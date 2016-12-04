@@ -8,9 +8,11 @@ GDB=$(CROSS_COMPILE)-gdb
 TOP=$(PWD)
 LIBS+=libgd32.a libgd32all.a
 
-#USB_MODULE=USB_Mouse
+ifndef USB_MODULE
+USB_MODULE=USB_Mouse
 #USB_MODULE=USB_MSC
-USB_MODULE=Virtual_COM_Port
+#USB_MODULE=Virtual_COM_Port
+endif
 
 SRCPATH1=$(TOP)/Libraries/CMSIS
 SRCPATH2=$(TOP)/Libraries/GD32F10x_StdPeriph_Driver/src
