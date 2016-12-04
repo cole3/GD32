@@ -9,9 +9,10 @@ TOP=$(PWD)
 LIBS+=libgd32.a libgd32all.a
 
 ifndef USB_MODULE
-USB_MODULE=USB_Mouse
+#USB_MODULE=USB_Mouse
 #USB_MODULE=USB_MSC
 #USB_MODULE=Virtual_COM_Port
+USB_MODULE=USB_Keyboard
 endif
 
 SRCPATH1=$(TOP)/Libraries/CMSIS
@@ -42,6 +43,10 @@ endif
 ifeq "$(USB_MODULE)" "Virtual_COM_Port"
 SRCPATH7=$(TOP)/Libraries/GD32_USB_Device_Library/Class/cdc/src
 CFLAGSlib+= -I$(TOP)/Libraries/GD32_USB_Device_Library/Class/cdc/inc
+endif
+ifeq "$(USB_MODULE)" "USB_Keyboard"
+SRCPATH7=$(TOP)/Libraries/GD32_USB_Device_Library/Class/hid/src
+CFLAGSlib+= -I$(TOP)/Libraries/GD32_USB_Device_Library/Class/hid/inc
 endif
 
 all: libs

@@ -61,15 +61,13 @@ void  USBD_Disconnect (USB_DEVICE_HANDLE *pudev)
   * @param  user_cb: user callback structure pointer
   * @retval None
   */
-extern void print(char* fmt, ...);
 void  USBD_Init (USB_DEVICE_HANDLE *pudev,
                  USBD_Desc_cb_TypeDef  *device_desc,
                  USBD_Class_cb_TypeDef *class_cb,
                  USBD_User_cb_TypeDef  *user_cb)
 {
-    print("USBD_Init %d\n", __LINE__);
     USBD_DeInit(pudev);
-    print("USBD_Init %d\n", __LINE__);
+
     /* Device descriptor class and user callbacks */
     pudev->dev.class_cb = class_cb;
     pudev->dev.user_cb = user_cb;
@@ -83,14 +81,12 @@ void  USBD_Init (USB_DEVICE_HANDLE *pudev,
 
     /* USB full-speed device */
     pudev->dev.speed = USB_SPEED_FULL; 
-    print("USBD_Init %d\n", __LINE__);
+
     /* Set device register */
     DR_Init();
 
-    print("USBD_Init %d\n", __LINE__);
     /* Callback user function */
     pudev->dev.user_cb->DeviceInit();
-    print("USBD_Init %d\n", __LINE__);
 }
 
 /**
